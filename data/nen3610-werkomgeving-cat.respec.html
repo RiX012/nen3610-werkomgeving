@@ -1,0 +1,2345 @@
+
+<!DOCTYPE HTML><section id="cat" class="normative">
+   <h2>Gegevensdefinitie</h2>
+   <!--MIMCM-NEN3610-1.0-0-20220601-20220608-182800 imvertor 1.66.0--><a class="anchor" id="global_package_Waardelijsten"></a><section id="global_package_Waardelijsten">
+      <h3>Domein   Waardelijsten</h3>
+      <section id="">
+         <h4>Codelijsten   </h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th><a class="anchor" id="graph_EAID_03776960_DC8E_4ef9_9910_9B540D78291C"></a><a class="anchor" id="global_class_Waardelijsten_VoidReasonValue"></a><a class="link" href="#detail_class_Waardelijsten_VoidReasonValue">Void­Reason­Value</a></th>
+                  <td>
+                     
+                     <p>Reden waarom een ’nil’-waarde is ingevuld.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+   </section><a class="anchor" id="global_package_BasisinformatieElementen"></a><section id="global_package_BasisinformatieElementen">
+      <h3>Domein   Basisinformatie-elementen</h3>
+      <section id="">
+         <h4>Objecttypen   </h4>
+         <a class="anchor" id="graph_EAID_2EB8F2FF_4F71_4441_8B77_6DD2CFE62E6A"></a><a class="anchor" id="global_class_BasisinformatieElementen_DummyIdentificeerbaarObject"></a><section id="global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">
+            <h5>   Dummy­Identificeerbaar­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Dummy­Identificeerbaar­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Klasse opgenomen om attributen uit te kopiëren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie">identificatie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
+                           Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
+                           een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
+                           of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
+                           attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
+                           verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+                           De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein">domein</a>
+                        </td>
+                     <td>
+                        
+                        <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Dummy­Identificeerbaar­Object
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BasisinformatieElementen_DummyIdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
+                        
+                        
+                        <a class="link" href="#global_class_BasisinformatieElementen_Registratie">Registratie</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gegevens over de registratie van het object als informatieobject.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_47CE152F_6789_46dc_A29F_33647F0A644A"></a><a class="anchor" id="global_class_BasisinformatieElementen_Registratie"></a><section id="global_class_BasisinformatieElementen_Registratie">
+            <h5>   Registratie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Registratie</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Vastlegging van een versie van een set gegevens.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Bij het registreren van een object als informatieobject horen een aantal metadata
+                        die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_versie">versie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Versieaanduiding van een informatieobject.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid">begin­Geldigheid</a>
+                        </td>
+                     <td>
+                        
+                        <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
+                        </td>
+                     <td>
+                        Datum
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_eindGeldigheid">eind­Geldigheid</a>
+                        </td>
+                     <td>
+                        
+                        <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
+                           is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
+                           nog geldig.</p>
+                        </td>
+                     <td>
+                        Datum
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">tijdstip­Registratie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                           in de registratie.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_eindRegistratie">eind­Registratie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
+                           De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
+                           is de versie nog actueel.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_objectBeginTijd">object­Begin­Tijd</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_objectEindTijd">object­Eind­Tijd</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
+                        </td>
+                     <td>0 .. *</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_BasisinformatieElementen_DummyIdentificeerbaarObject_registratiegegevens">geregistreerd­Met: registratiegegevens</a>
+                        
+                        Registratie
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gegevens over de registratie van het object als informatieobject.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section id="">
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section id="">
+            <h5>Objecttype details  </h5>
+            <a class="anchor" id="detail_class_BasisinformatieElementen_DummyIdentificeerbaarObject"></a><section id="detail_class_BasisinformatieElementen_DummyIdentificeerbaarObject">
+               <h6>   Dummy­Identificeerbaar­Object</h6>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
+                                 Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
+                                 een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
+                                 of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
+                                 attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
+                                 verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+                                 De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>‘identificatie’ is de identificatiecode die een object heeft binnen een registratie
+                                 of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling
+                                 is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt
+                                 een object hiermee uniek identificeerbaar op het niveau van verschillende registraties,
+                                 uitwisselprocessen en ook wereldwijd uniek.</p>
+                              
+                              <p>De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>[a-z­A-Z|0-9|_|.|-|\/|:|]</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> domein</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>domein</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke
+                              entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie
+                              met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op
+                              het niveau van verschillende registraties en ook mondiaal uniek.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_BasisinformatieElementen_DummyIdentificeerbaarObject_registratiegegevens"></a><div class="deepheader" id="detail_association_BasisinformatieElementen_DummyIdentificeerbaarObject_registratiegegevens">
+                  <h7>Relatiesoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> geregistreerd­Met</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geregistreerd­Met</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Gegevens over de registratie van het object als informatieobject.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren
+                              van één versie van het informatieobject. Ze horen als metadata bij de gegevensset
+                              van het informatieobject.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_BasisinformatieElementen_Registratie">Registratie</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            <a class="anchor" id="detail_class_BasisinformatieElementen_Registratie"></a><section id="detail_class_BasisinformatieElementen_Registratie">
+               <h6>   Registratie</h6>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_versie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_versie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> versie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>versie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Versieaanduiding van een informatieobject.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een versie van een informatieobject is een toestand van een informatieobject met zijn
+                              gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit
+                              van de identificatie van het object, maar kan worden gebruikt om verschillende instanties
+                              van hetzelfde informatieobject te identificeren.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> begin­Geldigheid</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>begin­Geldigheid</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Start van de periode waarop deze versie van het informatieobject geldig is.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. De start van een periode is het begin van de tijdsaanduiding; het
+                              ‘vanaf-moment’. Bij een datum (date) is dat het begin van die dag.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>Datum</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_eindGeldigheid"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_eindGeldigheid">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> eind­Geldigheid</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eind­Geldigheid</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Eind van de periode waarop deze versie van het informatieobject geldig is. De periode
+                                 is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie
+                                 nog geldig.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn
+                              verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. Het eind van de periode is tot het begin van de tijdsaanduiding;
+                              het ‘tot-moment’.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>Datum</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> tijdstip­Registratie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>tijdstip­Registratie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                                 in de registratie.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. Voor tijdstip registratie zal Date­Time in vrijwel alle gevallen
+                              de beste keuze zijn.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_eindRegistratie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_eindRegistratie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> eind­Registratie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>eind­Registratie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Eind van de periode dat deze versie van het informatieobject actueel is in de registratie.
+                                 De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld,
+                                 is de versie nog actueel.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel
+                                 in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie
+                                 is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het
+                                 de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van
+                                 een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan
+                                 o.a. worden gekozen uit typen TM_Instant, Date of Date­Time. Voor tijdstip­Registratie
+                                 zal Date­Time in vrijwel alle gevallen de beste keuze zijn. </p>
+                              
+                              <p></p>
+                              
+                              <p>Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen
+                                 aan de eind­Geldigheid van een versie, wordt bij het vullen van de eind­Geldigheid
+                                 tegelijkertijd ook altijd de eind­Registratie gevuld zodat het duidelijk is vanaf
+                                 welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eind­Registratie
+                                 geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_objectBeginTijd"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_objectBeginTijd">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> object­Begin­Tijd</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Begin­Tijd</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_objectEindTijd"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_objectEindTijd">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> object­Eind­Tijd</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>object­Eind­Tijd</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         </section>
+   </section><a class="anchor" id="global_package_SemantischModel"></a><section id="global_package_SemantischModel">
+      <h3>Domein   Semantisch­Model</h3>
+      <section id="">
+         <h4>Objecttypen   </h4>
+         <a class="anchor" id="graph_EAID_5183AC98_C887_4e5c_BC61_41A64257CE2A"></a><a class="anchor" id="global_class_SemantischModel_GeoObject"></a><section id="global_class_SemantischModel_GeoObject">
+            <h5>   Geo­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Geo­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
+                           relatief ten opzichte van de aarde.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object
+                        is, is het altijd een instantie van een subklasse van Geo­Object. Alle subklassen
+                        van Geo­Object hebben conform MIM het stereotype «Objecttype». Voor publicatie conform
+                        NEN-EN-ISO 19109:2015 is het stereotype «Feature­Type» verplicht. Binnen de context
+                        van NEN 3610 is «Objecttype» het equivalent van «Feature­Type».</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+         <a class="anchor" id="graph_EAID_8A4801C0_D263_4a0b_99C5_A0C7A67FFE62"></a><a class="anchor" id="global_class_SemantischModel_FunctioneleRuimte"></a><section id="global_class_SemantischModel_FunctioneleRuimte">
+            <h5>   Functionele­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Functionele­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Ruimte met een specifieke functie.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe
+                        te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing
+                        van reële objecten.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Functionele­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_A3F7184D_50E3_4d4d_B6B2_BB3127C7FBFC"></a><a class="anchor" id="global_class_SemantischModel_Gebouw"></a><section id="global_class_SemantischModel_Gebouw">
+            <h5>   Gebouw</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Gebouw</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het
+                           in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor
+                           de productie van goederen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Voorbeelden zijn: huis, schuur, flatgebouw, huizenblok, fabriek.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Gebouw
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_5E62C776_3420_4eac_BA47_7EE0602F035B"></a><a class="anchor" id="global_class_SemantischModel_GeografischeRuimte"></a><section id="global_class_SemantischModel_GeografischeRuimte">
+            <h5>   Geografische­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Geografische­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming
+                           of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder,
+                        Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Geografische­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_9426A967_757C_4889_ACD5_B1E420BF7E90"></a><a class="anchor" id="global_class_SemantischModel_Kunstwerk"></a><section id="global_class_SemantischModel_Kunstwerk">
+            <h5>   Kunstwerk</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Kunstwerk</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen,
+                           waterkeringen en/of leidingen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies.
+                        Overbruggingen kunnen zijn: brug, viaduct, aquaduct enz. Een voorbeeld van een waterstaatkundig
+                        werk is een sluis. Voorbeelden van waterkerende constructies zijn stuw en vaste dam.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Kunstwerk
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_21548D9F_88F5_41e4_85B3_0DC6A35FB407"></a><a class="anchor" id="global_class_SemantischModel_Leiding"></a><section id="global_class_SemantischModel_Leiding">
+            <h5>   Leiding</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Leiding</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Een geheel van geleiders of een ruimte die voorzien is van één ommanteling en bestemd
+                           is voor transport van materie, data en/of energie.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Voorbeelden zijn: hoogspanningsleiding, riool, waterleiding, glasvezelkabel, gasleiding.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Leiding
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_E3956B4F_8CE1_4bdf_88DA_2201BAC43668"></a><a class="anchor" id="global_class_SemantischModel_JuridischeRuimte"></a><section id="global_class_SemantischModel_JuridischeRuimte">
+            <h5>   Juridische­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Juridische­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Ruimte waar een juridisch instrument beleid of regelgeving toepast.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Juridische ruimte omvat objecten die zijn gekoppeld aan wet- en beleidsinformatie
+                        die aangeeft wat waar krachtens wetgeving of wettelijk beleid is geformuleerd. Voorbeelden
+                        zijn: benoeming van ruimten en gebieden in bijvoorbeeld omgevingsvisie, omgevingsverordening,
+                        waterschapsverordening, projectbesluit.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Juridische­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_240997BA_70F2_48dc_8A47_CA765C364BE7"></a><a class="anchor" id="global_class_SemantischModel_Spoorverkeerruimte"></a><section id="global_class_SemantischModel_Spoorverkeerruimte">
+            <h5>   Spoorverkeerruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Spoorverkeerruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Verkeerruimte voor voertuigen die zich over rails verplaatsen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro’s.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Spoorverkeerruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_85C106F3_B76B_4f9e_ACCF_AABCA792A479"></a><a class="anchor" id="global_class_SemantischModel_Bodem"></a><section id="global_class_SemantischModel_Bodem">
+            <h5>   Bodem</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Bodem</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Bovenste deel van de aarde, exclusief oppervlaktewater.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de
+                        bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende
+                        bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld
+                        bodemkunde, geologie, geohydrologie en geomorfologie.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Bodem
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_AC4F927B_8E66_43a1_9290_5DC5E84203A6"></a><a class="anchor" id="global_class_SemantischModel_Oppervlaktewater"></a><section id="global_class_SemantischModel_Oppervlaktewater">
+            <h5>   Oppervlaktewater</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Oppervlaktewater</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Grondwater maakt geen deel uit van de superklasse.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Oppervlaktewater
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_121AB4EC_0D70_48ee_BB85_EEF13378C900"></a><a class="anchor" id="global_class_SemantischModel_Verharding"></a><section id="global_class_SemantischModel_Verharding">
+            <h5>   Verharding</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Verharding</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt
+                           gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende
+                           constructie aangelegd materiaal.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan
+                        meervoudig zijn en hoeft niet de fysieke begrenzing te volgen.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Verharding
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_0CD49AD6_5021_4f47_B055_638163C4A94F"></a><a class="anchor" id="global_class_SemantischModel_Transportruimte"></a><section id="global_class_SemantischModel_Transportruimte">
+            <h5>   Transportruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Transportruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs
+                           stromen zich kunnen verplaatsen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen,
+                        luchtverbindingen.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Transportruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_FunctioneleRuimte">Functionele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Ruimte met een specifieke functie.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_4CA7941A_0973_4909_8978_6C17A3CD6F0E"></a><a class="anchor" id="global_class_SemantischModel_Begroeiing"></a><section id="global_class_SemantischModel_Begroeiing">
+            <h5>   Begroeiing</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Begroeiing</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk
+                        toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Begroeiing
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_531D0265_A1CA_45fa_9DFC_3CFD82071F26"></a><a class="anchor" id="global_class_SemantischModel_Constructie"></a><section id="global_class_SemantischModel_Constructie">
+            <h5>   Constructie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Constructie</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis,
+                        brug, asfalt, waterleiding, fabriek, mijnstelsel.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Constructie
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_57FC8B96_00D7_4eb4_A03C_4EA90E3A5733"></a><a class="anchor" id="global_class_SemantischModel_Waterverplaatsingsruimte"></a><section id="global_class_SemantischModel_Waterverplaatsingsruimte">
+            <h5>   Waterverplaatsingsruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Waterverplaatsingsruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Transportruimte waardoor water zich verplaatst.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name
+                        de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a.
+                        afwatering, watertoevoer en drainage.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Waterverplaatsingsruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Transportruimte">Transportruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs
+                           stromen zich kunnen verplaatsen.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_5E50A675_D501_40b6_82BE_6C49F355D3A0"></a><a class="anchor" id="global_class_SemantischModel_VirtueleRuimte"></a><section id="global_class_SemantischModel_VirtueleRuimte">
+            <h5>   Virtuele­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Virtuele­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de
+                        begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal
+                        het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn
+                        objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk
+                        beleid.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Virtuele­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
+                           relatief ten opzichte van de aarde.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_65280E13_7AA2_451f_9E14_CD7798636FAC"></a><a class="anchor" id="global_class_SemantischModel_ReeelObject"></a><section id="global_class_SemantischModel_ReeelObject">
+            <h5>   Reeel­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Reeel­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door
+                        zijn materiele samenstelling en structuur.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Reeel­Object
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
+                           relatief ten opzichte van de aarde.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_99749D9E_9B0F_4134_959D_4D7BE81D0CEA"></a><a class="anchor" id="global_class_SemantischModel_Wegverkeerruimte"></a><section id="global_class_SemantischModel_Wegverkeerruimte">
+            <h5>   Wegverkeerruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Wegverkeerruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Verkeerruimte voor weggebruikers die zich over wegen verplaatsen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Wegverkeerruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_C16B3487_F0C4_4e06_BDBB_72DDA60C7BA8"></a><a class="anchor" id="global_class_SemantischModel_RegistratieveRuimte"></a><section id="global_class_SemantischModel_RegistratieveRuimte">
+            <h5>   Registratieve­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Registratieve­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke
+                           verantwoordelijkheid of voor bedrijfsvoering.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die
+                        voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk
+                        gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden
+                        zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio
+                        Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Registratieve­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_CC240C98_C4B6_4796_ADB1_24D0F841EC34"></a><a class="anchor" id="global_class_SemantischModel_Scheepvaartruimte"></a><section id="global_class_SemantischModel_Scheepvaartruimte">
+            <h5>   Scheepvaartruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Scheepvaartruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Verkeerruimte voor voertuigen die zich over water verplaatsen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Scheepvaartruimte wordt gebruikt door allerlei soorten schepen.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Scheepvaartruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_DAECA380_235D_4a0a_95B9_A3C166AAC4BD"></a><a class="anchor" id="global_class_SemantischModel_Luchtvaartruimte"></a><section id="global_class_SemantischModel_Luchtvaartruimte">
+            <h5>   Luchtvaartruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Luchtvaartruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Verkeerruimte voor voertuigen die zich door de lucht verplaatsen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en
+                        helikopters.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Luchtvaartruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_F404593C_277B_4dcd_ABA9_EB37F8015AF4"></a><a class="anchor" id="global_class_SemantischModel_Verkeerruimte"></a><section id="global_class_SemantischModel_Verkeerruimte">
+            <h5>   Verkeerruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Verkeerruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen
+                        van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen,
+                        schepen en vliegtuigen.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Verkeerruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_Transportruimte">Transportruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs
+                           stromen zich kunnen verplaatsen.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+   </section>
+</section>
+<section id="lis" class="normative">
+   <h2>Inhoud van waardenlijsten</h2>
+   <!--MIMCM-NEN3610-1.0-0-20220601-20220608-182800 imvertor 1.66.0-->
+   <section id="">
+      <h3>Referentielijst inhoud   </h3>
+   </section>
+   <section id="">
+      <h3>Codelijst inhoud   </h3><a class="anchor" id="graph_EAID_03776960_DC8E_4ef9_9910_9B540D78291C"></a><a class="anchor" id="detail_class_Waardelijsten_VoidReasonValue"></a><section id="detail_class_Waardelijsten_VoidReasonValue">
+         <h4>Codelijst details  Void­Reason­Value</h4>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup></colgroup>
+            <tbody>
+               <tr>
+                  <td>
+                     
+                     <p>Reden waarom een ’nil’-waarde is ingevuld.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <table style="width: 100%;" class="list">
+            <colgroup style="width: 40%;"></colgroup>
+            <colgroup style="width: 60%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Waarde</th>
+                  <th>Omschrijving</th>
+               </tr>
+               <tr>
+                  <th>geen­Waarde</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>niet­Ondersteund</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>waarde­Onbekend</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>vastgesteld­Onbekend</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>niet­Geautoriseerd</th>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         </section>
+   </section>
+   <section id="">
+      <h3>Enumeratie inhoud   </h3>
+   </section>
+</section>
