@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-NEN3610-1.0-0-20220601-20220705-104818 imvertor 1.67.0--><a class="anchor" id="global_package_BasisinformatieElementen"></a><section id="global_package_BasisinformatieElementen">
+   <!--MIMCM-NEN3610-1.0-0-20220601-20220705-134336 imvertor 1.67.0--><a class="anchor" id="global_package_BasisinformatieElementen"></a><section id="global_package_BasisinformatieElementen">
       <h3>Domein   Basisinformatie-elementen</h3>
       <section id="">
          <h4>Objecttypen   </h4>
@@ -930,8 +930,8 @@
                </tbody>
             </table>
             </section>
-         <a class="anchor" id="graph_EAID_8A4801C0_D263_4a0b_99C5_A0C7A67FFE62"></a><a class="anchor" id="global_class_SemantischModel_FunctioneleRuimte"></a><section id="global_class_SemantischModel_FunctioneleRuimte">
-            <h5>   Functionele­Ruimte</h5>
+         <a class="anchor" id="graph_EAID_5E50A675_D501_40b6_82BE_6C49F355D3A0"></a><a class="anchor" id="global_class_SemantischModel_VirtueleRuimte"></a><section id="global_class_SemantischModel_VirtueleRuimte">
+            <h5>   Virtuele­Ruimte</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -939,7 +939,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Functionele­Ruimte</td>
+                     <td>Virtuele­Ruimte</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -949,7 +949,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Ruimte met een specifieke functie.</p>
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
                         </td>
                   </tr>
                   <tr>
@@ -958,9 +959,11 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe
-                        te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing
-                        van reële objecten.</td>
+                     <td>Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de
+                        begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal
+                        het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn
+                        objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk
+                        beleid.</td>
                   </tr>
                </tbody>
             </table>
@@ -978,16 +981,329 @@
                   </tr>
                   <tr>
                      <td>
-                        Functionele­Ruimte
+                        Virtuele­Ruimte
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
                         
                         </td>
                      <td>
                         
-                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
-                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
+                           relatief ten opzichte van de aarde.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_65280E13_7AA2_451f_9E14_CD7798636FAC"></a><a class="anchor" id="global_class_SemantischModel_ReeelObject"></a><section id="global_class_SemantischModel_ReeelObject">
+            <h5>   Reeel­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Reeel­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door
+                        zijn materiele samenstelling en structuur.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Reeel­Object
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
+                           relatief ten opzichte van de aarde.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_85C106F3_B76B_4f9e_ACCF_AABCA792A479"></a><a class="anchor" id="global_class_SemantischModel_Bodem"></a><section id="global_class_SemantischModel_Bodem">
+            <h5>   Bodem</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Bodem</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Bovenste deel van de aarde, exclusief oppervlaktewater.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de
+                        bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende
+                        bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld
+                        bodemkunde, geologie, geohydrologie en geomorfologie.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Bodem
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_AC4F927B_8E66_43a1_9290_5DC5E84203A6"></a><a class="anchor" id="global_class_SemantischModel_Oppervlaktewater"></a><section id="global_class_SemantischModel_Oppervlaktewater">
+            <h5>   Oppervlaktewater</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Oppervlaktewater</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Grondwater maakt geen deel uit van de superklasse.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Oppervlaktewater
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_4CA7941A_0973_4909_8978_6C17A3CD6F0E"></a><a class="anchor" id="global_class_SemantischModel_Begroeiing"></a><section id="global_class_SemantischModel_Begroeiing">
+            <h5>   Begroeiing</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Begroeiing</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk
+                        toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Begroeiing
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_531D0265_A1CA_45fa_9DFC_3CFD82071F26"></a><a class="anchor" id="global_class_SemantischModel_Constructie"></a><section id="global_class_SemantischModel_Constructie">
+            <h5>   Constructie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Constructie</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis,
+                        brug, asfalt, waterleiding, fabriek, mijnstelsel.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Constructie
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1058,8 +1374,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_5E62C776_3420_4eac_BA47_7EE0602F035B"></a><a class="anchor" id="global_class_SemantischModel_GeografischeRuimte"></a><section id="global_class_SemantischModel_GeografischeRuimte">
-            <h5>   Geografische­Ruimte</h5>
+         <a class="anchor" id="graph_EAID_121AB4EC_0D70_48ee_BB85_EEF13378C900"></a><a class="anchor" id="global_class_SemantischModel_Verharding"></a><section id="global_class_SemantischModel_Verharding">
+            <h5>   Verharding</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1067,7 +1383,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Geografische­Ruimte</td>
+                     <td>Verharding</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -1077,8 +1393,9 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming
-                           of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent.</p>
+                        <p>Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt
+                           gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende
+                           constructie aangelegd materiaal.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1087,8 +1404,8 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder,
-                        Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. </td>
+                     <td>Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan
+                        meervoudig zijn en hoeft niet de fysieke begrenzing te volgen.</td>
                   </tr>
                </tbody>
             </table>
@@ -1106,16 +1423,16 @@
                   </tr>
                   <tr>
                      <td>
-                        Geografische­Ruimte
+                        Verharding
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
                         
                         </td>
                      <td>
                         
-                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
-                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
+                           plaatse te functioneren.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1250,6 +1567,201 @@
             </table>
             
             </section>
+         <a class="anchor" id="graph_EAID_8A4801C0_D263_4a0b_99C5_A0C7A67FFE62"></a><a class="anchor" id="global_class_SemantischModel_FunctioneleRuimte"></a><section id="global_class_SemantischModel_FunctioneleRuimte">
+            <h5>   Functionele­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Functionele­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Ruimte met een specifieke functie.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe
+                        te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing
+                        van reële objecten.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Functionele­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_C16B3487_F0C4_4e06_BDBB_72DDA60C7BA8"></a><a class="anchor" id="global_class_SemantischModel_RegistratieveRuimte"></a><section id="global_class_SemantischModel_RegistratieveRuimte">
+            <h5>   Registratieve­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Registratieve­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke
+                           verantwoordelijkheid of voor bedrijfsvoering.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die
+                        voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk
+                        gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden
+                        zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio
+                        Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel.</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Registratieve­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         <a class="anchor" id="graph_EAID_5E62C776_3420_4eac_BA47_7EE0602F035B"></a><a class="anchor" id="global_class_SemantischModel_GeografischeRuimte"></a><section id="global_class_SemantischModel_GeografischeRuimte">
+            <h5>   Geografische­Ruimte</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Geografische­Ruimte</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming
+                           of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td>nen 3610</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder,
+                        Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Geografische­Ruimte
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
+                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
          <a class="anchor" id="graph_EAID_E3956B4F_8CE1_4bdf_88DA_2201BAC43668"></a><a class="anchor" id="global_class_SemantischModel_JuridischeRuimte"></a><section id="global_class_SemantischModel_JuridischeRuimte">
             <h5>   Juridische­Ruimte</h5>
             
@@ -1309,257 +1821,6 @@
                         
                         <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
                            in abstracte en/of geregistreerde vorm bestaat.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_240997BA_70F2_48dc_8A47_CA765C364BE7"></a><a class="anchor" id="global_class_SemantischModel_Spoorverkeerruimte"></a><section id="global_class_SemantischModel_Spoorverkeerruimte">
-            <h5>   Spoorverkeerruimte</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Spoorverkeerruimte</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Verkeerruimte voor voertuigen die zich over rails verplaatsen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro’s.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Spoorverkeerruimte
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_85C106F3_B76B_4f9e_ACCF_AABCA792A479"></a><a class="anchor" id="global_class_SemantischModel_Bodem"></a><section id="global_class_SemantischModel_Bodem">
-            <h5>   Bodem</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Bodem</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Bovenste deel van de aarde, exclusief oppervlaktewater.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de
-                        bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende
-                        bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld
-                        bodemkunde, geologie, geohydrologie en geomorfologie.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Bodem
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_AC4F927B_8E66_43a1_9290_5DC5E84203A6"></a><a class="anchor" id="global_class_SemantischModel_Oppervlaktewater"></a><section id="global_class_SemantischModel_Oppervlaktewater">
-            <h5>   Oppervlaktewater</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Oppervlaktewater</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Grondwater maakt geen deel uit van de superklasse.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Oppervlaktewater
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_121AB4EC_0D70_48ee_BB85_EEF13378C900"></a><a class="anchor" id="global_class_SemantischModel_Verharding"></a><section id="global_class_SemantischModel_Verharding">
-            <h5>   Verharding</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Verharding</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt
-                           gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende
-                           constructie aangelegd materiaal.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan
-                        meervoudig zijn en hoeft niet de fysieke begrenzing te volgen.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Verharding
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_Constructie">Constructie</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
-                           plaatse te functioneren.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1629,8 +1890,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_4CA7941A_0973_4909_8978_6C17A3CD6F0E"></a><a class="anchor" id="global_class_SemantischModel_Begroeiing"></a><section id="global_class_SemantischModel_Begroeiing">
-            <h5>   Begroeiing</h5>
+         <a class="anchor" id="graph_EAID_F404593C_277B_4dcd_ABA9_EB37F8015AF4"></a><a class="anchor" id="global_class_SemantischModel_Verkeerruimte"></a><section id="global_class_SemantischModel_Verkeerruimte">
+            <h5>   Verkeerruimte</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1638,7 +1899,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Begroeiing</td>
+                     <td>Verkeerruimte</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -1648,7 +1909,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant.</p>
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
                         </td>
                   </tr>
                   <tr>
@@ -1657,8 +1918,9 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk
-                        toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan.</td>
+                     <td>Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen
+                        van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen,
+                        schepen en vliegtuigen.</td>
                   </tr>
                </tbody>
             </table>
@@ -1676,78 +1938,16 @@
                   </tr>
                   <tr>
                      <td>
-                        Begroeiing
+                        Verkeerruimte
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
+                        <a class="link" href="#global_class_SemantischModel_Transportruimte">Transportruimte</a>
                         
                         </td>
                      <td>
                         
-                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_531D0265_A1CA_45fa_9DFC_3CFD82071F26"></a><a class="anchor" id="global_class_SemantischModel_Constructie"></a><section id="global_class_SemantischModel_Constructie">
-            <h5>   Constructie</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Constructie</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter
-                           plaatse te functioneren.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis,
-                        brug, asfalt, waterleiding, fabriek, mijnstelsel.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Constructie
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_ReeelObject">Reeel­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
+                        <p>Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs
+                           stromen zich kunnen verplaatsen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1818,8 +2018,8 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_5E50A675_D501_40b6_82BE_6C49F355D3A0"></a><a class="anchor" id="global_class_SemantischModel_VirtueleRuimte"></a><section id="global_class_SemantischModel_VirtueleRuimte">
-            <h5>   Virtuele­Ruimte</h5>
+         <a class="anchor" id="graph_EAID_240997BA_70F2_48dc_8A47_CA765C364BE7"></a><a class="anchor" id="global_class_SemantischModel_Spoorverkeerruimte"></a><section id="global_class_SemantischModel_Spoorverkeerruimte">
+            <h5>   Spoorverkeerruimte</h5>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1827,7 +2027,7 @@
                <tbody>
                   <tr>
                      <th>Naam</th>
-                     <td>Virtuele­Ruimte</td>
+                     <td>Spoorverkeerruimte</td>
                   </tr>
                   <tr>
                      <th>Herkomst</th>
@@ -1837,8 +2037,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
-                           in abstracte en/of geregistreerde vorm bestaat.</p>
+                        <p>Verkeerruimte voor voertuigen die zich over rails verplaatsen.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1847,11 +2046,7 @@
                   </tr>
                   <tr>
                      <th>Toelichting</th>
-                     <td>Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de
-                        begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal
-                        het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn
-                        objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk
-                        beleid.</td>
+                     <td>Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro’s.</td>
                   </tr>
                </tbody>
             </table>
@@ -1869,79 +2064,15 @@
                   </tr>
                   <tr>
                      <td>
-                        Virtuele­Ruimte
+                        Spoorverkeerruimte
                         is specialisatie van
                         
-                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
+                        <a class="link" href="#global_class_SemantischModel_Verkeerruimte">Verkeerruimte</a>
                         
                         </td>
                      <td>
                         
-                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
-                           relatief ten opzichte van de aarde.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_65280E13_7AA2_451f_9E14_CD7798636FAC"></a><a class="anchor" id="global_class_SemantischModel_ReeelObject"></a><section id="global_class_SemantischModel_ReeelObject">
-            <h5>   Reeel­Object</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Reeel­Object</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Geo-object dat zich geheel materieel manifesteert.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door
-                        zijn materiele samenstelling en structuur.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Reeel­Object
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_GeoObject">Geo­Object</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie
-                           relatief ten opzichte van de aarde.</p>
+                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
                         </td>
                   </tr>
                </tbody>
@@ -2003,73 +2134,6 @@
                      <td>
                         
                         <p>Transportruimte voor verkeer via land, water of lucht. </p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_C16B3487_F0C4_4e06_BDBB_72DDA60C7BA8"></a><a class="anchor" id="global_class_SemantischModel_RegistratieveRuimte"></a><section id="global_class_SemantischModel_RegistratieveRuimte">
-            <h5>   Registratieve­Ruimte</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Registratieve­Ruimte</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke
-                           verantwoordelijkheid of voor bedrijfsvoering.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die
-                        voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk
-                        gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden
-                        zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio
-                        Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Registratieve­Ruimte
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_VirtueleRuimte">Virtuele­Ruimte</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts
-                           in abstracte en/of geregistreerde vorm bestaat.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2199,70 +2263,6 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_F404593C_277B_4dcd_ABA9_EB37F8015AF4"></a><a class="anchor" id="global_class_SemantischModel_Verkeerruimte"></a><section id="global_class_SemantischModel_Verkeerruimte">
-            <h5>   Verkeerruimte</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Verkeerruimte</td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Transportruimte voor verkeer via land, water of lucht. </p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Herkomst definitie</th>
-                     <td>nen 3610</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen
-                        van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen,
-                        schepen en vliegtuigen.</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Verkeerruimte
-                        is specialisatie van
-                        
-                        <a class="link" href="#global_class_SemantischModel_Transportruimte">Transportruimte</a>
-                        
-                        </td>
-                     <td>
-                        
-                        <p>Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs
-                           stromen zich kunnen verplaatsen.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
          </section>
    </section><a class="anchor" id="global_package_Waardelijsten"></a><section id="global_package_Waardelijsten">
       <h3>Domein   Waardelijsten</h3>
@@ -2287,7 +2287,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-NEN3610-1.0-0-20220601-20220705-104818 imvertor 1.67.0-->
+   <!--MIMCM-NEN3610-1.0-0-20220601-20220705-134336 imvertor 1.67.0-->
    <section id="">
       <h3>Referentielijst inhoud   </h3>
    </section>
