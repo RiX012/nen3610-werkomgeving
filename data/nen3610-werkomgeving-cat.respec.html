@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-NEN3610-1.0-0-20220601-20221103-153026 imvertor 1.67.1--><a class="anchor" id="global_package_SemantischModel"></a><section id="global_package_SemantischModel">
+   <!--MIMCM-NEN3610-1.0-0-20220601-20221111-131847 imvertor 1.67.1--><a class="anchor" id="global_package_SemantischModel"></a><section id="global_package_SemantischModel">
       <h3>Domein   Semantisch­Model</h3>
       <section id="EAID_E61F178A_D58A_455a_BE12_ACF4B14CDB9A">
          <h4>   Semantisch­Model-overzicht</h4>
@@ -42,7 +42,7 @@
       </section>
       <section id="EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF">
          <h4>   Dummyobjecten-detail</h4>
-         <div class="imageinfo "><img src="data/Images/EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF.png" usemap="#imagemap-EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF" alt="Diagram &#xA;                        Basisinformatie-elementen NEN 3610. Deze objecttypen zijn opgenomen om attributen te benoemen voor identificatie, registratie en temporeel model. Voor een toepassingsmodel kunnen ze hieruit gekopieerd worden. Zie paragraaf 8.2 NEN 3610:2022.&#xA;                     "><map name="imagemap-EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF"><area shape="rect" alt="DummyIdentificeerbaarObject" coords="14,14,246,153" href="#graph_EAID_2EB8F2FF_4F71_4441_8B77_6DD2CFE62E6A"><area shape="rect" alt="Registratie" coords="14,301,239,599" href="#graph_EAID_47CE152F_6789_46dc_A29F_33647F0A644A"></map><p><b>Dummyobjecten-detail</b>
+         <div class="imageinfo "><img src="data/Images/EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF.png" usemap="#imagemap-EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF" alt="Diagram &#xA;                        Basisinformatie-elementen NEN 3610. Deze objecttypen zijn opgenomen om attributen te benoemen voor identificatie, registratie en temporeel model. Voor een toepassingsmodel kunnen ze hieruit gekopieerd worden. Zie paragraaf 8.2 NEN 3610:2022.&#xA;                     "><map name="imagemap-EAID_67721BC1_C0A6_44cc_A7D4_28419E7D02AF"><area shape="rect" alt="DummyIdentificeerbaarObject" coords="14,14,246,153" href="#graph_EAID_2EB8F2FF_4F71_4441_8B77_6DD2CFE62E6A"><area shape="rect" alt="Registratie" coords="18,299,243,597" href="#graph_EAID_47CE152F_6789_46dc_A29F_33647F0A644A"></map><p><b>Dummyobjecten-detail</b>
                
                <p>Basisinformatie-elementen NEN 3610. Deze objecttypen zijn opgenomen om attributen
                   te benoemen voor identificatie, registratie en temporeel model. Voor een toepassingsmodel
@@ -1487,19 +1487,6 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein">domein</a>
-                        </td>
-                     <td>
-                        
-                        <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
                         <a class="link" href="#detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie">identificatie</a>
                         </td>
                      <td>
@@ -1510,7 +1497,20 @@
                            of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
                            attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
                            verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
-                           De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
+                           De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein">domein</a>
+                        </td>
+                     <td>
+                        
+                        <p>Aanduiding van het domein waarbinnen de identificatie uniek is.</p>
                         </td>
                      <td>
                         <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
@@ -1603,6 +1603,19 @@
                   </tr>
                   <tr>
                      <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_versie">versie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Versieaanduiding van een informatieobject.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
                         <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid">begin­Geldigheid</a>
                         </td>
                      <td>
@@ -1628,6 +1641,20 @@
                         Datum
                         </td>
                      <td>0 .. 1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">tijdstip­Registratie</a>
+                        </td>
+                     <td>
+                        
+                        <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                           in de registratie.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
+                        </td>
+                     <td>1</td>
                   </tr>
                   <tr>
                      <td>
@@ -1669,33 +1696,6 @@
                         <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
                         </td>
                      <td>0 .. *</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">tijdstip­Registratie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
-                           in de registratie.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Datum­Tijd</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_BasisinformatieElementen_Registratie_versie">versie</a>
-                        </td>
-                     <td>
-                        
-                        <p>Versieaanduiding van een informatieobject.</p>
-                        </td>
-                     <td>
-                        <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
-                        </td>
-                     <td>0 .. 1</td>
                   </tr>
                </tbody>
             </table>
@@ -1741,6 +1741,81 @@
             <h5>Objecttype details  </h5>
             <a class="anchor" id="detail_class_BasisinformatieElementen_DummyIdentificeerbaarObject"></a><section id="detail_class_BasisinformatieElementen_DummyIdentificeerbaarObject">
                <h6>   Dummy­Identificeerbaar­Object</h6>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
+                                 Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
+                                 een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
+                                 of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
+                                 attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
+                                 verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+                                 De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|_|-|\,|.|\:|\/)+</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>‘identificatie’ is de identificatiecode die een object heeft binnen een registratie
+                                 of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling
+                                 is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt
+                                 een object hiermee uniek identificeerbaar op het niveau van verschillende registraties,
+                                 uitwisselprocessen en ook wereldwijd uniek.</p>
+                              
+                              <p>De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Overig</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen:
+                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}</td>
+                        </tr>
+                        <tr>
+                           <th>Formeel patroon</th>
+                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
                <a class="anchor" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_domein">
                   <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> domein</h7>
                   
@@ -1788,82 +1863,12 @@
                         </tr>
                         <tr>
                            <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
-                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_DummyIdentificeerbaarObject_identificatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_DummyIdentificeerbaarObject">Dummy­Identificeerbaar­Object</a> identificatie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>identificatie</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Unieke identificatiecode van een informatieobject binnen de context van een registratie.
-                                 Toelichting:  ‘identificatie’ is de identificatiecode die een object heeft binnen
-                                 een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie
-                                 of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het
-                                 attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van
-                                 verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
-                                 De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>
-                              
-                              <p>‘identificatie’ is de identificatiecode die een object heeft binnen een registratie
-                                 of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling
-                                 is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt
-                                 een object hiermee uniek identificeerbaar op het niveau van verschillende registraties,
-                                 uitwisselprocessen en ook wereldwijd uniek.</p>
-                              
-                              <p>De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie authentiek</th>
-                           <td>Overig</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De reguliere expressie voor de toegestane tekens is: [a-z­A-Z|0-9|_|.|-|\/|:|]</td>
+                           <td>Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen:
+                              {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}</td>
                         </tr>
                         <tr>
                            <th>Formeel patroon</th>
-                           <td>[a-z­A-Z|0-9|_|.|-|\/|:|]</td>
+                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
                         </tr>
                         <tr>
                            <th>Type</th>
@@ -1919,6 +1924,60 @@
                </section>
             <a class="anchor" id="detail_class_BasisinformatieElementen_Registratie"></a><section id="detail_class_BasisinformatieElementen_Registratie">
                <h6>   Registratie</h6>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_versie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_versie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> versie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>versie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Versieaanduiding van een informatieobject.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een versie van een informatieobject is een toestand van een informatieobject met zijn
+                              gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit
+                              van de identificatie van het object, maar kan worden gebruikt om verschillende instanties
+                              van hetzelfde informatieobject te identificeren.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>Waarde van attribuut versie mag maximaal 50 karakters bevatten.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
                <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_beginGeldigheid">
                   <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> begin­Geldigheid</h7>
                   
@@ -2024,6 +2083,62 @@
                         <tr>
                            <th>Type</th>
                            <td>Datum</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">
+                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> tijdstip­Registratie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>tijdstip­Registratie</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
+                                 in de registratie.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>nen 3610</td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
+                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
+                              Date of Date­Time. Voor tijdstip registratie zal Date­Time in vrijwel alle gevallen
+                              de beste keuze zijn.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
+                              </td>
                         </tr>
                      </tbody>
                   </table>
@@ -2195,119 +2310,12 @@
                         </tr>
                         <tr>
                            <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
-                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                           <td>([a-z]|[A-Z]|[0-9]|\_|\-|\,|\.|\:|\/)+</td>
                         </tr>
                         <tr>
                            <th>Type</th>
                            <td>
                               <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_tijdstipRegistratie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> tijdstip­Registratie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>tijdstip­Registratie</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen
-                                 in de registratie.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk
-                              van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant,
-                              Date of Date­Time. Voor tijdstip registratie zal Date­Time in vrijwel alle gevallen
-                              de beste keuze zijn.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Patroon</th>
-                           <td>De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
-                              het waardenbereik, uitgedrukt in een specifieke structuur.</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Date­Time</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_BasisinformatieElementen_Registratie_versie"></a><div class="deepheader" id="detail_attribute_BasisinformatieElementen_Registratie_versie">
-                  <h7>Attribuutsoort details  <a href="#global_class_BasisinformatieElementen_Registratie">Registratie</a> versie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>versie</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Definitie</th>
-                           <td>
-                              
-                              <p>Versieaanduiding van een informatieobject.</p>
-                              </td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst definitie</th>
-                           <td>nen 3610</td>
-                        </tr>
-                        <tr>
-                           <th>Toelichting</th>
-                           <td>Een versie van een informatieobject is een toestand van een informatieobject met zijn
-                              gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit
-                              van de identificatie van het object, maar kan worden gebruikt om verschillende instanties
-                              van hetzelfde informatieobject te identificeren.</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>0 .. 1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="external-link" href="https://geonovum.github.io/MIM-Werkomgeving/#primitive-datatypes">Character­String</a>
                               </td>
                         </tr>
                      </tbody>
@@ -2344,7 +2352,7 @@
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-NEN3610-1.0-0-20220601-20221103-153026 imvertor 1.67.1-->
+   <!--MIMCM-NEN3610-1.0-0-20220601-20221111-131847 imvertor 1.67.1-->
    <section id="">
       <h3>Codelijst inhoud   </h3><a class="anchor" id="graph_EAID_03776960_DC8E_4ef9_9910_9B540D78291C"></a><a class="anchor" id="detail_class_Waardelijsten_VoidReasonValue"></a><section id="detail_class_Waardelijsten_VoidReasonValue">
          <h4>Codelijst details  Void­Reason­Value</h4>
@@ -2374,11 +2382,11 @@
                   <td></td>
                </tr>
                <tr>
-                  <th>niet­Geautoriseerd</th>
+                  <th>niet­Ondersteund</th>
                   <td></td>
                </tr>
                <tr>
-                  <th>niet­Ondersteund</th>
+                  <th>waarde­Onbekend</th>
                   <td></td>
                </tr>
                <tr>
@@ -2386,7 +2394,7 @@
                   <td></td>
                </tr>
                <tr>
-                  <th>waarde­Onbekend</th>
+                  <th>niet­Geautoriseerd</th>
                   <td></td>
                </tr>
             </tbody>
