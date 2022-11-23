@@ -361,7 +361,7 @@ col:ruimtelijke_relaties a skos:Collection;
 :begin_geldigheid a skos:Concept;
   dct:source "NEN3610:2020 Basismodel Geo-informatie - Sectie 7"@nl;
   skos:definition "Start van de periode waarop deze versie van het informatieobject geldig is."@nl;
-  skos:scopeNote "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. wordne gekozen uit typen:: TM_instand, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het 'vanaf-moment'. Bij een datum (Date) is dat het begin van die dag."@nl;
+  skos:scopeNote "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen: TM_instand, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het 'vanaf-moment'. Bij een datum (Date) is dat het begin van die dag."@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Begin geldigheid"@nl;
   skos:hiddenLabel "beginGeldigheid"@nl, "begingeldigheid"@nl;
@@ -737,16 +737,16 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:scopeNote "Bedoeld is presentatie van informatie door visualisatie, hoorbaar maken, tastbaar maken (tactiel) of combinaties hiervan."@nl;
   skos:topConceptOf bk:nen3610-2022 .
 
-# :registratie a skos:Concept;
-  # rdfs:label "Registratie"@nl;
-  # dct:source "NEN3610:2020 Basismodel Geo-informatie - Sectie 3.29"@nl;
-  # skos:definition "Geïdentificeerde en erkende gegevensverzameling"@nl;
-  # skos:inScheme bk:nen3610-2022;
-  # skos:prefLabel "Registratie"@nl;
-  # skos:scopeNote "Een basisregistratie is een registratie."@nl;
-  # skos:scopeNote "Registraties kunnen op verschillende niveaus (landelijk, lokaal) opgesteld zijn en een verschillend temporeel karakter hebben, bijvoorbeeld een momentane registratie van gegevens voor uitwisseling en verwerking of een permanent raadpleegbare registratie voor referentie van gegevens."@nl;
-  # skos:editorialNote "Naast deze betekenis van het woord Registratie kent de NEN3610:2022-specificatie ook nog een informatieobject 'Registratie'. Om verwarring te voorkomen, is ervoor gekozen dit object met de term 'Objectregistratie' vast te leggen."@nl;
-  # skos:topConceptOf bk:nen3610-2022 .
+:registratie a skos:Concept;
+  rdfs:label "Registratie"@nl;
+  dct:source "NEN3610:2020 Basismodel Geo-informatie - Sectie 3.29"@nl;
+  skos:definition "Geïdentificeerde en erkende gegevensverzameling"@nl;
+  skos:inScheme bk:nen3610-2022;
+  skos:prefLabel "Registratie"@nl;
+  skos:scopeNote "Een basisregistratie is een registratie."@nl;
+  skos:scopeNote "Registraties kunnen op verschillende niveaus (landelijk, lokaal) opgesteld zijn en een verschillend temporeel karakter hebben, bijvoorbeeld een momentane registratie van gegevens voor uitwisseling en verwerking of een permanent raadpleegbare registratie voor referentie van gegevens."@nl;
+  skos:editorialNote "Naast deze betekenis van het woord Registratie kent de NEN3610:2022-specificatie ook nog een informatieobject 'Registratie'. Om verwarring te voorkomen, is ervoor gekozen dit object met de term 'Objectregistratie' vast te leggen."@nl;
+  skos:topConceptOf bk:nen3610-2022 .
 
 :registratiehouder a skos:Concept;
   rdfs:label "Registratiehouder"@nl;
