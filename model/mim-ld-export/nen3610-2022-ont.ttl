@@ -1,0 +1,675 @@
+@prefix ea:           <http://www.sparxsystems.eu/def/ea#> .
+@prefix mim:          <http://bp4mc2.org/def/mim#> .
+@prefix mim-item-ns:  <http://ontology.mim-namespace.org/def/modelname#> .
+@prefix mim-model-ns: <http://ontology.mim-namespace.org/> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:           <http://www.w3.org/ns/shacl#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+
+mim-item-ns:semi-rough
+        a             mim-item-ns:TypeParcoursDeel ;
+        rdfs:comment  "Het minder kort geschoren gras naast de fairway." ;
+        rdfs:label    "semi-rough" .
+
+mim-item-ns:linksbaan
+        a             mim-item-ns:TypeGolfbaan ;
+        rdfs:comment  "Bevindt zich in het gebied vlak langs de kustlijn en kenmerkt zich door het feit dat ze open is (weinig bomen) en relatief hoge rough heeft. Ook zijn de greens en fairways doorgaans vrij hard." ;
+        rdfs:label    "linksbaan" .
+
+mim-item-ns:waterpartij
+        a             mim-item-ns:TypeHindernis ;
+        rdfs:comment  "Een met water gevulde hindernis op een golfbaan." ;
+        rdfs:label    "waterpartij" .
+
+mim-item-ns:etiquette
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Beschrijving van de niet-harde regels op de golfbaan." ;
+        rdfs:label    "etiquette" .
+
+mim-item-ns:ParcoursDeel
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Deel van het terrein van de hole (parcours)." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "ParcoursDeel" ;
+        rdfs:subClassOf   mim-item-ns:FunctioneleRuimte , mim-item-ns:IMGolf-object ;
+        skos:notation     "ParcoursDeel" ;
+        sh:property       mim-item-ns:ParcoursDeel.hole , mim-item-ns:ParcoursDeel.geometry , mim-item-ns:ParcoursDeel.TypeParcoursDeel ;
+        sh:targetClass    mim-item-ns:ParcoursDeel .
+
+mim-item-ns:Hole.geometrie
+        a             sh:PropertyShape ;
+        rdfs:comment  "Puntgeometrie" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometrie" ;
+        sh:path       mim-item-ns:geometrie .
+
+mim-model-ns:Golfbaan
+        a              owl:Ontology ;
+        rdfs:label     "Golfbaan" ;
+        skos:notation  "Golfbaan" .
+
+mim-item-ns:Verkeerruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Transportruimte voor verkeer via land, water of lucht." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Verkeerruimte" ;
+        rdfs:subClassOf   mim-item-ns:Transportruimte ;
+        skos:notation     "Verkeerruimte" ;
+        sh:targetClass    mim-item-ns:Verkeerruimte .
+
+mim-item-ns:naam  a   owl:DatatypeProperty ;
+        rdfs:comment  "De benaming van de golfbaan." ;
+        rdfs:label    "naam" .
+
+mim-item-ns:VoidReasonValue
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Reden waarom een nil-waarde is ingevuld." ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "VoidReasonValue" ;
+        skos:notation     "VoidReasonValue" ;
+        sh:targetClass    mim-item-ns:VoidReasonValue .
+
+mim-item-ns:Spoorverkeerruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Spoorverkeerruimte" ;
+        rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
+        skos:notation     "Spoorverkeerruimte" ;
+        sh:targetClass    mim-item-ns:Spoorverkeerruimte .
+
+mim-model-ns:NEN3610  a  owl:Ontology ;
+        rdfs:comment   "NEN 3610:2022 - Basismodel geo-informatie  Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten.\r\n\r\nMim versie 1.1.1 is toegepast." ;
+        rdfs:label     "NEN3610" ;
+        owl:imports    mim-model-ns:SemantischModel , mim-model-ns:Basisinformatie-elementen , mim-model-ns:Waardelijsten ;
+        skos:notation  "NEN3610" .
+
+mim-item-ns:Enumeration2
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "Enumeration2" ;
+        rdfs:subClassOf   skos:Concept ;
+        sh:targetClass    mim-item-ns:Enumeration2 .
+
+mim-item-ns:FunctioneleRuimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Ruimte met een specifieke functie." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "FunctioneleRuimte" ;
+        rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
+        skos:notation     "FunctioneleRuimte" ;
+        sh:targetClass    mim-item-ns:FunctioneleRuimte .
+
+mim-item-ns:typeGolfbaan
+        a             owl:ObjectProperty ;
+        rdfs:comment  "Het soort golfbaan, ingedeeld naar het type terrein waar zij zich bevindt." ;
+        rdfs:label    "typeGolfbaan" .
+
+mim-item-ns:Parcours.afslagplaats
+        a         sh:PropertyShape ;
+        sh:class  mim-item-ns:Tee ;
+        sh:name   "afslagplaats" ;
+        sh:path   mim-item-ns:afslagplaats .
+
+mim-item-ns:Parcours.parcoursDeel
+        a         sh:PropertyShape ;
+        sh:class  mim-item-ns:ParcoursDeel ;
+        sh:name   "parcoursDeel" ;
+        sh:path   mim-item-ns:parcoursDeel .
+
+mim-item-ns:parkbaan  a  mim-item-ns:TypeGolfbaan ;
+        rdfs:comment  "Bevindt zich niet in een bosrijk gebied of aan de kust." ;
+        rdfs:label    "parkbaan" .
+
+mim-item-ns:Parcours.geometry
+        a             sh:PropertyShape ;
+        rdfs:comment  "Multi-vlak geometrie" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometry" ;
+        sh:path       mim-item-ns:geometry .
+
+mim-item-ns:bunker  a  mim-item-ns:TypeHindernis ;
+        rdfs:comment  "Een met zand gevulde hindernis op een golfbaan." ;
+        rdfs:label    "bunker" .
+
+mim-item-ns:Parcours.hindernis
+        a         sh:PropertyShape ;
+        sh:class  mim-item-ns:Hindernis ;
+        sh:name   "hindernis" ;
+        sh:path   mim-item-ns:hindernis .
+
+mim-item-ns:ReeelObject
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Geo-object dat zich geheel materieel manifesteert." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel , mim-model-ns:Golfbaan ;
+        rdfs:label        "ReeelObject" ;
+        rdfs:subClassOf   mim-item-ns:GeoObject ;
+        skos:notation     "ReeelObject" ;
+        sh:targetClass    mim-item-ns:ReeelObject .
+
+mim-item-ns:vereisten
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Harde vereisten voor toegang tot de golfbaan." ;
+        rdfs:label    "vereisten" .
+
+mim-item-ns:Parcours.nummer
+        a             sh:PropertyShape ;
+        rdfs:comment  "De getalaanduiding voor het parcours." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "nummer" ;
+        sh:path       mim-item-ns:nummer .
+
+mim-model-ns:Waardelijsten
+        a              owl:Ontology ;
+        rdfs:comment   "<b>Waardelijsten</b> van NEN 3610." ;
+        rdfs:label     "Waardelijsten" ;
+        skos:notation  "Waardelijsten" .
+
+mim-item-ns:Enumeration1
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "Enumeration1" ;
+        rdfs:subClassOf   skos:Concept ;
+        sh:targetClass    mim-item-ns:Enumeration1 .
+
+mim-item-ns:Hindernis
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Een obstakel op het parcours in de vorm van een zand- of waterpartij." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Hindernis" ;
+        rdfs:subClassOf   mim-item-ns:IMGolf-object , mim-item-ns:ReeelObject ;
+        skos:notation     "Hindernis" ;
+        sh:property       mim-item-ns:Hindernis.geometrie , mim-item-ns:Hindernis.typeHindernis ;
+        sh:targetClass    mim-item-ns:Hindernis .
+
+mim-item-ns:Golfbaan.typeGolfbaan
+        a             sh:PropertyShape ;
+        rdfs:comment  "Het soort golfbaan, ingedeeld naar het type terrein waar zij zich bevindt." ;
+        sh:class      mim-item-ns:TypeGolfbaan ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "typeGolfbaan" ;
+        sh:path       mim-item-ns:typeGolfbaan .
+
+mim-item-ns:Golfbaan.hole
+        a         sh:PropertyShape ;
+        sh:class  mim-item-ns:Parcours ;
+        sh:name   "hole" ;
+        sh:path   mim-item-ns:hole .
+
+mim-item-ns:par  a    owl:DatatypeProperty ;
+        rdfs:comment  "het aantal slagen waarin een gemiddelde professionele golfer een hole zou moeten kunnen spelen." ;
+        rdfs:label    "par" .
+
+mim-item-ns:domein  a  owl:DatatypeProperty ;
+        rdfs:comment  "Definitie: Aanduiding van het domein waarbinnen de identificatie uniek is.\r\nToelichting: Het attribuut domein is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." , "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
+        rdfs:label    "domein" .
+
+mim-item-ns:Green  a      sh:NodeShape , owl:Class ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Green" ;
+        rdfs:subClassOf   mim-item-ns:ParcoursDeel ;
+        skos:notation     "Green" ;
+        sh:targetClass    mim-item-ns:Green .
+
+mim-item-ns:ParcoursDeel.hole
+        a         sh:PropertyShape ;
+        sh:class  mim-item-ns:Hole ;
+        sh:name   "hole" ;
+        sh:path   mim-item-ns:hole .
+
+mim-item-ns:bosbaan  a  mim-item-ns:TypeGolfbaan ;
+        rdfs:comment  "Bevindt zich doorgaans in bosrijke gebieden." ;
+        rdfs:label    "bosbaan" .
+
+mim-item-ns:afslagplaats
+        a           owl:ObjectProperty ;
+        rdfs:label  "afslagplaats" .
+
+mim-item-ns:Waterverplaatsingsruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Transportruimte waardoor water zich verplaatst." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Waterverplaatsingsruimte" ;
+        rdfs:subClassOf   mim-item-ns:Transportruimte ;
+        skos:notation     "Waterverplaatsingsruimte" ;
+        sh:targetClass    mim-item-ns:Waterverplaatsingsruimte .
+
+mim-item-ns:green  a  mim-item-ns:TypeParcoursDeel ;
+        rdfs:comment  "Het laatste deel van het parcours, waar het gras zeer kort wordt gemaaid." ;
+        rdfs:label    "green" .
+
+mim-item-ns:Kunstwerk
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Kunstwerk" ;
+        rdfs:subClassOf   mim-item-ns:Constructie ;
+        skos:notation     "Kunstwerk" ;
+        sh:targetClass    mim-item-ns:Kunstwerk .
+
+mim-item-ns:parcoursDeel
+        a           owl:ObjectProperty ;
+        rdfs:label  "parcoursDeel" .
+
+mim-item-ns:Scheepvaartruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Scheepvaartruimte" ;
+        rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
+        skos:notation     "Scheepvaartruimte" ;
+        sh:targetClass    mim-item-ns:Scheepvaartruimte .
+
+mim-item-ns:rough  a  mim-item-ns:TypeParcoursDeel ;
+        rdfs:comment  "Onderdeel van een Hole bestaande uit het niet speciaal geprepareerd terrein." ;
+        rdfs:label    "rough" .
+
+mim-item-ns:TypeParcoursDeel
+        a                 owl:ObjectProperty , sh:NodeShape , owl:Class ;
+        rdfs:comment      "Het soort parcoursdeel." ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "TypeParcoursDeel" ;
+        rdfs:subClassOf   skos:Concept ;
+        sh:targetClass    mim-item-ns:TypeParcoursDeel .
+
+mim-item-ns:Hindernis.typeHindernis
+        a             sh:PropertyShape ;
+        rdfs:comment  "Het soort hindernis." ;
+        sh:class      mim-item-ns:TypeHindernis ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "typeHindernis" ;
+        sh:path       mim-item-ns:typeHindernis .
+
+mim-item-ns:Hindernis.geometrie
+        a             sh:PropertyShape ;
+        rdfs:comment  "Vlakgeometrie" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometrie" ;
+        sh:path       mim-item-ns:geometrie .
+
+mim-item-ns:ParcoursDeel.geometry
+        a             sh:PropertyShape ;
+        rdfs:comment  "Vlakgeometrie." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometry" ;
+        sh:path       mim-item-ns:geometry .
+
+mim-item-ns:Golfbaan.geometry
+        a             sh:PropertyShape ;
+        rdfs:comment  "Vlakgeometrie van het totale golfterrein." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometry" ;
+        sh:path       mim-item-ns:geometry .
+
+mim-item-ns:Leiding  a    sh:NodeShape , owl:Class ;
+        rdfs:comment      "Een geheel van geleiders of een ruimte die voorzien is van &#233;&#233;n ommanteling en bestemd is voor transport van materie, data en/of energie." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Leiding" ;
+        rdfs:subClassOf   mim-item-ns:Constructie ;
+        skos:notation     "Leiding" ;
+        sh:targetClass    mim-item-ns:Leiding .
+
+mim-model-ns:IMGolf  a  owl:Ontology ;
+        rdfs:comment   "Dit is een informatief voorbeeldmodel van een NEN 3610 toepassing. Dit mini informatiemodel beschrijft hoe een golfbaan gemodelleerd kan worden.\r\n\r\nMim versie 1.1.1 is toegepast." ;
+        rdfs:label     "IMGolf" ;
+        owl:imports    mim-model-ns:Golfbaan , mim-model-ns:Waardelijsten ;
+        skos:notation  "IMGolf" .
+
+mim-item-ns:Wegverkeerruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Wegverkeerruimte" ;
+        rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
+        skos:notation     "Wegverkeerruimte" ;
+        sh:targetClass    mim-item-ns:Wegverkeerruimte .
+
+mim-item-ns:Begroeiing
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Begroeiing" ;
+        rdfs:subClassOf   mim-item-ns:ReeelObject ;
+        skos:notation     "Begroeiing" ;
+        sh:targetClass    mim-item-ns:Begroeiing .
+
+mim-item-ns:ToegangGolfbaan
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Informatie over de toegang tot de golfbaan." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "ToegangGolfbaan" ;
+        skos:notation     "ToegangGolfbaan" ;
+        sh:property       mim-item-ns:ToegangGolfbaan.alleenVoorLeden , mim-item-ns:ToegangGolfbaan.vereisten , mim-item-ns:ToegangGolfbaan.etiquette ;
+        sh:targetClass    mim-item-ns:ToegangGolfbaan .
+
+mim-item-ns:identificatie
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" , "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:|]" ;
+        rdfs:label    "identificatie" .
+
+mim-item-ns:Oppervlaktewater
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Oppervlaktewater" ;
+        rdfs:subClassOf   mim-item-ns:ReeelObject ;
+        skos:notation     "Oppervlaktewater" ;
+        sh:targetClass    mim-item-ns:Oppervlaktewater .
+
+mim-item-ns:IMGolf-object
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "IMGolf-object" ;
+        skos:notation     "IMGolf-object" ;
+        sh:property       mim-item-ns:IMGolf-object.domein , mim-item-ns:IMGolf-object.identificatie ;
+        sh:targetClass    mim-item-ns:IMGolf-object .
+
+mim-item-ns:Parcours.par
+        a             sh:PropertyShape ;
+        rdfs:comment  "het aantal slagen waarin een gemiddelde professionele golfer een hole zou moeten kunnen spelen." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "par" ;
+        sh:path       mim-item-ns:par .
+
+mim-item-ns:hindernis
+        a           owl:ObjectProperty ;
+        rdfs:label  "hindernis" .
+
+mim-item-ns:Luchtvaartruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Luchtvaartruimte" ;
+        rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
+        skos:notation     "Luchtvaartruimte" ;
+        sh:targetClass    mim-item-ns:Luchtvaartruimte .
+
+mim-item-ns:fairway  a  mim-item-ns:TypeParcoursDeel ;
+        rdfs:comment  "Tussen de green en de tee-box gelegen terrein waar het gras wat korter is dan in het eromheen gelegen terrein." ;
+        rdfs:label    "fairway" .
+
+mim-item-ns:IMGolf-object.identificatie
+        a             sh:PropertyShape ;
+        rdfs:comment  "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:|]" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "identificatie" ;
+        sh:path       mim-item-ns:identificatie .
+
+mim-item-ns:Verharding
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Verharding" ;
+        rdfs:subClassOf   mim-item-ns:Constructie ;
+        skos:notation     "Verharding" ;
+        sh:targetClass    mim-item-ns:Verharding .
+
+mim-item-ns:hole  a  owl:ObjectProperty ;
+        rdfs:label  "hole" .
+
+mim-item-ns:DummyIdentificeerbaarObject
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Klasse opgenomen om attributen uit te kopi&#235;ren." ;
+        rdfs:isDefinedBy  mim-model-ns:Basisinformatie-elementen ;
+        rdfs:label        "DummyIdentificeerbaarObject" ;
+        skos:notation     "DummyIdentificeerbaarObject" ;
+        sh:property       mim-item-ns:DummyIdentificeerbaarObject.domein , mim-item-ns:DummyIdentificeerbaarObject.identificatie ;
+        sh:targetClass    mim-item-ns:DummyIdentificeerbaarObject .
+
+mim-item-ns:IMGolf-object.domein
+        a             sh:PropertyShape ;
+        rdfs:comment  "Definitie: Aanduiding van het domein waarbinnen de identificatie uniek is.\r\nToelichting: Het attribuut domein is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "domein" ;
+        sh:path       mim-item-ns:domein .
+
+mim-item-ns:ToegangGolfbaan.etiquette
+        a             sh:PropertyShape ;
+        rdfs:comment  "Beschrijving van de niet-harde regels op de golfbaan." ;
+        sh:maxCount   1 ;
+        sh:name       "etiquette" ;
+        sh:path       mim-item-ns:etiquette .
+
+mim-item-ns:Golfbaan  a   sh:NodeShape , owl:Class ;
+        rdfs:comment      "Een golfbaan is een perceel waarop de sport golf wordt gespeeld." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Golfbaan" ;
+        rdfs:subClassOf   mim-item-ns:FunctioneleRuimte , mim-item-ns:IMGolf-object ;
+        skos:notation     "Golfbaan" ;
+        sh:property       mim-item-ns:Golfbaan.hole , mim-item-ns:Golfbaan.typeGolfbaan , mim-item-ns:Golfbaan.toegang , mim-item-ns:Golfbaan.naam , mim-item-ns:Golfbaan.geometry ;
+        sh:targetClass    mim-item-ns:Golfbaan .
+
+mim-item-ns:Hole  a       sh:NodeShape , owl:Class ;
+        rdfs:comment      "Met een vlag gemarkeerd punt waarin de bal geslagen moet worden." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Hole" ;
+        rdfs:subClassOf   mim-item-ns:IMGolf-object , mim-item-ns:ReeelObject ;
+        skos:notation     "Hole" ;
+        sh:property       mim-item-ns:Hole.geometrie ;
+        sh:targetClass    mim-item-ns:Hole .
+
+mim-item-ns:Transportruimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Transportruimte" ;
+        rdfs:subClassOf   mim-item-ns:FunctioneleRuimte ;
+        skos:notation     "Transportruimte" ;
+        sh:targetClass    mim-item-ns:Transportruimte .
+
+mim-item-ns:DummyIdentificeerbaarObject.identificatie
+        a             sh:PropertyShape ;
+        rdfs:comment  "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "identificatie" ;
+        sh:path       mim-item-ns:identificatie .
+
+mim-item-ns:JuridischeRuimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "JuridischeRuimte" ;
+        rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
+        skos:notation     "JuridischeRuimte" ;
+        sh:targetClass    mim-item-ns:JuridischeRuimte .
+
+mim-item-ns:typeHindernis
+        a             owl:ObjectProperty ;
+        rdfs:comment  "Het soort hindernis." ;
+        rdfs:label    "typeHindernis" .
+
+mim-item-ns:TypeGolfbaan
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Het soort golfbaan." ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "TypeGolfbaan" ;
+        rdfs:subClassOf   skos:Concept ;
+        sh:targetClass    mim-item-ns:TypeGolfbaan .
+
+mim-model-ns:Basisinformatie-elementen
+        a              owl:Ontology ;
+        rdfs:comment   "<b>Basisinformatie-elementen</b> - NEN 3610 paragraaf 8.4\r\n\r\nDe basisinformatie-elementen zijn de elementen die een centrale rol spelen in NEN 3610. Dit zijn het objecttype <font color=\"#c83500\">Geo-object</font>, de attributen ter identificatie van objecten en het objecttype <font color=\"#c83500\">Registratiegegevens</font> met de attributen voor de implementatie van het temporele model. Voor de benoeming en toepassing van de attributen is een voorbeeldklasse <font color=\"#c83500\">IM_X_klasse</font> opgenomen" ;
+        rdfs:label     "Basisinformatie-elementen" ;
+        skos:notation  "Basisinformatie-elementen" .
+
+mim-item-ns:Bodem  a      sh:NodeShape , owl:Class ;
+        rdfs:comment      "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Bodem" ;
+        rdfs:subClassOf   mim-item-ns:ReeelObject ;
+        skos:notation     "Bodem" ;
+        sh:targetClass    mim-item-ns:Bodem .
+
+mim-item-ns:Golfbaan.naam
+        a             sh:PropertyShape ;
+        rdfs:comment  "De benaming van de golfbaan." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "naam" ;
+        sh:path       mim-item-ns:naam .
+
+mim-item-ns:geometry  a  owl:DatatypeProperty ;
+        rdfs:comment  "Vlakgeometrie." , "Vlakgeometrie" , "Multi-vlak geometrie" , "Vlakgeometrie van het totale golfterrein." ;
+        rdfs:label    "geometry" .
+
+mim-model-ns:SemantischModel
+        a              owl:Ontology ;
+        rdfs:comment   "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
+        rdfs:label     "SemantischModel" ;
+        skos:notation  "SemantischModel" .
+
+mim-item-ns:VirtueleRuimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "VirtueleRuimte" ;
+        rdfs:subClassOf   mim-item-ns:GeoObject ;
+        skos:notation     "VirtueleRuimte" ;
+        sh:targetClass    mim-item-ns:VirtueleRuimte .
+
+mim-item-ns:Constructie
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Constructie" ;
+        rdfs:subClassOf   mim-item-ns:ReeelObject ;
+        skos:notation     "Constructie" ;
+        sh:targetClass    mim-item-ns:Constructie .
+
+mim-item-ns:Golfbaan.toegang
+        a             sh:PropertyShape ;
+        rdfs:comment  "Informatie over de toegang tot de golfbaan." ;
+        sh:class      mim-item-ns:ToegangGolfbaan ;
+        sh:name       "toegang" ;
+        sh:nodeKind   sh:BlankNode ;
+        sh:path       mim-item-ns:toegang .
+
+mim-item-ns:toegang  a  owl:ObjectProperty ;
+        rdfs:label  "toegang" .
+
+mim-item-ns:alleenVoorLeden
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Geeft aan of de golfbaan alleen voor leden van de vereniging toegankelijk is." ;
+        rdfs:label    "alleenVoorLeden" .
+
+mim-item-ns:Parcours  a   owl:Class , sh:NodeShape ;
+        rdfs:comment      "Een van de speelvelden van een golfbaan." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Parcours" ;
+        rdfs:subClassOf   mim-item-ns:IMGolf-object , mim-item-ns:FunctioneleRuimte ;
+        skos:notation     "Parcours" ;
+        sh:property       mim-item-ns:Parcours.afslagplaats , mim-item-ns:Parcours.geometry , mim-item-ns:Parcours.hindernis , mim-item-ns:Parcours.par , mim-item-ns:Parcours.nummer , mim-item-ns:Parcours.parcoursDeel ;
+        sh:targetClass    mim-item-ns:Parcours .
+
+mim-item-ns:Tee  a        owl:Class , sh:NodeShape ;
+        rdfs:comment      "De afslagplaats aan het begin van een hole." ;
+        rdfs:isDefinedBy  mim-model-ns:Golfbaan ;
+        rdfs:label        "Tee" ;
+        rdfs:subClassOf   mim-item-ns:ReeelObject , mim-item-ns:IMGolf-object ;
+        skos:notation     "Tee" ;
+        sh:property       mim-item-ns:Tee.geometry ;
+        sh:targetClass    mim-item-ns:Tee .
+
+mim-item-ns:DummyIdentificeerbaarObject.domein
+        a             sh:PropertyShape ;
+        rdfs:comment  "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "domein" ;
+        sh:path       mim-item-ns:domein .
+
+mim-item-ns:TypeHindernis
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Het soort obstakel." ;
+        rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
+        rdfs:label        "TypeHindernis" ;
+        rdfs:subClassOf   skos:Concept ;
+        sh:targetClass    mim-item-ns:TypeHindernis .
+
+mim-item-ns:Tee.geometry
+        a             sh:PropertyShape ;
+        rdfs:comment  "Vlakgeometrie" ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "geometry" ;
+        sh:path       mim-item-ns:geometry .
+
+mim-item-ns:ParcoursDeel.TypeParcoursDeel
+        a             sh:PropertyShape ;
+        rdfs:comment  "Het soort parcoursdeel." ;
+        sh:class      mim-item-ns:TypeParcoursDeel ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "TypeParcoursDeel" ;
+        sh:path       mim-item-ns:TypeParcoursDeel .
+
+mim-item-ns:GeografischeRuimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "GeografischeRuimte" ;
+        rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
+        skos:notation     "GeografischeRuimte" ;
+        sh:targetClass    mim-item-ns:GeografischeRuimte .
+
+mim-item-ns:RegistratieveRuimte
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "RegistratieveRuimte" ;
+        rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
+        skos:notation     "RegistratieveRuimte" ;
+        sh:targetClass    mim-item-ns:RegistratieveRuimte .
+
+mim-item-ns:GeoObject
+        a                 sh:NodeShape , owl:Class ;
+        rdfs:comment      "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "GeoObject" ;
+        skos:notation     "GeoObject" ;
+        sh:targetClass    mim-item-ns:GeoObject .
+
+mim-item-ns:geometrie
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Vlakgeometrie" , "Puntgeometrie" ;
+        rdfs:label    "geometrie" .
+
+mim-item-ns:ToegangGolfbaan.vereisten
+        a             sh:PropertyShape ;
+        rdfs:comment  "Harde vereisten voor toegang tot de golfbaan." ;
+        sh:maxCount   1 ;
+        sh:name       "vereisten" ;
+        sh:path       mim-item-ns:vereisten .
+
+mim-item-ns:nummer  a  owl:DatatypeProperty ;
+        rdfs:comment  "De getalaanduiding voor het parcours." ;
+        rdfs:label    "nummer" .
+
+mim-item-ns:ToegangGolfbaan.alleenVoorLeden
+        a             sh:PropertyShape ;
+        rdfs:comment  "Geeft aan of de golfbaan alleen voor leden van de vereniging toegankelijk is." ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:name       "alleenVoorLeden" ;
+        sh:path       mim-item-ns:alleenVoorLeden .
+
+mim-item-ns:Gebouw  a     sh:NodeShape , owl:Class ;
+        rdfs:comment      "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
+        rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
+        rdfs:label        "Gebouw" ;
+        rdfs:subClassOf   mim-item-ns:Constructie ;
+        skos:notation     "Gebouw" ;
+        sh:targetClass    mim-item-ns:Gebouw .
