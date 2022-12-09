@@ -785,7 +785,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
 <urn:object:920> a ea:Object;
   ea:guid '47CE152F-6789-46dc-A29F-33647F0A644A';
   ea:type '''Class''';
-  ea:stereotype '''Metadata''';
+  ea:stereotype '''Objecttype''';
   rdfs:label '''Registratie''';
   ea:abstract false;
   ea:package <urn:package:159>;
@@ -960,7 +960,7 @@ De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|
   ea:classifier <urn:object:55>;
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:876>;
-  rdfs:comment '''De getalaanduiding voor het parcours. 
+  rdfs:comment '''De getalaanduiding voor het parcours.
 ''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -2853,7 +2853,7 @@ Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
   ea:element <urn:attribute:698>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. 
+  ea:notes '''Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn.
 
 Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.''';
 .
@@ -3780,6 +3780,242 @@ Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar da
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
   ea:notes '''Par staat voor Professional Average Result.''';
+.
+<urn:connectortag:1075> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-86A2-62B15BC204B4';
+  ea:element <urn:connector:598>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1079> a ea:Connectortag;
+  ea:guid 'FB3F1EDB-DAA3-98da-BA9A-4335F0A244C8';
+  ea:element <urn:connector:598>;
+  ea:property '''Datum opname''';
+  ea:value '''2022-06-01''';
+  ea:notes '''Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+''';
+.
+<urn:connectortag:1087> a ea:Connectortag;
+  ea:guid '0BFEBE52-E81A-a6e8-A9FC-0DA4FF9A22A4';
+  ea:element <urn:connector:614>;
+  ea:property '''Authentiek''';
+  ea:value '''Overig''';
+  ea:notes '''Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig
+Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
+''';
+.
+<urn:connectortag:1088> a ea:Connectortag;
+  ea:guid '1FAA1D3E-8F06-a38f-8037-77FD8D8B7E6E';
+  ea:element <urn:connector:614>;
+  ea:property '''Herkomst definitie''';
+  ea:value '''nen 3610''';
+  ea:notes '''Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+''';
+.
+<urn:connectortag:1089> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-8755-EBF5F84C8C0C';
+  ea:element <urn:connector:614>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject.''';
+.
+<urn:connectortag:1090> a ea:Connectortag;
+  ea:guid '6B33862D-9DF5-b69d-87A4-B1D9F873C3D1';
+  ea:element <urn:connector:614>;
+  ea:property '''Herkomst''';
+  ea:value '''nen 3610''';
+  ea:notes '''Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+''';
+.
+<urn:connectortag:1091> a ea:Connectortag;
+  ea:guid '8F70DA6F-2637-1926-A644-D5A4AC285E66';
+  ea:element <urn:connector:614>;
+  ea:property '''Indicatie materiële historie''';
+  ea:value '''Nee''';
+  ea:notes '''Values: Ja,Nee
+Description: Indicatie of de materiële historie van het kenmerk van het object te bevragen is.
+''';
+.
+<urn:connectortag:1092> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-8EBD-357E7AA32E7F';
+  ea:element <urn:connector:614>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1093> a ea:Connectortag;
+  ea:guid 'D0DCC9FB-83C3-ef83-8D8B-A0EEEB8A95A7';
+  ea:element <urn:connector:614>;
+  ea:property '''Indicatie formele historie''';
+  ea:value '''Nee''';
+  ea:notes '''Values: Ja,Nee
+Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.
+''';
+.
+<urn:connectortag:1095> a ea:Connectortag;
+  ea:guid 'FB3F1EDB-DAA3-98da-8DC4-122066F1241C';
+  ea:element <urn:connector:614>;
+  ea:property '''Datum opname''';
+  ea:value '''20220601''';
+  ea:notes '''Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+''';
+.
+<urn:connectortag:1013> a ea:Connectortag;
+  ea:guid '1FAA1D3E-8F06-a38f-8ED0-D6D9C46E340F';
+  ea:element <urn:connector:585>;
+  ea:property '''Herkomst definitie''';
+  ea:value '''imgolf''';
+  ea:notes '''Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+''';
+.
+<urn:connectortag:1014> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-BA5B-658147451929';
+  ea:element <urn:connector:585>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1015> a ea:Connectortag;
+  ea:guid '6B33862D-9DF5-b69d-BAD6-5935FDB6A978';
+  ea:element <urn:connector:585>;
+  ea:property '''Herkomst''';
+  ea:value '''imgolf''';
+  ea:notes '''Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+''';
+.
+<urn:connectortag:1017> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-BEAB-EDA078A2B0B8';
+  ea:element <urn:connector:585>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1021> a ea:Connectortag;
+  ea:guid 'FB3F1EDB-DAA3-98da-89F1-B7D76894E6DD';
+  ea:element <urn:connector:585>;
+  ea:property '''Datum opname''';
+  ea:value '''imgolf''';
+  ea:notes '''Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+''';
+.
+<urn:connectortag:1031> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-8C71-CE3A3F13AEB7';
+  ea:element <urn:connector:593>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1034> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-898C-6A1F63291121';
+  ea:element <urn:connector:593>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1042> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-A016-06D3992AD5D3';
+  ea:element <urn:connector:595>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1052> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-9BE5-7FD61E6FC744';
+  ea:element <urn:connector:596>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1055> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-A875-E3ED5528A026';
+  ea:element <urn:connector:596>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1059> a ea:Connectortag;
+  ea:guid 'FB3F1EDB-DAA3-98da-91BA-A4C131F10C34';
+  ea:element <urn:connector:596>;
+  ea:property '''Datum opname''';
+  ea:value '''2022-06-01''';
+  ea:notes '''Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+''';
+.
+<urn:connectortag:1062> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-9784-F83648C0337F';
+  ea:element <urn:connector:597>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1065> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-A828-D086F9B378B2';
+  ea:element <urn:connector:597>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
+.
+<urn:connectortag:1069> a ea:Connectortag;
+  ea:guid 'FB3F1EDB-DAA3-98da-B836-24FA05517A5A';
+  ea:element <urn:connector:597>;
+  ea:property '''Datum opname''';
+  ea:value '''2022-06-01''';
+  ea:notes '''Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+''';
+.
+<urn:connectortag:1070> a ea:Connectortag;
+  ea:guid '0BFEBE52-E81A-a6e8-A5F3-A5740902AC63';
+  ea:element <urn:connector:598>;
+  ea:property '''Authentiek''';
+  ea:value '''Overig''';
+  ea:notes '''Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig
+Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
+''';
+.
+<urn:connectortag:1071> a ea:Connectortag;
+  ea:guid '1FAA1D3E-8F06-a38f-99AA-B32C05C5DEF9';
+  ea:element <urn:connector:598>;
+  ea:property '''Herkomst definitie''';
+  ea:value '''nen 3610''';
+  ea:notes '''Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+''';
+.
+<urn:connectortag:1072> a ea:Connectortag;
+  ea:guid '50A2721A-D4E2-4fd4-B09E-9B43665B6B09';
+  ea:element <urn:connector:598>;
+  ea:property '''Toelichting''';
+  ea:value '''<memo>''';
+  ea:notes '''Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.''';
+.
+<urn:connectortag:1073> a ea:Connectortag;
+  ea:guid '6B33862D-9DF5-b69d-89DB-E7C85C4DE8D6';
+  ea:element <urn:connector:598>;
+  ea:property '''Herkomst''';
+  ea:value '''nen 3610''';
+  ea:notes '''Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+''';
+.
+<urn:connectortag:1045> a ea:Connectortag;
+  ea:guid 'BE7DA005-A3CD-9aa3-82E0-B2B9FB3C5876';
+  ea:element <urn:connector:595>;
+  ea:property '''Mogelijk geen waarde''';
+  ea:value '''Nee''';
+  ea:notes '''Default: Nee
+Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
+''';
 .
 <urn:objectproperty:3870> a ea:ObjectProperty;
   ea:guid 'CA6B62A2-47D8-49c7-AE79-01083B34A2DE';
