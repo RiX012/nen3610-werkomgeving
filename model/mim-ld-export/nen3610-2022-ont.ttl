@@ -1,3 +1,4 @@
+@prefix dct:          <http://purl.org/dc/terms/> .
 @prefix ea:           <http://www.sparxsystems.eu/def/ea#> .
 @prefix mim:          <http://bp4mc2.org/def/mim#> .
 @prefix mim-item-ns:  <http://ontology.mim-namespace.org/def/modelname#> .
@@ -9,18 +10,18 @@
 
 mim-item-ns:Verkeerruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Transportruimte voor verkeer via land, water of lucht." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Verkeerruimte" ;
         rdfs:subClassOf   mim-item-ns:Transportruimte ;
         mim:equivalent    <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verkeerruimte> ;
         skos:notation     "Verkeerruimte" ;
         sh:targetClass    mim-item-ns:Verkeerruimte .
 
 mim-item-ns:Registratie.objectEindTijd
         a               sh:PropertyShape ;
-        rdfs:comment    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
         mim:equivalent  <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd> ;
         sh:datatype     mim-item-ns:DateTime ;
         sh:name         "objectEindTijd" ;
         sh:nodeKind     sh:Literal ;
@@ -28,30 +29,30 @@ mim-item-ns:Registratie.objectEindTijd
 
 mim-item-ns:Registratie
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Vastlegging van een versie van een set gegevens." ;
         rdfs:isDefinedBy  mim-model-ns:Basisinformatie-elementen ;
         rdfs:label        "Registratie" ;
         mim:equivalent    <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie> ;
         skos:notation     "Registratie" ;
         sh:property       mim-item-ns:Registratie.objectEindTijd , mim-item-ns:Registratie.objectBeginTijd , mim-item-ns:Registratie.eindGeldigheid , mim-item-ns:Registratie.eindRegistratie , mim-item-ns:Registratie.versie , mim-item-ns:Registratie.beginGeldigheid , mim-item-ns:Registratie.tijdstipRegistratie ;
         sh:targetClass    mim-item-ns:Registratie .
 
 mim-item-ns:VoidReasonValue
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Reden waarom een nil-waarde is ingevuld." ;
         rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
         rdfs:label        "VoidReasonValue" ;
         mim:equivalent    <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
         skos:notation     "VoidReasonValue" ;
         sh:targetClass    mim-item-ns:VoidReasonValue .
 
 mim-item-ns:Spoorverkeerruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Spoorverkeerruimte" ;
         rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
         mim:equivalent    <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/spoorverkeerruimte> ;
         skos:notation     "Spoorverkeerruimte" ;
         sh:targetClass    mim-item-ns:Spoorverkeerruimte .
 
@@ -69,40 +70,40 @@ mim-item-ns:registratiegegevens
 
 mim-item-ns:FunctioneleRuimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Ruimte met een specifieke functie." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "FunctioneleRuimte" ;
         rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
         mim:equivalent    <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/functionele_ruimte> ;
         skos:notation     "FunctioneleRuimte" ;
         sh:targetClass    mim-item-ns:FunctioneleRuimte .
 
 mim-item-ns:beginGeldigheid
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
         rdfs:label      "beginGeldigheid" ;
-        mim:equivalent  <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0> .
+        mim:equivalent  <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid> .
 
 mim-item-ns:objectEindTijd
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
         rdfs:label      "objectEindTijd" ;
-        mim:equivalent  <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B> .
+        mim:equivalent  <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd> .
 
 mim-item-ns:ReeelObject
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Geo-object dat zich geheel materieel manifesteert." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "ReeelObject" ;
         rdfs:subClassOf   mim-item-ns:GeoObject ;
         mim:equivalent    <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/reeel_object> ;
         skos:notation     "ReeelObject" ;
         sh:targetClass    mim-item-ns:ReeelObject .
 
 mim-item-ns:Registratie.objectBeginTijd
         a               sh:PropertyShape ;
-        rdfs:comment    "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan." ;
         mim:equivalent  <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd> ;
         sh:datatype     mim-item-ns:DateTime ;
         sh:maxCount     1 ;
         sh:minCount     1 ;
@@ -111,9 +112,9 @@ mim-item-ns:Registratie.objectBeginTijd
         sh:path         mim-item-ns:objectBeginTijd .
 
 mim-item-ns:versie  a   owl:DatatypeProperty ;
-        rdfs:comment    "Versieaanduiding van een informatieobject." ;
         rdfs:label      "versie" ;
-        mim:equivalent  <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020> .
+        mim:equivalent  <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie> .
 
 mim-model-ns:Waardelijsten
         a               owl:Ontology ;
@@ -124,8 +125,8 @@ mim-model-ns:Waardelijsten
 
 mim-item-ns:Registratie.eindRegistratie
         a               sh:PropertyShape ;
-        rdfs:comment    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
         mim:equivalent  <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie> ;
         sh:datatype     mim-item-ns:DateTime ;
         sh:maxCount     1 ;
         sh:name         "eindRegistratie" ;
@@ -133,80 +134,80 @@ mim-item-ns:Registratie.eindRegistratie
         sh:path         mim-item-ns:eindRegistratie .
 
 mim-item-ns:domein  a   owl:DatatypeProperty ;
-        rdfs:comment    "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
         rdfs:label      "domein" ;
         mim:equivalent  <urn:uuid:5DE55742-811D-4f31-92D0-0354787B5A86> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein> ;
         sh:pattern      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" .
 
 mim-item-ns:Waterverplaatsingsruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Transportruimte waardoor water zich verplaatst." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Waterverplaatsingsruimte" ;
         rdfs:subClassOf   mim-item-ns:Transportruimte ;
         mim:equivalent    <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/waterverplaatsingsruimte> ;
         skos:notation     "Waterverplaatsingsruimte" ;
         sh:targetClass    mim-item-ns:Waterverplaatsingsruimte .
 
 mim-item-ns:Kunstwerk
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Kunstwerk" ;
         rdfs:subClassOf   mim-item-ns:Constructie ;
         mim:equivalent    <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/kunstwerk> ;
         skos:notation     "Kunstwerk" ;
         sh:targetClass    mim-item-ns:Kunstwerk .
 
 mim-item-ns:Scheepvaartruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Scheepvaartruimte" ;
         rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
         mim:equivalent    <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/scheepvaartruimte> ;
         skos:notation     "Scheepvaartruimte" ;
         sh:targetClass    mim-item-ns:Scheepvaartruimte .
 
 mim-item-ns:objectBeginTijd
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan." ;
         rdfs:label      "objectBeginTijd" ;
-        mim:equivalent  <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E> .
+        mim:equivalent  <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd> .
 
 mim-item-ns:Leiding  a    sh:NodeShape , owl:Class ;
-        rdfs:comment      "Een geheel van geleiders of een ruimte die voorzien is van &#233;&#233;n ommanteling en bestemd is voor transport van materie, data en/of energie." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Leiding" ;
         rdfs:subClassOf   mim-item-ns:Constructie ;
         mim:equivalent    <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/leiding> ;
         skos:notation     "Leiding" ;
         sh:targetClass    mim-item-ns:Leiding .
 
 mim-item-ns:Wegverkeerruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Wegverkeerruimte" ;
         rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
         mim:equivalent    <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/wegverkeerruimte> ;
         skos:notation     "Wegverkeerruimte" ;
         sh:targetClass    mim-item-ns:Wegverkeerruimte .
 
 mim-item-ns:Begroeiing
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Begroeiing" ;
         rdfs:subClassOf   mim-item-ns:ReeelObject ;
         mim:equivalent    <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begroeiing> ;
         skos:notation     "Begroeiing" ;
         sh:targetClass    mim-item-ns:Begroeiing .
 
 mim-item-ns:Registratie.versie
         a               sh:PropertyShape ;
-        rdfs:comment    "Versieaanduiding van een informatieobject." ;
         mim:equivalent  <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie> ;
         sh:datatype     mim-item-ns:CharacterString ;
         sh:maxCount     1 ;
         sh:maxLength    50 ;
@@ -217,24 +218,24 @@ mim-item-ns:Registratie.versie
 
 mim-item-ns:identificatie
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         rdfs:label      "identificatie" ;
         mim:equivalent  <urn:uuid:A1B98275-C1D6-416a-A61B-AACB4C8C44A4> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie> ;
         sh:pattern      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" .
 
 mim-item-ns:eindRegistratie
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
         rdfs:label      "eindRegistratie" ;
-        mim:equivalent  <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317> .
+        mim:equivalent  <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie> .
 
 mim-item-ns:Oppervlaktewater
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Oppervlaktewater" ;
         rdfs:subClassOf   mim-item-ns:ReeelObject ;
         mim:equivalent    <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/oppervlaktewater> ;
         skos:notation     "Oppervlaktewater" ;
         sh:targetClass    mim-item-ns:Oppervlaktewater .
 
@@ -250,28 +251,28 @@ mim-item-ns:DummyIdentificeerbaarObject.registratiegegevens
 
 mim-item-ns:Luchtvaartruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Luchtvaartruimte" ;
         rdfs:subClassOf   mim-item-ns:Verkeerruimte ;
         mim:equivalent    <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/luchtvaartruimte> ;
         skos:notation     "Luchtvaartruimte" ;
         sh:targetClass    mim-item-ns:Luchtvaartruimte .
 
 mim-item-ns:Verharding
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Verharding" ;
         rdfs:subClassOf   mim-item-ns:Constructie ;
         mim:equivalent    <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verharding> ;
         skos:notation     "Verharding" ;
         sh:targetClass    mim-item-ns:Verharding .
 
 mim-item-ns:Registratie.tijdstipRegistratie
         a               sh:PropertyShape ;
-        rdfs:comment    "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
         mim:equivalent  <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie> ;
         sh:datatype     mim-item-ns:DateTime ;
         sh:maxCount     1 ;
         sh:minCount     1 ;
@@ -297,34 +298,34 @@ mim-item-ns:DummyIdentificeerbaarObject
 
 mim-item-ns:tijdstipRegistratie
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
         rdfs:label      "tijdstipRegistratie" ;
-        mim:equivalent  <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5> .
+        mim:equivalent  <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie> .
 
 mim-item-ns:Transportruimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Transportruimte" ;
         rdfs:subClassOf   mim-item-ns:FunctioneleRuimte ;
         mim:equivalent    <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/transportruimte> ;
         skos:notation     "Transportruimte" ;
         sh:targetClass    mim-item-ns:Transportruimte .
 
 mim-item-ns:JuridischeRuimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "JuridischeRuimte" ;
         rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
         mim:equivalent    <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/juridische_ruimte> ;
         skos:notation     "JuridischeRuimte" ;
         sh:targetClass    mim-item-ns:JuridischeRuimte .
 
 mim-item-ns:DummyIdentificeerbaarObject.identificatie
         a               sh:PropertyShape ;
-        rdfs:comment    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:equivalent  <urn:uuid:A1B98275-C1D6-416a-A61B-AACB4C8C44A4> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie> ;
         sh:datatype     mim-item-ns:CharacterString ;
         sh:maxCount     1 ;
         sh:minCount     1 ;
@@ -341,11 +342,11 @@ mim-model-ns:Basisinformatie-elementen
         skos:notation   "Basisinformatie-elementen" .
 
 mim-item-ns:Bodem  a      sh:NodeShape , owl:Class ;
-        rdfs:comment      "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Bodem" ;
         rdfs:subClassOf   mim-item-ns:ReeelObject ;
         mim:equivalent    <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/bodem> ;
         skos:notation     "Bodem" ;
         sh:targetClass    mim-item-ns:Bodem .
 
@@ -358,36 +359,36 @@ mim-model-ns:SemantischModel
 
 mim-item-ns:VirtueleRuimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "VirtueleRuimte" ;
         rdfs:subClassOf   mim-item-ns:GeoObject ;
         mim:equivalent    <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte> ;
         skos:notation     "VirtueleRuimte" ;
         sh:targetClass    mim-item-ns:VirtueleRuimte .
 
 mim-item-ns:Constructie
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Constructie" ;
         rdfs:subClassOf   mim-item-ns:ReeelObject ;
         mim:equivalent    <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie> ;
         skos:notation     "Constructie" ;
         sh:targetClass    mim-item-ns:Constructie .
 
 mim-item-ns:Registratie.eindGeldigheid
         a               sh:PropertyShape ;
-        rdfs:comment    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
         mim:equivalent  <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid> ;
         sh:maxCount     1 ;
         sh:name         "eindGeldigheid" ;
         sh:path         mim-item-ns:eindGeldigheid .
 
 mim-item-ns:DummyIdentificeerbaarObject.domein
         a               sh:PropertyShape ;
-        rdfs:comment    "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
         mim:equivalent  <urn:uuid:5DE55742-811D-4f31-92D0-0354787B5A86> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein> ;
         sh:datatype     mim-item-ns:CharacterString ;
         sh:maxCount     1 ;
         sh:minCount     1 ;
@@ -398,8 +399,8 @@ mim-item-ns:DummyIdentificeerbaarObject.domein
 
 mim-item-ns:Registratie.beginGeldigheid
         a               sh:PropertyShape ;
-        rdfs:comment    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
         mim:equivalent  <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid> ;
         sh:maxCount     1 ;
         sh:minCount     1 ;
         sh:name         "beginGeldigheid" ;
@@ -412,44 +413,44 @@ mim-item-ns:DateTime  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Datatype> ;
 
 mim-item-ns:GeografischeRuimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "GeografischeRuimte" ;
         rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
         mim:equivalent    <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geografische_ruimte> ;
         skos:notation     "GeografischeRuimte" ;
         sh:targetClass    mim-item-ns:GeografischeRuimte .
 
 mim-item-ns:RegistratieveRuimte
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "RegistratieveRuimte" ;
         rdfs:subClassOf   mim-item-ns:VirtueleRuimte ;
         mim:equivalent    <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte> ;
         skos:notation     "RegistratieveRuimte" ;
         sh:targetClass    mim-item-ns:RegistratieveRuimte .
 
 mim-item-ns:GeoObject
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "GeoObject" ;
         mim:equivalent    <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geo-object> ;
         skos:notation     "GeoObject" ;
         sh:targetClass    mim-item-ns:GeoObject .
 
 mim-item-ns:eindGeldigheid
         a               owl:DatatypeProperty ;
-        rdfs:comment    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
         rdfs:label      "eindGeldigheid" ;
-        mim:equivalent  <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9> .
+        mim:equivalent  <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9> ;
+        dct:subject     <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid> .
 
 mim-item-ns:Gebouw  a     sh:NodeShape , owl:Class ;
-        rdfs:comment      "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
         rdfs:isDefinedBy  mim-model-ns:SemantischModel ;
         rdfs:label        "Gebouw" ;
         rdfs:subClassOf   mim-item-ns:Constructie ;
         mim:equivalent    <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw> ;
         skos:notation     "Gebouw" ;
         sh:targetClass    mim-item-ns:Gebouw .

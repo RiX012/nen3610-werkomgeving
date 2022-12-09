@@ -15,36 +15,36 @@
 <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407>
         a                            mim:Objecttype ;
         mim:alias                    "Leiding" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/leiding> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een geheel van geleiders of een ruimte die voorzien is van &#233;&#233;n ommanteling en bestemd is voor transport van materie, data en/of energie." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Leiding" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Voorbeelden zijn: hoogspanningsleiding, riool, waterleiding, glasvezelkabel, gasleiding." .
 
 <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0>
         a                            mim:Objecttype ;
         mim:alias                    "Virtuele ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "VirtueleRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid." .
 
 <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/scheepvaartruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Scheepvaartruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Scheepvaartruimte wordt gebruikt door allerlei soorten schepen." .
 
 <urn:uuid:A8E551B0-EB1C-4021-80EE-B107F22DD3A9>
@@ -82,13 +82,13 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "naam" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "De naam wordt weergegeven in de lijst van alle golfbanen van nederland. " ;
         mim:type               <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
 
 <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan." ;
         mim:herkomst                    "nen 3610" ;
@@ -97,32 +97,31 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "objectBeginTijd" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
 <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8>
         a                            mim:Objecttype ;
         mim:alias                    "Registratieve ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "RegistratieveRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel." .
 
 <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7>
         a                            mim:Objecttype ;
         mim:alias                    "Spoorverkeerruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/spoorverkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Spoorverkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." .
 
 <urn:uuid:629865B1-402F-43cf-91BC-843BBF3B2699>
@@ -133,13 +132,13 @@
         mim:herkomstDefinitie  "IMGolf" ;
         mim:kardinaliteit      "0..1" ;
         mim:naam               "vereisten" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Hier kan bijvoorbeeld worden opgenomen dat er toegangsvereisten zijn zoals het hebben van een baanpermissie of GVB." ;
         mim:type               <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
 
 <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
         mim:herkomst                    "nen 3610" ;
@@ -148,7 +147,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..-1" ;
         mim:naam                        "objectEindTijd" ;
-        mim:patroon                     "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
@@ -171,8 +169,7 @@
         mim:datumOpname        "2022-06-01" ;
         mim:definitie          "Het laatste deel van het parcours, waar het gras zeer kort wordt gemaaid." ;
         mim:herkomstDefinitie  "imgolf" ;
-        mim:naam               "green" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "green" .
 
 <urn:uuid:E1FC4DF0-51FF-47d7-B83F-97AA88482FAB>
         a                      mim:Enumeratiewaarde ;
@@ -180,8 +177,7 @@
         mim:definitie          "Bevindt zich doorgaans in bosrijke gebieden." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "Wikipedia" ;
-        mim:naam               "bosbaan" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "bosbaan" .
 
 <urn:uuid:046027E3-508B-4e5e-9226-920BC0B8C860>
         a                            mim:Domein ;
@@ -214,6 +210,7 @@
 <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
         mim:herkomst                    "nen 3610" ;
@@ -222,7 +219,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindRegistratie" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
@@ -234,6 +230,7 @@
 <urn:uuid:A1B98275-C1D6-416a-A61B-AACB4C8C44A4>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
@@ -248,16 +245,16 @@
         mim:toelichting                 "identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:type                        <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
 
+<urn:uuid:95189993-45F6-4084-B2B2-DA68956E93B3>
+        a              mim:Generalisatie ;
+        mim:subtype    <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> ;
+        mim:supertype  <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> .
+
 <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8>
         a                            mim:PrimitiefDatatype ;
         mim:definitie                "MIM: Zie [iso-19103]. Vrij vertaald: alle alfanumerieke tekens en speciale tekens die horen bij de gekozen characterset (standaard UTF-8), dus met diakrieten, white spaces, \\-teken en newlines of HTML opmaak e.d. Mag starten met spatie. De maximale lengte is onbepaald. Opmerking: getallen (ISO Numbers) met voorloopnullen worden opgenomen als CharacterString, met een patroon of formeel patroon. Bij het metagegeven Waardenverzameling attribuutsoort wordt dit dan (ook) gespecificeerd." ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "CharacterString" .
-
-<urn:uuid:95189993-45F6-4084-B2B2-DA68956E93B3>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> ;
-        mim:supertype  <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> .
 
 <urn:uuid:BC76D390-EE42-4760-A48D-3AD6B8B8130D>
         a              mim:Generalisatie ;
@@ -291,7 +288,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "0..1" ;
         mim:naam               "etiquette" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Dit zijn de regels waaraan men zich formeel niet hoeft te houden, maar er wordt wel zeer de prijs op gesteld als je het doet. Hier kan bijvoorbeeld de kledingetiquette worden beschreven." ;
         mim:type               <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
 
@@ -304,7 +300,6 @@
         mim:herkomstDefinitie        "imgolf" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Hole" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "De hole wordt regelmatig van plek veranderd, omdat de green dan niet onregelmatig slijt." .
 
 <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428>
@@ -332,7 +327,6 @@
         mim:herkomstDefinitie        "http://nl.wikipedia.org/wiki/Tee_(golf)" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Tee" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Ook wel tee-box genoemd." .
 
 <urn:uuid:3C4D1AEA-9840-405e-9D51-66FF780498CC>
@@ -342,13 +336,13 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "nummer" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Meestal heeft een golfbaan 18 'holes' of parcoursen. De eerste heeft als waarde van dit attribuut 1, de laatste 18." ;
         mim:type               <urn:uuid:6117ACBD-3892-4c5a-8241-2570BD334665> .
 
 <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
         mim:herkomst                    "nen 3610" ;
@@ -357,7 +351,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindGeldigheid" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." .
 
 <urn:uuid:48C4DEE9-CDC2-424d-9F39-4F0035FB41C4>
@@ -366,8 +359,7 @@
         mim:definitie          "Bevindt zich in het gebied vlak langs de kustlijn en kenmerkt zich door het feit dat ze open is (weinig bomen) en relatief hoge rough heeft. Ook zijn de greens en fairways doorgaans vrij hard." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "Wikipedia" ;
-        mim:naam               "linksbaan" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "linksbaan" .
 
 <urn:uuid:CCDDE1A3-5915-41e8-986C-F9F9271380A7>
         a                            mim:PrimitiefDatatype ;
@@ -388,7 +380,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "TypeParcoursDeel" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Een parcours kan worden verdeeld in een aantal onderdelen, zoals fairway of green." ;
         mim:type               <urn:uuid:71A59579-305C-40cc-8664-54B155A411BD> .
 
@@ -399,6 +390,7 @@
 
 <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C>
         a                            mim:Codelijst ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Reden waarom een nil-waarde is ingevuld." ;
         mim:herkomst                 "nen 3610" ;
@@ -421,7 +413,6 @@
         mim:herkomstDefinitie  "nen 3610" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "beginGeldigheid" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag." .
 
 <urn:uuid:8A62C85A-5D12-4fe9-8594-79B16FD4192D>
@@ -440,7 +431,6 @@
         mim:herkomstDefinitie  "nen 3610" ;
         mim:kardinaliteit      "0..1" ;
         mim:naam               "eindGeldigheid" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." .
 
 <urn:uuid:CE19F627-55D5-40ee-8970-B44AC0264C03>
@@ -449,8 +439,7 @@
         mim:definitie          "Een met water gevulde hindernis op een golfbaan." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "imgolf" ;
-        mim:naam               "waterpartij" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "waterpartij" .
 
 <urn:uuid-dst:3E82C86E-E6ED-4611-BE18-B0107AD443CF>
         a                  mim:RelatierolDoel ;
@@ -460,13 +449,13 @@
 
 <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/wegverkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Wegverkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer." .
 
 <urn:uuid:6D9078A3-14CB-4b1f-85A5-15207CBBBDDA>
@@ -483,32 +472,31 @@
 <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62>
         a                            mim:Objecttype ;
         mim:alias                    "Functionele ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/functionele_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte met een specifieke functie." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "FunctioneleRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing van reële objecten." .
 
 <urn:uuid:ADBF0588-0D6F-4704-A532-9F1E819403BC>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:71A59579-305C-40cc-8664-54B155A411BD> , <urn:uuid:18E60578-602B-4e49-8CA6-223C3FCF6631> , <urn:uuid:A16B5D83-EAAD-4194-A356-B00CA07763A6> , <urn:uuid:FEA57D0B-B05C-4b4c-BB4B-88F89641CE26> , <urn:uuid:3FAEDB24-F980-4428-A31B-8B1CBE638B75> ;
+        mim:bevatModelelement        <urn:uuid:18E60578-602B-4e49-8CA6-223C3FCF6631> , <urn:uuid:71A59579-305C-40cc-8664-54B155A411BD> , <urn:uuid:A16B5D83-EAAD-4194-A356-B00CA07763A6> ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "Waardelijsten" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam                     "Waardelijsten" .
 
 <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A>
         a                            mim:Objecttype ;
         mim:alias                    "Geo-object" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geo-object> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "GeoObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType»." .
 
 <urn:uuid:93CF48D4-B42A-4cf4-9B9D-337FC41A75CF>
@@ -519,13 +507,13 @@
 <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC>
         a                            mim:Objecttype ;
         mim:alias                    "Reëel object" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/reeel_object> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Geo-object dat zich geheel materieel manifesteert." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "ReeelObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door zijn materiele samenstelling en structuur." .
 
 <urn:uuid:FDC67DCB-BBE0-4f8f-A49D-9A8130957E61>
@@ -564,7 +552,6 @@
         mim:herkomstDefinitie  "http://nl.wikipedia.org/wiki/Par_(golf)" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "par" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Par staat voor Professional Average Result." ;
         mim:type               <urn:uuid:6117ACBD-3892-4c5a-8241-2570BD334665> .
 
@@ -593,13 +580,13 @@
 <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668>
         a                            mim:Objecttype ;
         mim:alias                    "Juridische ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/juridische_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "JuridischeRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Juridische ruimte omvat objecten die zijn gekoppeld aan wet- en beleidsinformatie die aangeeft wat waar krachtens wetgeving of wettelijk beleid is geformuleerd. Voorbeelden zijn: benoeming van ruimten en gebieden in bijvoorbeeld omgevingsvisie, omgevingsverordening, waterschapsverordening, projectbesluit." .
 
 <urn:uuid:651E3DFE-D213-40a6-8B9C-1CD045CCCDA7>
@@ -614,7 +601,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometry" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Voor elk onderdeel van een parcours worden hier de coordinaten van het vlak opgenomen. Als bijvoorbeeld de fairway in twee stukken wordt verdeeld door een waterpartij, worden dit twee aparte parcoursdelen met ieder een vlak." ;
         mim:type               <urn:uuid:7DFCE11E-C482-4d6b-800C-5F3CA801E9A4> .
 
@@ -625,14 +611,13 @@
 
 <urn:uuid:94A5BF41-39F9-48c6-85C6-FFDAB5DC4B68>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> , <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
+        mim:bevatModelelement        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> , <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Basisinformatie-elementen</b> - NEN 3610 paragraaf 8.4\r\n\r\nDe basisinformatie-elementen zijn de elementen die een centrale rol spelen in NEN 3610. Dit zijn het objecttype <font color=\"#c83500\">Geo-object</font>, de attributen ter identificatie van objecten en het objecttype <font color=\"#c83500\">Registratiegegevens</font> met de attributen voor de implementatie van het temporele model. Voor de benoeming en toepassing van de attributen is een voorbeeldklasse <font color=\"#c83500\">IM_X_klasse</font> opgenomen" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "Basisinformatie-elementen" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam                     "Basisinformatie-elementen" .
 
 <urn:uuid:4FD40A70-2C67-4ce7-A870-9C18C320D8FC>
         a                      mim:Attribuutsoort ;
@@ -642,7 +627,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "typeHindernis" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Dit is altijd een zandbunker of een waterpartij. Ook bomen en incidentele waterplassen kunnen een hindernis zijn, maar deze zijn niet gemodelleerd. Bomen worden wellicht in de 2.0 versie opgenomen." ;
         mim:type               <urn:uuid:18E60578-602B-4e49-8CA6-223C3FCF6631> .
 
@@ -659,7 +643,7 @@
 
 <urn:uuid:AAB6354B-685C-4f41-8AD2-92A70007CA4D>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
+        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
         mim:herkomst                 "nen 3610" ;
@@ -670,13 +654,13 @@
 
 <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/waterverplaatsingsruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Transportruimte waardoor water zich verplaatst." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Waterverplaatsingsruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage." .
 
 <urn:uuid:8ED4CD75-2D73-4506-97BE-8A69A58F2937>
@@ -687,13 +671,13 @@
 
 <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/luchtvaartruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Luchtvaartruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters." .
 
 <urn:uuid:A2B4FAB8-EA59-416d-A430-493EF2E11E55>
@@ -705,17 +689,6 @@
         a                            mim:PrimitiefDatatype ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Time" .
-
-<urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6>
-        a                            mim:Objecttype ;
-        mim:alias                    "Reëel object" ;
-        mim:datumOpname              "2022-06-01" ;
-        mim:herkomst                 "imgolf" ;
-        mim:herkomstDefinitie        "imgolf" ;
-        mim:indicatieAbstractObject  true ;
-        mim:naam                     "ReeelObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
 
 <urn:uuid:3E3521B6-5563-43aa-9DF6-09925A6756C6>
         a              mim:Generalisatie ;
@@ -761,6 +734,7 @@
 <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Start van de periode waarop deze versie van het informatieobject geldig is." ;
         mim:herkomst                    "nen 3610" ;
@@ -769,7 +743,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "beginGeldigheid" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag." .
 
 <urn:uuid:23F9390B-9A60-4941-A62C-85718E23E5B4>
@@ -790,7 +763,6 @@
         mim:herkomstDefinitie  "IMGolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "alleenVoorLeden" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Als de golfbaan niet alleen voor leden is, is ze dus openbaar en mag iedere golfer er komen spelen." .
 
 <urn:uuid:9A3F20A1-F5BF-4f30-B1D3-517A53140D6F>
@@ -798,25 +770,20 @@
         mim:subtype    <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> ;
         mim:supertype  <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> .
 
-<urn:uuid:BAE033C2-093D-4d7a-9CFD-B2DAD8756DD0>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> ;
-        mim:supertype  <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> .
-
 <urn:uuid:B491881D-7EA8-4d92-A6EA-EB7D7A4C967D>
         a                            mim:PrimitiefDatatype ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "GM_LineString" .
 
-<urn:uuid:FEA57D0B-B05C-4b4c-BB4B-88F89641CE26>
-        a                            mim:Enumeratie ;
-        mim:indicatieAbstractObject  false ;
-        mim:naam                     "Enumeration2" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+<urn:uuid:BAE033C2-093D-4d7a-9CFD-B2DAD8756DD0>
+        a              mim:Generalisatie ;
+        mim:subtype    <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> ;
+        mim:supertype  <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> .
 
 <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Versieaanduiding van een informatieobject." ;
         mim:herkomst                    "nen 3610" ;
@@ -830,12 +797,6 @@
         mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
         mim:toelichting                 "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren." ;
         mim:type                        <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
-
-<urn:uuid:3FAEDB24-F980-4428-A31B-8B1CBE638B75>
-        a                            mim:Enumeratie ;
-        mim:indicatieAbstractObject  false ;
-        mim:naam                     "Enumeration1" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
 
 <urn:uuid:A2949663-66E1-440a-B3DE-90584F0A9284>
         a                            mim:Informatiemodel ;
@@ -854,9 +815,7 @@
         mim:herkomst                 "imgolf" ;
         mim:herkomstDefinitie        "imgolf" ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "IMGolf-object" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam                     "IMGolf-object" .
 
 <urn:uuid:A43D82A5-B3B0-449d-8DA6-5309A1719C31>
         a                            mim:Objecttype ;
@@ -868,7 +827,6 @@
         mim:herkomstDefinitie        "http://nl.wikipedia.org/wiki/Golfbaan" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Golfbaan" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "De baan bestaat uit een reeks holes." .
 
 <urn:uuid:65777670-24BF-4aeb-9A66-6123DF281671>
@@ -902,13 +860,13 @@
 <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC>
         a                            mim:Objecttype ;
         mim:alias                    "Gebouw" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Gebouw" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Voorbeelden zijn: huis, schuur, flatgebouw, huizenblok, fabriek." .
 
 <urn:uuid:F5DD012F-FC7D-49c1-8F7E-EC24CA38C1F1>
@@ -917,27 +875,25 @@
         mim:definitie          "Onderdeel van een Hole bestaande uit het niet speciaal geprepareerd terrein." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "imgolf" ;
-        mim:naam               "rough" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "rough" .
 
 <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A>
         a                            mim:Objecttype ;
         mim:attribuut                <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317> , <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020> , <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E> , <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B> , <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5> , <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9> , <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0> ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Vastlegging van een versie van een set gegevens." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Registratie" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." .
 
 <urn:uuid:A05DF8A6-B3FB-49a4-BBAD-AA475FBAF9E2>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:EEA09760-5294-4398-836C-95EA02692F5C> , <urn:uuid:7DFCE11E-C482-4d6b-800C-5F3CA801E9A4> , <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> , <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> , <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0> , <urn:uuid:D126219C-0012-45d8-80FB-D521E25484E0> , <urn:uuid:192D9C92-3A45-4915-81C4-EAD3A22FDE91> , <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> , <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> , <urn:uuid:A43D82A5-B3B0-449d-8DA6-5309A1719C31> , <urn:uuid:401B4C0F-F295-4773-9126-780D56631422> , <urn:uuid:42BDD9B2-1615-483e-A8B8-1BB9A823A732> ;
+        mim:bevatModelelement        <urn:uuid:EEA09760-5294-4398-836C-95EA02692F5C> , <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> , <urn:uuid:7DFCE11E-C482-4d6b-800C-5F3CA801E9A4> , <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0> , <urn:uuid:D126219C-0012-45d8-80FB-D521E25484E0> , <urn:uuid:192D9C92-3A45-4915-81C4-EAD3A22FDE91> , <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> , <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> , <urn:uuid:A43D82A5-B3B0-449d-8DA6-5309A1719C31> , <urn:uuid:401B4C0F-F295-4773-9126-780D56631422> , <urn:uuid:42BDD9B2-1615-483e-A8B8-1BB9A823A732> ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "Golfbaan" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam                     "Golfbaan" .
 
 <urn:uuid:5148A094-0E82-40c1-90C1-202BBDA97B0B>
         a              mim:Generalisatie ;
@@ -947,6 +903,7 @@
 <urn:uuid:3E82C86E-E6ED-4611-BE18-B0107AD443CF>
         a                               mim:Relatiesoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens> ;
         mim:bron                        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
         mim:datumOpname                 "20220601" ;
         mim:doel                        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
@@ -970,18 +927,18 @@
         mim:definitie          "Tussen de green en de tee-box gelegen terrein waar het gras wat korter is dan in het eromheen gelegen terrein." ;
         mim:herkomstDefinitie  "imgolf" ;
         mim:naam               "fairway" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:toelichting        "." .
 
 <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E>
         a                            mim:Objecttype ;
         mim:alias                    "Begroeiing" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begroeiing> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Begroeiing" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan." .
 
 <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0>
@@ -993,7 +950,6 @@
         mim:herkomstDefinitie        "imgolf" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Hindernis" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Om een bal uit een bunker te slaan wordt vaak een speciale club gebruik; als een bal in het water terecht komt ben je verder van huis." .
 
 <urn:uuid:7A11F89C-FCBE-4a5a-95FB-28478EF1F265>
@@ -1029,7 +985,6 @@
         mim:herkomstDefinitie        "http://nl.wikipedia.org/wiki/Golfbaan#Onderdelen_van_een_golfbaan" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "ParcoursDeel" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Elk parcours heeft verschillende onderdelen zoals de green, de fairway, de semi-rough en de rough." .
 
 <urn:uuid:71A59579-305C-40cc-8664-54B155A411BD>
@@ -1051,6 +1006,7 @@
 <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
         mim:herkomst                    "nen 3610" ;
@@ -1059,7 +1015,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "tijdstipRegistratie" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
@@ -1071,7 +1026,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometrie" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Wijzigt regelmatig. De nieuwe Hole lokaties worden verspreid onder de leden en deelnemers aan wedstrijden." ;
         mim:type               <urn:uuid:CA9CCE00-9C40-4b96-952F-7E7F8C0086F3> .
 
@@ -1080,18 +1034,17 @@
         mim:definitie      "Het soort golfbaan, ingedeeld naar het type terrein waar zij zich bevindt." ;
         mim:kardinaliteit  "1..1" ;
         mim:naam           "typeGolfbaan" ;
-        mim:patroon        "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:type           <urn:uuid:A16B5D83-EAAD-4194-A356-B00CA07763A6> .
 
 <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Constructie" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis, brug, asfalt, waterleiding, fabriek, mijnstelsel." .
 
 <urn:uuid:76CE4343-1FA0-42d6-BA2E-365DE9C2AD2D>
@@ -1118,7 +1071,7 @@
 <urn:uuid:4F201519-7659-4dfe-A459-A06A44ED72E5>
         a              mim:Generalisatie ;
         mim:subtype    <urn:uuid:EEA09760-5294-4398-836C-95EA02692F5C> ;
-        mim:supertype  <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> .
+        mim:supertype  <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> .
 
 <urn:uuid:F8D66774-69DA-4eee-92BD-31EECCB65BF3>
         a                            mim:PrimitiefDatatype ;
@@ -1129,7 +1082,7 @@
 <urn:uuid:2BC2EABD-DB88-4144-8611-6C37336F0AE7>
         a              mim:Generalisatie ;
         mim:subtype    <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0> ;
-        mim:supertype  <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> .
+        mim:supertype  <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> .
 
 <urn:uuid:7F257123-2727-4835-ACD7-EC4322771AE2>
         a                      mim:Attribuutsoort ;
@@ -1138,7 +1091,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometry" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Coordinaten van het vlak van het parcours. Het kan een multivlak zijn. " ;
         mim:type               <urn:uuid:28E881FF-2361-44aa-8FF9-08604E438AFE> .
 
@@ -1157,17 +1109,12 @@
         mim:datumOpname        "2022-06-01" ;
         mim:definitie          "Bevindt zich niet in een bosrijk gebied of aan de kust." ;
         mim:herkomstDefinitie  "imgolf" ;
-        mim:naam               "parkbaan" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
-
-<urn:uuid:D6A26884-E9A3-4dd9-B321-E112A2EE9FDE>
-        a              mim:Generalisatie ;
-        mim:subtype    <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> ;
-        mim:supertype  <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> .
+        mim:naam               "parkbaan" .
 
 <urn:uuid:5DE55742-811D-4f31-92D0-0354787B5A86>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
@@ -1182,14 +1129,18 @@
         mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
         mim:type                        <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8> .
 
+<urn:uuid:D6A26884-E9A3-4dd9-B321-E112A2EE9FDE>
+        a              mim:Generalisatie ;
+        mim:subtype    <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> ;
+        mim:supertype  <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> .
+
 <urn:uuid:0BDC5099-875E-4415-A542-A9FADCB3C87C>
         a                      mim:Enumeratiewaarde ;
         mim:datumOpname        "2022-06-01" ;
         mim:definitie          "Het minder kort geschoren gras naast de fairway." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "Wikipedia" ;
-        mim:naam               "semi-rough" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "semi-rough" .
 
 <urn:uuid:7A23CC13-23D9-444e-A9D7-2D95DF145822>
         a              mim:Generalisatie ;
@@ -1204,7 +1155,6 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometrie" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "De coordinaten van het vlak waar het obstakel zich bevindt." ;
         mim:type               <urn:uuid:CCDDE1A3-5915-41e8-986C-F9F9271380A7> .
 
@@ -1235,13 +1185,13 @@
 
 <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/transportruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Transportruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." .
 
 <urn:uuid:6C16BE33-19BD-4fdc-96E6-142E6BC86331>
@@ -1255,8 +1205,7 @@
         mim:definitie          "Een met zand gevulde hindernis op een golfbaan." ;
         mim:herkomst           "imgolf" ;
         mim:herkomstDefinitie  "imgolf" ;
-        mim:naam               "bunker" ;
-        mim:toelichting        "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam               "bunker" .
 
 <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F>
         a                            mim:Objecttype ;
@@ -1267,30 +1216,29 @@
         mim:herkomstDefinitie        "http://nl.wikipedia.org/wiki/Hole_%28golf%29" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Parcours" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Ook wel 'Hole' genoemd. Hier wordt de term Parcours gebruikt om verwarring met de hole waar de bal ingeslagen moet worden, te voorkomen.\r\n\r\nIeder parcours bestaat in de regel uit de volgende onderdelen: Tee-box, Green, Hole, Fairway, Rough, Fringe / Apron, Hindernissen." .
 
 <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Transportruimte voor verkeer via land, water of lucht." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Verkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen." .
 
 <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90>
         a                            mim:Objecttype ;
         mim:alias                    "Kunstwerk" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/kunstwerk> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Kunstwerk" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies. Overbruggingen kunnen zijn: brug, viaduct, aquaduct enz. Een voorbeeld van een waterstaatkundig werk is een sluis. Voorbeelden van waterkerende constructies zijn stuw en vaste dam." .
 
 <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A>
@@ -1302,19 +1250,18 @@
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "DummyIdentificeerbaarObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." .
 
 <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6>
         a                            mim:Objecttype ;
         mim:alias                    "Oppervlaktewater" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/oppervlaktewater> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Oppervlaktewater" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Grondwater maakt geen deel uit van de superklasse." .
 
 <urn:uuid-dst:93CF48D4-B42A-4cf4-9B9D-337FC41A75CF>
@@ -1331,20 +1278,19 @@
         mim:herkomstDefinitie  "imgolf" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometry" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "Omvat alle parcoursen (holes) op de golfbaan maar ook de kantine, het parkeerterrein, de oefengreen en de drivingrange." ;
         mim:type               <urn:uuid:28E881FF-2361-44aa-8FF9-08604E438AFE> .
 
 <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900>
         a                            mim:Objecttype ;
         mim:alias                    "Verharding" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verharding> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Verharding" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen." .
 
 <urn:uuid:97431795-3255-489e-AC39-EBA8C3D25231>
@@ -1355,7 +1301,6 @@
         mim:herkomstDefinitie  "http://nl.wikipedia.org/wiki/Golfbaan" ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "geometry" ;
-        mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting        "De exacte plaats op de tee waar men moet beginnen wordt aangegeven door een tee-marker, waarvan er meerdere kunnen zijn. Meestal zijn er aparte tee-markers voor dames en heren om te compenseren voor het verschil in kracht. In dit model wordt alleen het vlak opgenomen, waarbinnen alle tee-markers zich bevinden." ;
         mim:type               <urn:uuid:CCDDE1A3-5915-41e8-986C-F9F9271380A7> .
 
@@ -1368,19 +1313,18 @@
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Registratie" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." .
 
 <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B>
         a                            mim:Objecttype ;
         mim:alias                    "Geografische ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geografische_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "GeografischeRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. " .
 
 <urn:uuid-dst:B7A6F3D5-1239-452a-BD8A-699A8C294F60>
@@ -1392,11 +1336,11 @@
 <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479>
         a                            mim:Objecttype ;
         mim:alias                    "Bodem" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/bodem> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Bodem" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld bodemkunde, geologie, geohydrologie en geomorfologie." .

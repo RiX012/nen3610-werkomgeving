@@ -7,6 +7,7 @@ prefixes:
   sh: http://www.w3.org/ns/shacl#
   nen3610: http://modellen.geostandaarden.nl/def/nen3610-2022#
   nen3610-sh: http://modellen.geostandaarden.nl/nen3610-2022/id/shape/
+  nen3610-beg: http://definities.geostandaarden.nl/nen3610-2022/id/begrip/
   mim: http://bp4mc2.org/def/mim#
   xsd: http://www.w3.org/2001/XMLSchema#
 queries:
@@ -149,6 +150,7 @@ queries:
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
       PREFIX mim: <http://bp4mc2.org/def/mim#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       INSERT {
         GRAPH <urn:output> {
           ?pshape ?p ?o
@@ -161,7 +163,7 @@ queries:
         }
         GRAPH <urn:input> {
           ?ps ?p ?o
-          FILTER (isLiteral(?o) || ?p=mim:authentiek || ?p=sh:nodeKind)
+          FILTER (isLiteral(?o) || ?p=mim:authentiek || ?p=sh:nodeKind || ?p=dct:subject)
         }
       }
   - title: add Datatype equivalents

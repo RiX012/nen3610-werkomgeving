@@ -10,13 +10,13 @@
 <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479>
         a                            mim:Objecttype ;
         mim:alias                    "Bodem" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/bodem> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Bodem" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld bodemkunde, geologie, geohydrologie en geomorfologie." .
 
 <urn:uuid:EDE83C44-57D5-4a30-A34D-860C09C9350A>
@@ -33,31 +33,30 @@
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "DummyIdentificeerbaarObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." .
 
 <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8>
         a                            mim:Objecttype ;
         mim:alias                    "Registratieve ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratieve_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "RegistratieveRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel." .
 
 <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC>
         a                            mim:Objecttype ;
         mim:alias                    "Gebouw" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Gebouw" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Voorbeelden zijn: huis, schuur, flatgebouw, huizenblok, fabriek." .
 
 <urn:uuid:95189993-45F6-4084-B2B2-DA68956E93B3>
@@ -68,25 +67,25 @@
 <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7>
         a                            mim:Objecttype ;
         mim:alias                    "Spoorverkeerruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/spoorverkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Spoorverkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." .
 
 <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0>
         a                            mim:Objecttype ;
         mim:alias                    "Virtuele ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/virtuele_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "VirtueleRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid." .
 
 <urn:uuid:3E3521B6-5563-43aa-9DF6-09925A6756C6>
@@ -96,25 +95,25 @@
 
 <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/constructie> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Constructie" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis, brug, asfalt, waterleiding, fabriek, mijnstelsel." .
 
 <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900>
         a                            mim:Objecttype ;
         mim:alias                    "Verharding" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verharding> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Verharding" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen." .
 
 <urn:uuid:2C3F1533-2281-4567-9990-01DCEE6661C8>
@@ -125,36 +124,36 @@
 
 <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/luchtvaartruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Luchtvaartruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters." .
 
 <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/transportruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Transportruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." .
 
 <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A>
         a                            mim:Objecttype ;
         mim:attribuut                <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317> , <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020> , <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B> , <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E> , <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5> , <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9> , <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0> ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/objectregistratie> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Vastlegging van een versie van een set gegevens." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Registratie" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." .
 
 <urn:uuid:76CE4343-1FA0-42d6-BA2E-365DE9C2AD2D>
@@ -165,6 +164,7 @@
 <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/versie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Versieaanduiding van een informatieobject." ;
         mim:herkomst                    "nen 3610" ;
@@ -187,24 +187,24 @@
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "Basisinformatie-elementen" ;
-        mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
+        mim:naam                     "Basisinformatie-elementen" .
 
 <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668>
         a                            mim:Objecttype ;
         mim:alias                    "Juridische ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/juridische_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "JuridischeRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Juridische ruimte omvat objecten die zijn gekoppeld aan wet- en beleidsinformatie die aangeeft wat waar krachtens wetgeving of wettelijk beleid is geformuleerd. Voorbeelden zijn: benoeming van ruimten en gebieden in bijvoorbeeld omgevingsvisie, omgevingsverordening, waterschapsverordening, projectbesluit." .
 
 <urn:uuid:333010ED-98E6-474b-A1BF-83F659BDD317>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_registratie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
         mim:herkomst                    "nen 3610" ;
@@ -213,7 +213,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindRegistratie" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
@@ -236,25 +235,25 @@
 <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62>
         a                            mim:Objecttype ;
         mim:alias                    "Functionele ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/functionele_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte met een specifieke functie." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "FunctioneleRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing van reële objecten." .
 
 <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E>
         a                            mim:Objecttype ;
         mim:alias                    "Begroeiing" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begroeiing> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Begroeiing" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan." .
 
 <urn:uuid:9AA4EBC6-B535-44e1-8D7E-1413CD7CBDF7>
@@ -275,13 +274,13 @@
 <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC>
         a                            mim:Objecttype ;
         mim:alias                    "Reëel object" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/reeel_object> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Geo-object dat zich geheel materieel manifesteert." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "ReeelObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door zijn materiele samenstelling en structuur." .
 
 <urn:uuid:5148A094-0E82-40c1-90C1-202BBDA97B0B>
@@ -296,13 +295,13 @@
 
 <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/verkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Transportruimte voor verkeer via land, water of lucht." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Verkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen." .
 
 <urn:uuid:E304428E-2926-46be-92EB-2665A2E00DEB>
@@ -313,6 +312,7 @@
 <urn:uuid:B93562C6-BBB6-4431-8119-35D79689E9C9>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/eind_geldigheid> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
         mim:herkomst                    "nen 3610" ;
@@ -321,24 +321,24 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindGeldigheid" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." .
 
 <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A>
         a                            mim:Objecttype ;
         mim:alias                    "Geo-object" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geo-object> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "GeoObject" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType»." .
 
 <urn:uuid:AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/begin_geldigheid> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Start van de periode waarop deze versie van het informatieobject geldig is." ;
         mim:herkomst                    "nen 3610" ;
@@ -347,12 +347,12 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "beginGeldigheid" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag." .
 
 <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_eindtijd> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
         mim:herkomst                    "nen 3610" ;
@@ -361,7 +361,6 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..-1" ;
         mim:naam                        "objectEindTijd" ;
-        mim:patroon                     "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
@@ -373,6 +372,7 @@
 <urn:uuid:3E82C86E-E6ED-4611-BE18-B0107AD443CF>
         a                               mim:Relatiesoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/registratiegegevens> ;
         mim:bron                        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
         mim:datumOpname                 "20220601" ;
         mim:doel                        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
@@ -398,13 +398,13 @@
 
 <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/wegverkeerruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Wegverkeerruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer." .
 
 <urn:uuid:0A642139-16B4-481e-BCFC-848BF451565E>
@@ -420,29 +420,30 @@
 <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90>
         a                            mim:Objecttype ;
         mim:alias                    "Kunstwerk" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/kunstwerk> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Kunstwerk" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies. Overbruggingen kunnen zijn: brug, viaduct, aquaduct enz. Een voorbeeld van een waterstaatkundig werk is een sluis. Voorbeelden van waterkerende constructies zijn stuw en vaste dam." .
 
 <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/scheepvaartruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Scheepvaartruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Scheepvaartruimte wordt gebruikt door allerlei soorten schepen." .
 
 <urn:uuid:A1B98275-C1D6-416a-A61B-AACB4C8C44A4>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
@@ -472,13 +473,13 @@
 <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407>
         a                            mim:Objecttype ;
         mim:alias                    "Leiding" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/leiding> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Een geheel van geleiders of een ruimte die voorzien is van &#233;&#233;n ommanteling en bestemd is voor transport van materie, data en/of energie." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Leiding" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Voorbeelden zijn: hoogspanningsleiding, riool, waterleiding, glasvezelkabel, gasleiding." .
 
 <urn:uuid:A40328ED-99EC-4962-B5D2-4E0BBAA49105>
@@ -509,6 +510,7 @@
 <urn:uuid:31F3B3C6-3B38-4887-8133-45F4B9AFE04E>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/object_begintijd> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan." ;
         mim:herkomst                    "nen 3610" ;
@@ -517,20 +519,19 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "objectBeginTijd" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
 <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B>
         a                            mim:Objecttype ;
         mim:alias                    "Geografische ruimte" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/geografische_ruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "GeografischeRuimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. " .
 
 <urn:uuid-dst:3E82C86E-E6ED-4611-BE18-B0107AD443CF>
@@ -541,30 +542,31 @@
 
 <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733>
         a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/waterverplaatsingsruimte> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Transportruimte waardoor water zich verplaatst." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Waterverplaatsingsruimte" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Een waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage." .
 
 <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6>
         a                            mim:Objecttype ;
         mim:alias                    "Oppervlaktewater" ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/oppervlaktewater> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:naam                     "Oppervlaktewater" ;
-        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Grondwater maakt geen deel uit van de superklasse." .
 
 <urn:uuid:5DE55742-811D-4f31-92D0-0354787B5A86>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/domein> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
@@ -582,6 +584,7 @@
 <urn:uuid:5D2DB318-C979-46ee-A331-B9B88399F1F5>
         a                               mim:Attribuutsoort ;
         mim:authentiek                  mim:OverigeAuthenticiteit ;
+        mim:begrip                      <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/tijdstip_registratie> ;
         mim:datumOpname                 "20220601" ;
         mim:definitie                   "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
         mim:herkomst                    "nen 3610" ;
@@ -590,12 +593,12 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "tijdstipRegistratie" ;
-        mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
         mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
 <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C>
         a                            mim:Codelijst ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Reden waarom een nil-waarde is ingevuld." ;
         mim:herkomst                 "nen 3610" ;
@@ -606,7 +609,7 @@
 
 <urn:uuid:AAB6354B-685C-4f41-8AD2-92A70007CA4D>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
+        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
         mim:herkomst                 "nen 3610" ;
