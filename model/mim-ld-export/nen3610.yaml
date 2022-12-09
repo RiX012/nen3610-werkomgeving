@@ -22,7 +22,7 @@ queries:
         GRAPH <urn:input> {
           ?s mim:equivalent ?item.
           ?item ?p ?o
-          FILTER (?p=mim:herkomst || ?p=mim:populatie || ?p=mim:indicatieAbstractObject || ?p=mim:herkomstDefinitie || ?p=mim:toelichting || ?p=mim:alias || ?p=mim:authentiek || ?p=mim:datumOpname || ?p=mim:patroon || ?p=mim:indicatieFormeleHistorie || ?p=mim:indicatieMaterieleHistorie)
+          FILTER (?p=mim:herkomst || ?p=mim:populatie || ?p=mim:indicatieAbstractObject || ?p=mim:herkomstDefinitie || ?p=mim:toelichting || ?p=mim:alias || ?p=mim:authentiek || ?p=mim:datumOpname || ?p=mim:patroon || ?p=mim:indicatieFormeleHistorie || ?p=mim:indicatieMaterieleHistorie || ?p=mim:identificerend)
         }
       }
   - title: export ontology

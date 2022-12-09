@@ -158,6 +158,66 @@ nen3610-sh:Registratie
         mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." ;
         skos:notation                "Registratie" ;
+        sh:property                  [ rdfs:comment                    "Versieaanduiding van een informatieobject." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              false ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
+                                       mim:toelichting                 "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren." ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:maxLength                    50 ;
+                                       sh:minLength                    1 ;
+                                       sh:name                         "versie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:versie
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
+                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:maxCount                     1 ;
+                                       sh:name                         "eindRegistratie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:eindRegistratie
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:name                         "objectEindTijd" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:objectEindTijd
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
+                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." ;
+                                       sh:maxCount                     1 ;
+                                       sh:name                         "eindGeldigheid" ;
+                                       sh:path                         nen3610:eindGeldigheid
+                                     ] ;
         sh:property                  [ rdfs:comment                    "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -190,23 +250,6 @@ nen3610-sh:Registratie
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:objectBeginTijd
                                      ] ;
-        sh:property                  [ rdfs:comment                    "Versieaanduiding van een informatieobject." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
-                                       mim:toelichting                 "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren." ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:maxLength                    50 ;
-                                       sh:minLength                    1 ;
-                                       sh:name                         "versie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:versie
-                                     ] ;
         sh:property                  [ rdfs:comment                    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -220,48 +263,6 @@ nen3610-sh:Registratie
                                        sh:minCount                     1 ;
                                        sh:name                         "beginGeldigheid" ;
                                        sh:path                         nen3610:beginGeldigheid
-                                     ] ;
-        sh:property                  [ rdfs:comment                    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
-                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." ;
-                                       sh:maxCount                     1 ;
-                                       sh:name                         "eindGeldigheid" ;
-                                       sh:path                         nen3610:eindGeldigheid
-                                     ] ;
-        sh:property                  [ rdfs:comment                    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
-                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn.\r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:maxCount                     1 ;
-                                       sh:name                         "eindRegistratie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:eindRegistratie
-                                     ] ;
-        sh:property                  [ rdfs:comment                    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:name                         "objectEindTijd" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:objectEindTijd
                                      ] ;
         sh:targetClass               nen3610:Registratie .
 
@@ -821,23 +822,6 @@ nen3610-sh:DummyIdentificeerbaarObject
         mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
         mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." ;
         skos:notation                "DummyIdentificeerbaarObject" ;
-        sh:property                  [ rdfs:comment                    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "identificatie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:identificatie ;
-                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
-                                     ] ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
@@ -857,6 +841,7 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
                                        mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
@@ -867,6 +852,24 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        sh:name                         "domein" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:domein ;
+                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
+                                       mim:toelichting                 "identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "identificatie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:identificatie ;
                                        sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
                                      ] ;
         sh:targetClass               nen3610:DummyIdentificeerbaarObject .

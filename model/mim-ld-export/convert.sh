@@ -8,7 +8,7 @@
 #
 
 # First step: transform native EAP format to RDF
-#java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -ea -e "../nen3610-2022-template - 20221116.eap" > nen3610-2022-ea.ttl
+java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -ea -e "../nen3610-2022-template - 20221116.eap" > nen3610-2022-ea.ttl
 
 # Second step: transform EA model in RDF to MIM in RDF
 java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ea.ttl nen3610-2022-mim-all.ttl ~/GITREPO/mimtools/ea2mim.yaml
@@ -20,7 +20,7 @@ java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim-all.ttl nen3610-
 java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim.ttl nen3610-2022-ont.ttl ~/GITREPO/mimtools/mim2onto.yaml
 
 # Fifth step: create diagram from ontology
-#java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar nen3610-2022-ont.ttl nen3610-2022-model.graphml ~/GITREPO/rdf2xml/rdf2graphml.xsl
+java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar nen3610-2022-ont.ttl nen3610-2022-model.graphml ~/GITREPO/rdf2xml/rdf2graphml.xsl
 
 # Sixth step: specific NEN3610 steps
 java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ont.ttl nen3610-2022-final.ttl nen3610.yaml nen3610-2022-mim.ttl

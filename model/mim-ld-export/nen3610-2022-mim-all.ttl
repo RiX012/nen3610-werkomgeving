@@ -159,6 +159,7 @@
         mim:definitie          "Definitie: Aanduiding van het domein waarbinnen de identificatie uniek is.\r\nToelichting: Het attribuut domein is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
         mim:herkomst           "nen 3610" ;
         mim:herkomstDefinitie  "nen 3610" ;
+        mim:identificerend     true ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "domein" ;
         mim:patroon            "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
@@ -222,7 +223,7 @@
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindRegistratie" ;
         mim:patroon                     "De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur." ;
-        mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn.\r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
+        mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
         mim:type                        <urn:uuid:4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428> .
 
 <urn:uuid:3F712AF5-BAAF-41ae-8F7A-4C43B1908A63>
@@ -238,6 +239,7 @@
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:herkomst                    "nen 3610" ;
         mim:herkomstDefinitie           "nen 3610" ;
+        mim:identificerend              true ;
         mim:indicatieFormeleHistorie    false ;
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
@@ -734,6 +736,7 @@
         mim:formeelPatroon     "[a-zA-Z| 0-9| _| .| -|\\/|:|]" ;
         mim:herkomst           "nen 3610" ;
         mim:herkomstDefinitie  "nen 3610" ;
+        mim:identificerend     true ;
         mim:kardinaliteit      "1..1" ;
         mim:naam               "identificatie" ;
         mim:patroon            "De reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:|]" ;
@@ -818,6 +821,7 @@
         mim:definitie                   "Versieaanduiding van een informatieobject." ;
         mim:herkomst                    "nen 3610" ;
         mim:herkomstDefinitie           "nen 3610" ;
+        mim:identificerend              false ;
         mim:indicatieFormeleHistorie    false ;
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
@@ -930,7 +934,7 @@
 
 <urn:uuid:A05DF8A6-B3FB-49a4-BBAD-AA475FBAF9E2>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:EEA09760-5294-4398-836C-95EA02692F5C> , <urn:uuid:7DFCE11E-C482-4d6b-800C-5F3CA801E9A4> , <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> , <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> , <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0> , <urn:uuid:D126219C-0012-45d8-80FB-D521E25484E0> , <urn:uuid:192D9C92-3A45-4915-81C4-EAD3A22FDE91> , <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> , <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> , <urn:uuid:A43D82A5-B3B0-449d-8DA6-5309A1719C31> , <urn:uuid:42BDD9B2-1615-483e-A8B8-1BB9A823A732> ;
+        mim:bevatModelelement        <urn:uuid:EEA09760-5294-4398-836C-95EA02692F5C> , <urn:uuid:7DFCE11E-C482-4d6b-800C-5F3CA801E9A4> , <urn:uuid:DCE74647-AA82-4f56-9BBD-A2C1CDEDC341> , <urn:uuid:2F4E0B92-42B2-443a-9F04-C25FADFB70C6> , <urn:uuid:B3E1F9A6-3E34-4335-B057-E287B0834EE0> , <urn:uuid:D126219C-0012-45d8-80FB-D521E25484E0> , <urn:uuid:192D9C92-3A45-4915-81C4-EAD3A22FDE91> , <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> , <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> , <urn:uuid:A43D82A5-B3B0-449d-8DA6-5309A1719C31> , <urn:uuid:401B4C0F-F295-4773-9126-780D56631422> , <urn:uuid:42BDD9B2-1615-483e-A8B8-1BB9A823A732> ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "Golfbaan" ;
         mim:toelichting              "Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." .
@@ -1169,6 +1173,7 @@
         mim:formeelPatroon              "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
         mim:herkomst                    "nen 3610" ;
         mim:herkomstDefinitie           "nen 3610" ;
+        mim:identificerend              true ;
         mim:indicatieFormeleHistorie    false ;
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
@@ -1210,6 +1215,7 @@
         mim:definitie          "Versieaanduiding van een informatieobject." ;
         mim:herkomst           "nen 3610" ;
         mim:herkomstDefinitie  "nen 3610" ;
+        mim:identificerend     false ;
         mim:kardinaliteit      "0..1" ;
         mim:lengte             "1..50" ;
         mim:naam               "versie" ;
@@ -1354,7 +1360,16 @@
         mim:type               <urn:uuid:CCDDE1A3-5915-41e8-986C-F9F9271380A7> .
 
 <urn:uuid:401B4C0F-F295-4773-9126-780D56631422>
-        mim:attribuut  <urn:uuid:BF1CE752-C2F4-46bd-9C74-82E4DBFFB1DE> , <urn:uuid:E0952809-0E6E-4680-9A20-13939546B747> , <urn:uuid:829CBEAA-6086-4392-92B1-DE9A0F68594B> .
+        a                            mim:Objecttype ;
+        mim:attribuut                <urn:uuid:BF1CE752-C2F4-46bd-9C74-82E4DBFFB1DE> , <urn:uuid:E0952809-0E6E-4680-9A20-13939546B747> , <urn:uuid:829CBEAA-6086-4392-92B1-DE9A0F68594B> ;
+        mim:datumOpname              "2022-06-01" ;
+        mim:definitie                "Vastlegging van een versie van een set gegevens." ;
+        mim:herkomst                 "nen 3610" ;
+        mim:herkomstDefinitie        "nen 3610" ;
+        mim:indicatieAbstractObject  false ;
+        mim:naam                     "Registratie" ;
+        mim:populatie                "Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn." ;
+        mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." .
 
 <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B>
         a                            mim:Objecttype ;

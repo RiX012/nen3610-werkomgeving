@@ -785,7 +785,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
 <urn:object:920> a ea:Object;
   ea:guid '47CE152F-6789-46dc-A29F-33647F0A644A';
   ea:type '''Class''';
-  ea:stereotype '''Objecttype''';
+  ea:stereotype '''Metadata''';
   rdfs:label '''Registratie''';
   ea:abstract false;
   ea:package <urn:package:159>;
@@ -960,7 +960,7 @@ De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|
   ea:classifier <urn:object:55>;
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:876>;
-  rdfs:comment '''De getalaanduiding voor het parcours.
+  rdfs:comment '''De getalaanduiding voor het parcours. 
 ''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -2853,7 +2853,7 @@ Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
   ea:element <urn:attribute:698>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn.
+  ea:notes '''Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. 
 
 Wanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn.''';
 .
@@ -5796,4 +5796,913 @@ Description: De beschrijving van de aard van het informatiemodel, hoe het geïnt
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
   ea:notes '''Deze codelijst moet extern worden gepubliceerd.''';
+.
+<urn:xref:465:0> a ea:XRef;
+  ea:client '8B7EF5FC-5228-4c0e-9380-41C684309C15';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:465:1> a ea:XRef;
+  ea:client '8B7EF5FC-5228-4c0e-9380-41C684309C15';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:465:2> a ea:XRef;
+  ea:client '8B7EF5FC-5228-4c0e-9380-41C684309C15';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:465:3> a ea:XRef;
+  ea:client '8B7EF5FC-5228-4c0e-9380-41C684309C15';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:465:4> a ea:XRef;
+  ea:client '3F712AF5-BAAF-41ae-8F7A-4C43B1908A63';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:465:5> a ea:XRef;
+  ea:client '3F712AF5-BAAF-41ae-8F7A-4C43B1908A63';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:465:6> a ea:XRef;
+  ea:client '33D0CE91-861B-4b77-8627-06FAD1B0C7FF';
+  ea:isDerived false;
+.
+<urn:xref:465:7> a ea:XRef;
+  ea:client '33D0CE91-861B-4b77-8627-06FAD1B0C7FF';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:465:8> a ea:XRef;
+  ea:client '33D0CE91-861B-4b77-8627-06FAD1B0C7FF';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:465:9> a ea:XRef;
+  ea:client '33D0CE91-861B-4b77-8627-06FAD1B0C7FF';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:465:10> a ea:XRef;
+  ea:client '33D0CE91-861B-4b77-8627-06FAD1B0C7FF';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:465:11> a ea:XRef;
+  ea:client 'B7A6F3D5-1239-452a-BD8A-699A8C294F60';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:465:12> a ea:XRef;
+  ea:client 'B7A6F3D5-1239-452a-BD8A-699A8C294F60';
+  ea:stereotype '''Metadata''';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:500:5> a ea:XRef;
+  ea:client '7CE95B9A-13B2-426d-A8F6-FCC28AFC1B54';
+  ea:stereotype '''Prullenbak''';
+.
+<urn:xref:500:40> a ea:XRef;
+  ea:client 'A05DF8A6-B3FB-49a4-BBAD-AA475FBAF9E2';
+  ea:stereotype '''Domein''';
+.
+<urn:xref:500:41> a ea:XRef;
+  ea:client 'ADBF0588-0D6F-4704-A532-9F1E819403BC';
+  ea:stereotype '''Domein''';
+.
+<urn:xref:500:42> a ea:XRef;
+  ea:client '192D9C92-3A45-4915-81C4-EAD3A22FDE91';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:43> a ea:XRef;
+  ea:client '2F4E0B92-42B2-443a-9F04-C25FADFB70C6';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:44> a ea:XRef;
+  ea:client '046027E3-508B-4e5e-9226-920BC0B8C860';
+  ea:stereotype '''Domein''';
+.
+<urn:xref:500:45> a ea:XRef;
+  ea:client '94A5BF41-39F9-48c6-85C6-FFDAB5DC4B68';
+  ea:stereotype '''Domein''';
+.
+<urn:xref:500:46> a ea:XRef;
+  ea:client 'AAB6354B-685C-4f41-8AD2-92A70007CA4D';
+  ea:stereotype '''Domein''';
+.
+<urn:xref:500:47> a ea:XRef;
+  ea:client '0CD49AD6-5021-4f47-B055-638163C4A94F';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:48> a ea:XRef;
+  ea:client '121AB4EC-0D70-48ee-BB85-EEF13378C900';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:49> a ea:XRef;
+  ea:client '21548D9F-88F5-41e4-85B3-0DC6A35FB407';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:50> a ea:XRef;
+  ea:client '240997BA-70F2-48dc-8A47-CA765C364BE7';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:500:51> a ea:XRef;
+  ea:client '4CA7941A-0973-4909-8978-6C17A3CD6F0E';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:540:2> a ea:XRef;
+  ea:client '6D9078A3-14CB-4b1f-85A5-15207CBBBDDA';
+  ea:stereotype '''interface''';
+.
+<urn:xref:540:3> a ea:XRef;
+  ea:client '8ED4CD75-2D73-4506-97BE-8A69A58F2937';
+  ea:stereotype '''interface''';
+.
+<urn:xref:540:4> a ea:XRef;
+  ea:client '326BCEE7-4BD2-46bb-BAFB-347B1076AE1D';
+  ea:stereotype '''interface''';
+.
+<urn:xref:540:64> a ea:XRef;
+  ea:client '401B4C0F-F295-4773-9126-780D56631422';
+  ea:stereotype '''Metadata''';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:540:65> a ea:XRef;
+  ea:client 'BF1CE752-C2F4-46bd-9C74-82E4DBFFB1DE';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnGeldigheid''';
+.
+<urn:xref:540:66> a ea:XRef;
+  ea:client '829CBEAA-6086-4392-92B1-DE9A0F68594B';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnGeldigheid''';
+.
+<urn:xref:540:67> a ea:XRef;
+  ea:client 'E0952809-0E6E-4680-9A20-13939546B747';
+  ea:isID false;
+.
+<urn:xref:540:68> a ea:XRef;
+  ea:client 'E0952809-0E6E-4680-9A20-13939546B747';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:540:69> a ea:XRef;
+  ea:client '5183AC98-C887-4e5c-BC61-41A64257CE2A';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:540:70> a ea:XRef;
+  ea:client '531D0265-A1CA-45fa-9DFC-3CFD82071F26';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:540:71> a ea:XRef;
+  ea:client '57FC8B96-00D7-4eb4-A03C-4EA90E3A5733';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:540:72> a ea:XRef;
+  ea:client '5E50A675-D501-40b6-82BE-6C49F355D3A0';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:542:3> a ea:XRef;
+  ea:client '507F9B4B-F77E-48f2-848E-2EB7220A99C6';
+  ea:stereotype '''interface''';
+.
+<urn:xref:542:5> a ea:XRef;
+  ea:client 'CA9CCE00-9C40-4b96-952F-7E7F8C0086F3';
+  ea:stereotype '''interface''';
+.
+<urn:xref:542:8> a ea:XRef;
+  ea:client 'CCDDE1A3-5915-41e8-986C-F9F9271380A7';
+  ea:stereotype '''interface''';
+.
+<urn:xref:542:62> a ea:XRef;
+  ea:client '42BDD9B2-1615-483e-A8B8-1BB9A823A732';
+  ea:stereotype '''Gegevensgroeptype''';
+.
+<urn:xref:542:63> a ea:XRef;
+  ea:client '42BDD9B2-1615-483e-A8B8-1BB9A823A732';
+  ea:isActive false;
+.
+<urn:xref:542:64> a ea:XRef;
+  ea:client 'D398A163-4455-41fb-9149-F0B4E75DF716';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:542:65> a ea:XRef;
+  ea:client 'FFDF545C-EDED-4ab3-8B12-1411C62E6019';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:542:66> a ea:XRef;
+  ea:client '5E62C776-3420-4eac-BA47-7EE0602F035B';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:542:67> a ea:XRef;
+  ea:client '65280E13-7AA2-451f-9E14-CD7798636FAC';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:542:68> a ea:XRef;
+  ea:client '686B29B9-3310-421c-B983-A17130525728';
+  ea:stereotype '''invariant''';
+.
+<urn:xref:542:69> a ea:XRef;
+  ea:client '85C106F3-B76B-4f9e-ACCF-AABCA792A479';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:542:70> a ea:XRef;
+  ea:client '87D58109-3F28-4149-8996-3DF83797BD6A';
+  ea:stereotype '''invariant''';
+.
+<urn:xref:544:5> a ea:XRef;
+  ea:client 'CA9CCE00-9C40-4b96-952F-7E7F8C0086F3';
+  ea:isActive false;
+.
+<urn:xref:544:12> a ea:XRef;
+  ea:client 'BDA6BCF0-0256-4f79-BE96-0BCA4A74B93D';
+  ea:isActive false;
+.
+<urn:xref:544:65> a ea:XRef;
+  ea:client '629865B1-402F-43cf-91BC-843BBF3B2699';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:544:66> a ea:XRef;
+  ea:client '63F459F5-DBA6-4b91-A04A-30797C2A590F';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:544:67> a ea:XRef;
+  ea:client '63F459F5-DBA6-4b91-A04A-30797C2A590F';
+  ea:isActive false;
+.
+<urn:xref:544:68> a ea:XRef;
+  ea:client '7F257123-2727-4835-ACD7-EC4322771AE2';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:544:69> a ea:XRef;
+  ea:client '3C4D1AEA-9840-405e-9D51-66FF780498CC';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:544:70> a ea:XRef;
+  ea:client 'AC38FF34-A49A-469a-895A-1FFA69418A08';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:544:71> a ea:XRef;
+  ea:client '7DFCE11E-C482-4d6b-800C-5F3CA801E9A4';
+  ea:stereotype '''Keuze''';
+.
+<urn:xref:544:72> a ea:XRef;
+  ea:client '8A4801C0-D263-4a0b-99C5-A0C7A67FFE62';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:544:73> a ea:XRef;
+  ea:client '9426A967-757C-4889-ACD5-B1E420BF7E90';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:544:74> a ea:XRef;
+  ea:client '99749D9E-9B0F-4134-959D-4D7BE81D0CEA';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:546:3> a ea:XRef;
+  ea:client '972ED548-ADE8-4306-AEFE-E3D342459A2D';
+  ea:stereotype '''applicationSchema''';
+.
+<urn:xref:546:5> a ea:XRef;
+  ea:client '23F9390B-9A60-4941-A62C-85718E23E5B4';
+  ea:isActive false;
+.
+<urn:xref:546:6> a ea:XRef;
+  ea:client '3B9D4E02-F33A-4d58-8D2D-B9773B7BBF48';
+  ea:isActive false;
+.
+<urn:xref:546:7> a ea:XRef;
+  ea:client '6117ACBD-3892-4c5a-8241-2570BD334665';
+  ea:isActive false;
+.
+<urn:xref:546:9> a ea:XRef;
+  ea:client 'BDA6BCF0-0256-4f79-BE96-0BCA4A74B93D';
+  ea:stereotype '''interface''';
+.
+<urn:xref:546:10> a ea:XRef;
+  ea:client '8ED4CD75-2D73-4506-97BE-8A69A58F2937';
+  ea:isActive false;
+.
+<urn:xref:546:11> a ea:XRef;
+  ea:client '6D9078A3-14CB-4b1f-85A5-15207CBBBDDA';
+  ea:isActive false;
+.
+<urn:xref:546:53> a ea:XRef;
+  ea:client 'EAF79887-C42B-4695-B3B4-3AC5E342C704';
+  ea:stereotype '''Datatype''';
+.
+<urn:xref:546:54> a ea:XRef;
+  ea:client 'A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:546:55> a ea:XRef;
+  ea:client 'AC4F927B-8E66-43a1-9290-5DC5E84203A6';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:546:56> a ea:XRef;
+  ea:client 'C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:546:57> a ea:XRef;
+  ea:client 'CC240C98-C4B6-4796-ADB1-24D0F841EC34';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:546:58> a ea:XRef;
+  ea:client 'DA8C27C0-912F-4e48-8B38-6619A4E0A879';
+  ea:stereotype '''invariant''';
+.
+<urn:xref:548:2> a ea:XRef;
+  ea:client '4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428';
+  ea:stereotype '''interface''';
+.
+<urn:xref:548:3> a ea:XRef;
+  ea:client '28E881FF-2361-44aa-8FF9-08604E438AFE';
+  ea:isActive false;
+.
+<urn:xref:548:4> a ea:XRef;
+  ea:client '507F9B4B-F77E-48f2-848E-2EB7220A99C6';
+  ea:isActive false;
+.
+<urn:xref:548:7> a ea:XRef;
+  ea:client 'F8D66774-69DA-4eee-92BD-31EECCB65BF3';
+  ea:isActive false;
+.
+<urn:xref:548:12> a ea:XRef;
+  ea:client '9EA5855C-069D-41d1-9BCD-DD4D0DEE6FEA';
+  ea:isActive false;
+.
+<urn:xref:548:54> a ea:XRef;
+  ea:client '9E86EDF2-9A11-4405-B4ED-4DACD47BB6AE';
+  ea:stereotype '''Datatype''';
+.
+<urn:xref:548:55> a ea:XRef;
+  ea:client 'A43D82A5-B3B0-449d-8DA6-5309A1719C31';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:548:56> a ea:XRef;
+  ea:client 'DAECA380-235D-4a0a-95B9-A3C166AAC4BD';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:548:57> a ea:XRef;
+  ea:client 'E3956B4F-8CE1-4bdf-88DA-2201BAC43668';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:548:58> a ea:XRef;
+  ea:client 'F404593C-277B-4dcd-ABA9-EB37F8015AF4';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:548:59> a ea:XRef;
+  ea:client '2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:548:60> a ea:XRef;
+  ea:client 'A1B98275-C1D6-416a-A61B-AACB4C8C44A4';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:549:1> a ea:XRef;
+  ea:client '0FC9EEF9-8A1B-4045-A82E-E8AB4FF75990';
+  ea:stereotype '''interface''';
+.
+<urn:xref:549:2> a ea:XRef;
+  ea:client 'F8D66774-69DA-4eee-92BD-31EECCB65BF3';
+  ea:stereotype '''interface''';
+.
+<urn:xref:549:5> a ea:XRef;
+  ea:client 'CCDDE1A3-5915-41e8-986C-F9F9271380A7';
+  ea:isActive false;
+.
+<urn:xref:549:6> a ea:XRef;
+  ea:client '6117ACBD-3892-4c5a-8241-2570BD334665';
+  ea:stereotype '''interface''';
+.
+<urn:xref:549:57> a ea:XRef;
+  ea:client 'A43D82A5-B3B0-449d-8DA6-5309A1719C31';
+  ea:isActive false;
+.
+<urn:xref:549:58> a ea:XRef;
+  ea:client 'EAE19213-5127-4332-8C8E-4243057B59F1';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:549:59> a ea:XRef;
+  ea:client 'FA977627-D455-422a-BCAC-6BB82197C147';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:549:60> a ea:XRef;
+  ea:client '8A62C85A-5D12-4fe9-8594-79B16FD4192D';
+  ea:stereotype '''Gegevensgroep''';
+.
+<urn:xref:551:0> a ea:XRef;
+  ea:client '61600E07-65A2-459f-8ED8-1EABEB08A3BF';
+  ea:isActive false;
+.
+<urn:xref:551:1> a ea:XRef;
+  ea:client '4CB6BBE5-EFAF-4680-8E2F-C4DD1ADE6428';
+  ea:isActive false;
+.
+<urn:xref:551:3> a ea:XRef;
+  ea:client '2C3F1533-2281-4567-9990-01DCEE6661C8';
+  ea:stereotype '''interface''';
+.
+<urn:xref:551:4> a ea:XRef;
+  ea:client 'B491881D-7EA8-4d92-A6EA-EB7D7A4C967D';
+  ea:isActive false;
+.
+<urn:xref:551:10> a ea:XRef;
+  ea:client '0FC9EEF9-8A1B-4045-A82E-E8AB4FF75990';
+  ea:isActive false;
+.
+<urn:xref:551:12> a ea:XRef;
+  ea:client '2C3F1533-2281-4567-9990-01DCEE6661C8';
+  ea:isActive false;
+.
+<urn:xref:551:53> a ea:XRef;
+  ea:client '4B6754A2-1F3E-4b85-BB47-4D878E1C4076';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:551:54> a ea:XRef;
+  ea:client 'B23632C6-1D57-4174-BCBA-D5AB02AFEE8A';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:551:55> a ea:XRef;
+  ea:client 'A1B98275-C1D6-416a-A61B-AACB4C8C44A4';
+  ea:isID true;
+.
+<urn:xref:551:56> a ea:XRef;
+  ea:client '5DE55742-811D-4f31-92D0-0354787B5A86';
+  ea:isID true;
+.
+<urn:xref:551:57> a ea:XRef;
+  ea:client '5DE55742-811D-4f31-92D0-0354787B5A86';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:551:58> a ea:XRef;
+  ea:client '47CE152F-6789-46dc-A29F-33647F0A644A';
+  ea:stereotype '''Metadata''';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:553:5> a ea:XRef;
+  ea:client '326BCEE7-4BD2-46bb-BAFB-347B1076AE1D';
+  ea:isActive false;
+.
+<urn:xref:553:8> a ea:XRef;
+  ea:client '61600E07-65A2-459f-8ED8-1EABEB08A3BF';
+  ea:stereotype '''interface''';
+.
+<urn:xref:553:9> a ea:XRef;
+  ea:client 'B491881D-7EA8-4d92-A6EA-EB7D7A4C967D';
+  ea:stereotype '''interface''';
+.
+<urn:xref:553:12> a ea:XRef;
+  ea:client '3B9D4E02-F33A-4d58-8D2D-B9773B7BBF48';
+  ea:stereotype '''interface''';
+.
+<urn:xref:553:48> a ea:XRef;
+  ea:client 'B1DCD0A9-DD62-4e0c-BA9A-8814195245DE';
+  ea:isID true;
+.
+<urn:xref:553:49> a ea:XRef;
+  ea:client 'B1DCD0A9-DD62-4e0c-BA9A-8814195245DE';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:553:50> a ea:XRef;
+  ea:client '49FAFBE7-E59C-4fed-B166-FC247E81CCD9';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:553:51> a ea:XRef;
+  ea:client '49FAFBE7-E59C-4fed-B166-FC247E81CCD9';
+  ea:isID true;
+.
+<urn:xref:553:52> a ea:XRef;
+  ea:client 'B3E1F9A6-3E34-4335-B057-E287B0834EE0';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:553:53> a ea:XRef;
+  ea:client '0933CF52-99E4-45ea-8615-9A1827202020';
+  ea:isID false;
+.
+<urn:xref:553:54> a ea:XRef;
+  ea:client '0933CF52-99E4-45ea-8615-9A1827202020';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:553:55> a ea:XRef;
+  ea:client 'AA69E28B-EDF6-4ffe-A15B-1068A17AA9E0';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnGeldigheid''';
+.
+<urn:xref:553:56> a ea:XRef;
+  ea:client 'B93562C6-BBB6-4431-8119-35D79689E9C9';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnGeldigheid''';
+.
+<urn:xref:562:14> a ea:XRef;
+  ea:client 'B3E1F9A6-3E34-4335-B057-E287B0834EE0';
+  ea:isActive false;
+.
+<urn:xref:562:15> a ea:XRef;
+  ea:client '10A7B1E8-FF7D-4512-BD30-CA0E47BE1707';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:562:16> a ea:XRef;
+  ea:client '4FD40A70-2C67-4ce7-A870-9C18C320D8FC';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:562:17> a ea:XRef;
+  ea:client 'D126219C-0012-45d8-80FB-D521E25484E0';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:562:18> a ea:XRef;
+  ea:client 'D126219C-0012-45d8-80FB-D521E25484E0';
+  ea:isActive false;
+.
+<urn:xref:562:19> a ea:XRef;
+  ea:client '806D6D04-A822-4e7a-884E-6A692FD918F2';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:562:20> a ea:XRef;
+  ea:client 'C6191152-3B4E-413b-B9B1-C72A2B81A8B3';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:562:21> a ea:XRef;
+  ea:client 'DCE74647-AA82-4f56-9BBD-A2C1CDEDC341';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:562:22> a ea:XRef;
+  ea:client 'DCE74647-AA82-4f56-9BBD-A2C1CDEDC341';
+  ea:isActive false;
+.
+<urn:xref:562:23> a ea:XRef;
+  ea:client '97431795-3255-489e-AC39-EBA8C3D25231';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:562:24> a ea:XRef;
+  ea:client '5D2DB318-C979-46ee-A331-B9B88399F1F5';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnRegistratie''';
+.
+<urn:xref:562:25> a ea:XRef;
+  ea:client '333010ED-98E6-474b-A1BF-83F659BDD317';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''TijdlijnRegistratie''';
+.
+<urn:xref:562:26> a ea:XRef;
+  ea:client '31F3B3C6-3B38-4887-8133-45F4B9AFE04E';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''Levensduur''';
+.
+<urn:xref:584:4> a ea:XRef;
+  ea:client '185D811A-D963-4f2f-A29B-233BB6926585';
+  ea:stereotype '''interface''';
+.
+<urn:xref:584:67> a ea:XRef;
+  ea:client 'EEA09760-5294-4398-836C-95EA02692F5C';
+  ea:stereotype '''Objecttype''';
+.
+<urn:xref:584:68> a ea:XRef;
+  ea:client 'EEA09760-5294-4398-836C-95EA02692F5C';
+  ea:isActive false;
+.
+<urn:xref:584:69> a ea:XRef;
+  ea:client 'A7FFB13A-B57A-48e1-9EFA-7D17F7F3A7D8';
+  ea:stereotype '''Attribuutsoort''';
+.
+<urn:xref:584:70> a ea:XRef;
+  ea:client '18E60578-602B-4e49-8CA6-223C3FCF6631';
+  ea:stereotype '''Enumeratie''';
+.
+<urn:xref:584:71> a ea:XRef;
+  ea:client '18E60578-602B-4e49-8CA6-223C3FCF6631';
+  ea:isActive false;
+.
+<urn:xref:584:72> a ea:XRef;
+  ea:client 'CE19F627-55D5-40ee-8970-B44AC0264C03';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:584:73> a ea:XRef;
+  ea:client '8019CE46-6177-44c4-9972-8AE01237479B';
+  ea:stereotype '''Attribuutsoort''';
+  ea:stereotype '''Levensduur''';
+.
+<urn:xref:584:74> a ea:XRef;
+  ea:client '03776960-DC8E-4ef9-9910-9B540D78291C';
+  ea:stereotype '''Codelijst''';
+.
+<urn:xref:584:75> a ea:XRef;
+  ea:client '65777670-24BF-4aeb-9A66-6123DF281671';
+  ea:stereotype '''Informatiemodel''';
+.
+<urn:xref:584:76> a ea:XRef;
+  ea:client '3E82C86E-E6ED-4611-BE18-B0107AD443CF';
+  ea:stereotype '''Relatiesoort''';
+  ea:stereotype '''Metadata''';
+.
+<urn:xref:584:77> a ea:XRef;
+  ea:client '3E82C86E-E6ED-4611-BE18-B0107AD443CF';
+  ea:stereotype '''Metadata''';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:585:1> a ea:XRef;
+  ea:client '185D811A-D963-4f2f-A29B-233BB6926585';
+  ea:isActive false;
+.
+<urn:xref:585:5> a ea:XRef;
+  ea:client '28E881FF-2361-44aa-8FF9-08604E438AFE';
+  ea:stereotype '''interface''';
+.
+<urn:xref:585:10> a ea:XRef;
+  ea:client '23F9390B-9A60-4941-A62C-85718E23E5B4';
+  ea:stereotype '''interface''';
+.
+<urn:xref:585:55> a ea:XRef;
+  ea:client '784DC87E-0EE6-4c86-963E-97F91177175B';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:585:56> a ea:XRef;
+  ea:client '3FAEDB24-F980-4428-A31B-8B1CBE638B75';
+  ea:stereotype '''Enumeratie''';
+.
+<urn:xref:585:57> a ea:XRef;
+  ea:client '71A59579-305C-40cc-8664-54B155A411BD';
+  ea:stereotype '''Enumeratie''';
+.
+<urn:xref:585:58> a ea:XRef;
+  ea:client '649D146A-3D62-4201-89F7-CE29392406E8';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:585:59> a ea:XRef;
+  ea:client '7A23CC13-23D9-444e-A9D7-2D95DF145822';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:585:60> a ea:XRef;
+  ea:client '1AD90356-91D9-4b7b-8489-DAB54619E585';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:585:61> a ea:XRef;
+  ea:client 'EEBA1CA6-23FD-4c0d-B9CA-F4F72BE94AD6';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:585:62> a ea:XRef;
+  ea:client 'D3CE2A86-0083-4dad-9149-B6CCCE38207D';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:585:63> a ea:XRef;
+  ea:client '6C16BE33-19BD-4fdc-96E6-142E6BC86331';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:4> a ea:XRef;
+  ea:client '9EA5855C-069D-41d1-9BCD-DD4D0DEE6FEA';
+  ea:stereotype '''interface''';
+.
+<urn:xref:586:58> a ea:XRef;
+  ea:client '71A59579-305C-40cc-8664-54B155A411BD';
+  ea:isActive false;
+.
+<urn:xref:586:59> a ea:XRef;
+  ea:client '86B6F17E-5CC8-4ef9-89C0-D34745A71D58';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:586:60> a ea:XRef;
+  ea:client 'E304428E-2926-46be-92EB-2665A2E00DEB';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:61> a ea:XRef;
+  ea:client 'AF2C2E4F-329F-480f-864E-C32236F1EAA1';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:62> a ea:XRef;
+  ea:client 'BC76D390-EE42-4760-A48D-3AD6B8B8130D';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:63> a ea:XRef;
+  ea:client 'BAE033C2-093D-4d7a-9CFD-B2DAD8756DD0';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:64> a ea:XRef;
+  ea:client 'A40328ED-99EC-4962-B5D2-4E0BBAA49105';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:65> a ea:XRef;
+  ea:client '95189993-45F6-4084-B2B2-DA68956E93B3';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:66> a ea:XRef;
+  ea:client 'C3B142BA-470F-4e89-AC02-5039A6C6E8A6';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:67> a ea:XRef;
+  ea:client 'A2B4FAB8-EA59-416d-A430-493EF2E11E55';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:586:68> a ea:XRef;
+  ea:client '76CE4343-1FA0-42d6-BA2E-365DE9C2AD2D';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:22> a ea:XRef;
+  ea:client 'C0E1DE08-012B-4478-A497-C2E87BB8F3B4';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1201:23> a ea:XRef;
+  ea:client '9AA4EBC6-B535-44e1-8D7E-1413CD7CBDF7';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:24> a ea:XRef;
+  ea:client '5148A094-0E82-40c1-90C1-202BBDA97B0B';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:25> a ea:XRef;
+  ea:client 'EDE83C44-57D5-4a30-A34D-860C09C9350A';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:26> a ea:XRef;
+  ea:client 'E832DF97-3EC2-431c-BFBD-A6EBAD1E6003';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:27> a ea:XRef;
+  ea:client 'BEEAD71A-341F-44df-A09C-F62BF9B9783D';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:28> a ea:XRef;
+  ea:client '904D3798-C715-4db3-94FA-35093C2543E2';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:29> a ea:XRef;
+  ea:client '651E3DFE-D213-40a6-8B9C-1CD045CCCDA7';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:30> a ea:XRef;
+  ea:client '3E3521B6-5563-43aa-9DF6-09925A6756C6';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1201:31> a ea:XRef;
+  ea:client '0A642139-16B4-481e-BCFC-848BF451565E';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1202:0> a ea:XRef;
+  ea:client 'B4D470E8-AA9B-4bd3-BA35-B8655BDF8739';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1202:1> a ea:XRef;
+  ea:client 'B3BBEFA9-1803-4950-AF15-99F3DB909C7A';
+  ea:stereotype '''Ruimtelijke relatie''';
+.
+<urn:xref:1202:8> a ea:XRef;
+  ea:client 'B3BBEFA9-1803-4950-AF15-99F3DB909C7A';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:1205:66> a ea:XRef;
+  ea:client 'F5DD012F-FC7D-49c1-8F7E-EC24CA38C1F1';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1205:67> a ea:XRef;
+  ea:client '0BDC5099-875E-4415-A542-A9FADCB3C87C';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1429:57> a ea:XRef;
+  ea:client 'A16B5D83-EAAD-4194-A356-B00CA07763A6';
+  ea:stereotype '''Enumeratie''';
+.
+<urn:xref:1429:58> a ea:XRef;
+  ea:client 'A16B5D83-EAAD-4194-A356-B00CA07763A6';
+  ea:isActive false;
+.
+<urn:xref:1429:59> a ea:XRef;
+  ea:client '48C4DEE9-CDC2-424d-9F39-4F0035FB41C4';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1429:60> a ea:XRef;
+  ea:client 'E1FC4DF0-51FF-47d7-B83F-97AA88482FAB';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1429:61> a ea:XRef;
+  ea:client 'D924D577-860A-4e04-B801-CADA7B9ACCF8';
+  ea:stereotype '''Enumeratiewaarde''';
+.
+<urn:xref:1429:62> a ea:XRef;
+  ea:client 'FEA57D0B-B05C-4b4c-BB4B-88F89641CE26';
+  ea:stereotype '''Enumeratie''';
+.
+<urn:xref:1429:63> a ea:XRef;
+  ea:client 'A2949663-66E1-440a-B3DE-90584F0A9284';
+  ea:stereotype '''Informatiemodel''';
+.
+<urn:xref:1448:67> a ea:XRef;
+  ea:client '93CF48D4-B42A-4cf4-9B9D-337FC41A75CF';
+  ea:isDerived false;
+.
+<urn:xref:1448:68> a ea:XRef;
+  ea:client '93CF48D4-B42A-4cf4-9B9D-337FC41A75CF';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:1448:69> a ea:XRef;
+  ea:client '93CF48D4-B42A-4cf4-9B9D-337FC41A75CF';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:1448:70> a ea:XRef;
+  ea:client '93CF48D4-B42A-4cf4-9B9D-337FC41A75CF';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:1448:71> a ea:XRef;
+  ea:client '93CF48D4-B42A-4cf4-9B9D-337FC41A75CF';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:1448:72> a ea:XRef;
+  ea:client 'FDC67DCB-BBE0-4f8f-A49D-9A8130957E61';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1562:37> a ea:XRef;
+  ea:client '06394F81-E483-4fa0-96AB-826614F30CF2';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1562:38> a ea:XRef;
+  ea:client 'DBD4AFFA-728D-490d-BAA3-2A572972BAB3';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1562:39> a ea:XRef;
+  ea:client '7A11F89C-FCBE-4a5a-95FB-28478EF1F265';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1562:40> a ea:XRef;
+  ea:client '8A648425-7B03-4f54-A541-4C0921D89FFF';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1562:49> a ea:XRef;
+  ea:client 'EFE5F205-5412-4d19-8DE4-FD95DEA5E6F6';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1562:50> a ea:XRef;
+  ea:client 'A8E551B0-EB1C-4021-80EE-B107F22DD3A9';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1562:51> a ea:XRef;
+  ea:client '923B9BB6-C5E0-48c1-BBE4-C121DFB3BA56';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1562:52> a ea:XRef;
+  ea:client 'B4256B1F-4B02-467a-85E7-89C4D5BC9523';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1664:36> a ea:XRef;
+  ea:client 'D42DDF6A-AFFF-401a-8EE2-A1FD76A61DF1';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1664:37> a ea:XRef;
+  ea:client '7A11F89C-FCBE-4a5a-95FB-28478EF1F265';
+  ea:stereotype '''interface''';
+.
+<urn:xref:1664:49> a ea:XRef;
+  ea:client 'BC4B2E66-AE4A-4d6b-9FC4-75512D4C20BB';
+  ea:stereotype '''Relatiesoort''';
+.
+<urn:xref:1664:50> a ea:XRef;
+  ea:client 'BC4B2E66-AE4A-4d6b-9FC4-75512D4C20BB';
+  ea:isDerived false;
+.
+<urn:xref:1664:51> a ea:XRef;
+  ea:client 'BC4B2E66-AE4A-4d6b-9FC4-75512D4C20BB';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:1664:52> a ea:XRef;
+  ea:client 'BC4B2E66-AE4A-4d6b-9FC4-75512D4C20BB';
+  ea:stereotype '''Relatierol''';
+.
+<urn:xref:1664:53> a ea:XRef;
+  ea:client 'BC4B2E66-AE4A-4d6b-9FC4-75512D4C20BB';
+  ea:isComposite false;
+  ea:isDerivedUnion false;
+  ea:default '''''';
+  ea:isReadOnly false;
+  ea:isDerived false;
+  ea:aggregation '''none''';
+.
+<urn:xref:1664:54> a ea:XRef;
+  ea:client '9A3F20A1-F5BF-4f30-B1D3-517A53140D6F';
+  ea:stereotype '''Generalisatie''';
+.
+<urn:xref:1664:55> a ea:XRef;
+  ea:client '8B7EF5FC-5228-4c0e-9380-41C684309C15';
+  ea:isDerived false;
 .
