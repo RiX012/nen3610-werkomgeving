@@ -288,7 +288,7 @@ mim-item-ns:CharacterString
 
 mim-item-ns:DummyIdentificeerbaarObject
         a                 sh:NodeShape , owl:Class ;
-        rdfs:comment      "Klasse opgenomen om attributen uit te kopi&#235;ren." ;
+        rdfs:comment      "Klasse opgenomen om attributen uit te kopiëren." ;
         rdfs:isDefinedBy  mim-model-ns:Basisinformatie-elementen ;
         rdfs:label        "DummyIdentificeerbaarObject" ;
         mim:equivalent    <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
@@ -352,7 +352,7 @@ mim-item-ns:Bodem  a      sh:NodeShape , owl:Class ;
 
 mim-model-ns:SemantischModel
         a               owl:Ontology ;
-        rdfs:comment    "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
+        rdfs:comment    "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast reële objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
         rdfs:label      "SemantischModel" ;
         mim:equivalent  <urn:uuid:AAB6354B-685C-4f41-8AD2-92A70007CA4D> ;
         skos:notation   "SemantischModel" .

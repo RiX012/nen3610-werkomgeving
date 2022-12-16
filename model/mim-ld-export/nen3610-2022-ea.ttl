@@ -33,7 +33,7 @@ Mim versie 1.1.1 is toegepast.''';
   ea:parent <urn:package:172>;
   rdfs:comment '''<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4
 
-Het semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object.
+Het semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast reële objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object.
 ''';
 .
 <urn:package:174> a ea:Package;
@@ -157,7 +157,7 @@ De basisinformatie-elementen zijn de elementen die een centrale rol spelen in NE
   ea:package <urn:package:172>;
   rdfs:comment '''<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4
 
-Het semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast re&#235;le objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object.
+Het semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast reële objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object.
 ''';
 .
 <urn:object:42> a ea:Object;
@@ -238,7 +238,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   ea:alias '''Leiding''';
   ea:abstract true;
   ea:package <urn:package:173>;
-  rdfs:comment '''Een geheel van geleiders of een ruimte die voorzien is van &#233;&#233;n ommanteling en bestemd is voor transport van materie, data en/of energie.''';
+  rdfs:comment '''Een geheel van geleiders of een ruimte die voorzien is van één ommanteling en bestemd is voor transport van materie, data en/of energie.''';
 .
 <urn:object:46> a ea:Object;
   ea:guid '507F9B4B-F77E-48f2-848E-2EB7220A99C6';
@@ -632,7 +632,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   rdfs:label '''iDToegestaneKarakters''';
   ea:abstract false;
   ea:package <urn:package:173>;
-  rdfs:comment '''identificatie.regExpMatch(([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+)''';
+  rdfs:comment '''identificatie.regExpMatch(([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+')''';
 .
 <urn:object:1018> a ea:Object;
   ea:guid '8A4801C0-D263-4a0b-99C5-A0C7A67FFE62';
@@ -718,7 +718,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   rdfs:label '''domeinToegestaneKarakters''';
   ea:abstract false;
   ea:package <urn:package:173>;
-  rdfs:comment '''identificatie.regExpMatch(([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+)''';
+  rdfs:comment '''identificatie.regExpMatch(([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+')''';
 .
 <urn:object:1026> a ea:Object;
   ea:guid 'DAECA380-235D-4a0a-95B9-A3C166AAC4BD';
@@ -755,7 +755,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   rdfs:label '''DummyIdentificeerbaarObject''';
   ea:abstract false;
   ea:package <urn:package:174>;
-  rdfs:comment '''Klasse opgenomen om attributen uit te kopi&#235;ren.''';
+  rdfs:comment '''Klasse opgenomen om attributen uit te kopiëren.''';
 .
 <urn:object:1030> a ea:Object;
   ea:guid '47CE152F-6789-46dc-A29F-33647F0A644A';
@@ -773,7 +773,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   rdfs:label '''VoidReasonValue''';
   ea:abstract false;
   ea:package <urn:package:175>;
-  rdfs:comment '''Reden waarom een nil-waarde is ingevuld.''';
+  rdfs:comment '''Reden waarom een 'nil'-waarde is ingevuld.''';
 .
 <urn:attribute:753> a ea:Attribute;
   ea:guid 'E0952809-0E6E-4680-9A20-13939546B747';
@@ -794,7 +794,7 @@ Het semantisch model classificeert de objecttypen waarbij locatie-informatie van
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:1029>;
   rdfs:comment '''Unieke identificatiecode van een informatieobject binnen de context van een registratie.
-Toelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+Toelichting:  identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
 De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -1005,7 +1005,7 @@ De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:991>;
   rdfs:comment '''Unieke identificatiecode van een informatieobject binnen de context van een registratie.
-Toelichting:  identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+Toelichting:  identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
 De reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:|]''';
   ea:lowerBound '''1''';
   ea:upperBound '''1''';
@@ -1018,7 +1018,7 @@ De reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:
   ea:stereotype '''Attribuutsoort''';
   ea:object <urn:object:991>;
   rdfs:comment '''Definitie: Aanduiding van het domein waarbinnen de identificatie uniek is.
-Toelichting: Het attribuut domein is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek.
+Toelichting: Het attribuut domein' is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek.
 
 ''';
   ea:lowerBound '''1''';
@@ -1814,7 +1814,7 @@ Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar da
   ea:element <urn:attribute:785>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+  ea:notes '''identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
 De reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+''';
 .
 <urn:attributetag:7375> a ea:Attributetag;
@@ -2101,7 +2101,7 @@ Description: Indicatie of de formele historie van het kenmerk van het object bij
   ea:element <urn:attribute:788>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag.''';
+  ea:notes '''Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag.''';
 .
 <urn:attributetag:7408> a ea:Attributetag;
   ea:guid 'EBF7A679-CC7F-45cc-AC76-5778C3D0DC6B';
@@ -2297,7 +2297,7 @@ Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar da
   ea:element <urn:attribute:754>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag.''';
+  ea:notes '''Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag.''';
 .
 <urn:attributetag:7066> a ea:Attributetag;
   ea:guid '98327E03-64C9-4564-B73F-25DB692D0826';
@@ -2326,7 +2326,7 @@ Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar da
   ea:element <urn:attribute:755>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment.''';
+  ea:notes '''Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'.''';
 .
 <urn:attributetag:7075> a ea:Attributetag;
   ea:guid 'BE7DA005-D88B-42d8-B641-73DEDF9D7235';
@@ -2366,7 +2366,7 @@ Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
   ea:element <urn:attribute:789>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment.''';
+  ea:notes '''Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'.''';
 .
 <urn:attributetag:7426> a ea:Attributetag;
   ea:guid '516262A9-6E2F-7c6e-9DD1-4AC7EF4189D7';
@@ -2843,7 +2843,7 @@ Description: Aanduiding of het kenmerk een authentiek gegeven betreft.
   ea:element <urn:attribute:769>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Het attribuut domein is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek.''';
+  ea:notes '''Het attribuut domein' is een unieke verwijzing naar de registratie of ketenproces verantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek.''';
 .
 <urn:attributetag:7233> a ea:Attributetag;
   ea:guid '6B33862D-45B3-a345-B55E-E7B9DDC1304E';
@@ -3557,7 +3557,7 @@ Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar da
   ea:element <urn:attribute:768>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes ''' identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
+  ea:notes ''' identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.
 
 De reguliere expressie voor de toegestane tekens is: [a-zA-Z| 0-9| _| .| -|\\/|:|]''';
 .
@@ -4700,7 +4700,7 @@ Ieder parcours bestaat in de regel uit de volgende onderdelen: Tee-box, Green, H
   ea:element <urn:object:1007>;
   ea:property '''Toelichting''';
   ea:value '''<memo>''';
-  ea:notes '''Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros.''';
+  ea:notes '''Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro's.''';
 .
 <urn:objectproperty:4791> a ea:ObjectProperty;
   ea:guid 'EBF7A679-4E9D-974e-9FBD-E51DBB14D503';

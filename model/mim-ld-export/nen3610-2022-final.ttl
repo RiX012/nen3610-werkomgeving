@@ -79,7 +79,7 @@ nen3610:Spoorverkeerruimte
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
-        mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." ;
+        mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro's." ;
         dct:subject                  nen3610-beg:spoorverkeerruimte ;
         skos:notation                "Spoorverkeerruimte" .
 
@@ -188,14 +188,12 @@ nen3610-sh:Registratie
                                        mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
-                                       dct:subject                     nen3610-beg:tijdstip_registratie ;
-                                       sh:datatype                     xsd:dateTime ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
+                                       dct:subject                     nen3610-beg:begin_geldigheid ;
                                        sh:maxCount                     1 ;
                                        sh:minCount                     1 ;
-                                       sh:name                         "tijdstipRegistratie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:tijdstipRegistratie
+                                       sh:name                         "beginGeldigheid" ;
+                                       sh:path                         nen3610:beginGeldigheid
                                      ] ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -203,12 +201,13 @@ nen3610-sh:Registratie
                                        mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment. Bij een datum (date) is dat het begin van die dag." ;
-                                       dct:subject                     nen3610-beg:begin_geldigheid ;
+                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
+                                       dct:subject                     nen3610-beg:eind_registratie ;
+                                       sh:datatype                     xsd:dateTime ;
                                        sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "beginGeldigheid" ;
-                                       sh:path                         nen3610:beginGeldigheid
+                                       sh:name                         "eindRegistratie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:eindRegistratie
                                      ] ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -231,7 +230,7 @@ nen3610-sh:Registratie
                                        mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment." ;
+                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." ;
                                        dct:subject                     nen3610-beg:eind_geldigheid ;
                                        sh:maxCount                     1 ;
                                        sh:name                         "eindGeldigheid" ;
@@ -243,13 +242,14 @@ nen3610-sh:Registratie
                                        mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
-                                       dct:subject                     nen3610-beg:eind_registratie ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
+                                       dct:subject                     nen3610-beg:tijdstip_registratie ;
                                        sh:datatype                     xsd:dateTime ;
                                        sh:maxCount                     1 ;
-                                       sh:name                         "eindRegistratie" ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "tijdstipRegistratie" ;
                                        sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:eindRegistratie
+                                       sh:path                         nen3610:tijdstipRegistratie
                                      ] ;
         sh:targetClass               nen3610:Registratie .
 
@@ -378,7 +378,7 @@ nen3610:tijdstipRegistratie
 
 nen3610:DummyIdentificeerbaarObject
         a                            owl:Class ;
-        rdfs:comment                 "Klasse opgenomen om attributen uit te kopi&#235;ren." ;
+        rdfs:comment                 "Klasse opgenomen om attributen uit te kopiëren." ;
         rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen> ;
         rdfs:label                   "DummyIdentificeerbaarObject" ;
         mim:datumOpname              "20220601" ;
@@ -643,7 +643,7 @@ nen3610-sh:Spoorverkeerruimte
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
-        mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." ;
+        mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metro's." ;
         dct:subject                  nen3610-beg:spoorverkeerruimte ;
         skos:notation                "Spoorverkeerruimte" ;
         sh:targetClass               nen3610:Spoorverkeerruimte .
@@ -773,7 +773,7 @@ nen3610:JuridischeRuimte
 
 nen3610-sh:DummyIdentificeerbaarObject
         a                            sh:NodeShape ;
-        rdfs:comment                 "Klasse opgenomen om attributen uit te kopi&#235;ren." ;
+        rdfs:comment                 "Klasse opgenomen om attributen uit te kopiëren." ;
         rdfs:label                   "DummyIdentificeerbaarObject" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -788,26 +788,8 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        mim:identificerend              true ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
-                                       dct:subject                     nen3610-beg:domein ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "domein" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:domein ;
-                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              true ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
                                        mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "identificatie is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       mim:toelichting                 "identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
                                        dct:subject                     nen3610-beg:identificatie ;
                                        sh:datatype                     xsd:string ;
                                        sh:maxCount                     1 ;
@@ -830,6 +812,24 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        sh:name                         "registratiegegevens" ;
                                        sh:nodeKind                     sh:IRI ;
                                        sh:path                         nen3610:registratiegegevens
+                                     ] ;
+        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
+                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
+                                       dct:subject                     nen3610-beg:domein ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "domein" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:domein ;
+                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
                                      ] ;
         sh:targetClass               nen3610:DummyIdentificeerbaarObject .
 
