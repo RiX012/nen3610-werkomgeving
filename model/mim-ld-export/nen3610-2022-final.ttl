@@ -23,6 +23,7 @@ nen3610:RegistratieveRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel." ;
+        dct:subject                  nen3610-beg:registratieve_ruimte ;
         skos:notation                "RegistratieveRuimte" .
 
 nen3610:Oppervlaktewater
@@ -36,6 +37,7 @@ nen3610:Oppervlaktewater
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Grondwater maakt geen deel uit van de superklasse." ;
+        dct:subject                  nen3610-beg:oppervlaktewater ;
         skos:notation                "Oppervlaktewater" .
 
 <http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen>
@@ -51,6 +53,7 @@ nen3610:Kunstwerk  a                 owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies. Overbruggingen kunnen zijn: brug, viaduct, aquaduct enz. Een voorbeeld van een waterstaatkundig werk is een sluis. Voorbeelden van waterkerende constructies zijn stuw en vaste dam." ;
+        dct:subject                  nen3610-beg:kunstwerk ;
         skos:notation                "Kunstwerk" .
 
 nen3610:Waterverplaatsingsruimte
@@ -63,6 +66,7 @@ nen3610:Waterverplaatsingsruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage." ;
+        dct:subject                  nen3610-beg:waterverplaatsingsruimte ;
         skos:notation                "Waterverplaatsingsruimte" .
 
 nen3610:Spoorverkeerruimte
@@ -76,6 +80,7 @@ nen3610:Spoorverkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." ;
+        dct:subject                  nen3610-beg:spoorverkeerruimte ;
         skos:notation                "Spoorverkeerruimte" .
 
 nen3610-sh:Begroeiing
@@ -87,6 +92,7 @@ nen3610-sh:Begroeiing
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan." ;
+        dct:subject                  nen3610-beg:begroeiing ;
         skos:notation                "Begroeiing" ;
         sh:targetClass               nen3610:Begroeiing .
 
@@ -100,11 +106,13 @@ nen3610:Verkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen." ;
+        dct:subject                  nen3610-beg:verkeerruimte ;
         skos:notation                "Verkeerruimte" .
 
 nen3610:beginGeldigheid
-        a           owl:DatatypeProperty ;
-        rdfs:label  "beginGeldigheid" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "beginGeldigheid" ;
+        dct:subject  nen3610-beg:begin_geldigheid .
 
 nen3610-sh:Verharding
         a                            sh:NodeShape ;
@@ -115,6 +123,7 @@ nen3610-sh:Verharding
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen." ;
+        dct:subject                  nen3610-beg:verharding ;
         skos:notation                "Verharding" ;
         sh:targetClass               nen3610:Verharding .
 
@@ -129,6 +138,7 @@ nen3610:VirtueleRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid." ;
+        dct:subject                  nen3610-beg:virtuele_ruimte ;
         skos:notation                "VirtueleRuimte" .
 
 nen3610-sh:Registratie
@@ -139,6 +149,7 @@ nen3610-sh:Registratie
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." ;
+        dct:subject                  nen3610-beg:objectregistratie ;
         skos:notation                "Registratie" ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -152,6 +163,39 @@ nen3610-sh:Registratie
                                        sh:name                         "objectEindTijd" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:objectEindTijd
+                                     ] ;
+        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              false ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
+                                       mim:toelichting                 "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren." ;
+                                       dct:subject                     nen3610-beg:versie ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:maxLength                    50 ;
+                                       sh:minLength                    1 ;
+                                       sh:name                         "versie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:versie
+                                     ] ;
+        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
+                                       dct:subject                     nen3610-beg:tijdstip_registratie ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "tijdstipRegistratie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:tijdstipRegistratie
                                      ] ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -197,24 +241,6 @@ nen3610-sh:Registratie
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              false ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
-                                       mim:toelichting                 "Een versie van een informatieobject is een toestand van een informatieobject met zijn gegevens op een bepaald moment in de tijd. Het attribuut versie maakt geen deel uit van de identificatie van het object, maar kan worden gebruikt om verschillende instanties van hetzelfde informatieobject te identificeren." ;
-                                       dct:subject                     nen3610-beg:versie ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:maxLength                    50 ;
-                                       sh:minLength                    1 ;
-                                       sh:name                         "versie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:versie
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
                                        mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
@@ -225,26 +251,12 @@ nen3610-sh:Registratie
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:eindRegistratie
                                      ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
-                                       dct:subject                     nen3610-beg:tijdstip_registratie ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "tijdstipRegistratie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:tijdstipRegistratie
-                                     ] ;
         sh:targetClass               nen3610:Registratie .
 
 nen3610:objectBeginTijd
-        a           owl:DatatypeProperty ;
-        rdfs:label  "objectBeginTijd" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "objectBeginTijd" ;
+        dct:subject  nen3610-beg:object_begintijd .
 
 nen3610:Leiding  a                   owl:Class ;
         rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
@@ -256,6 +268,7 @@ nen3610:Leiding  a                   owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Voorbeelden zijn: hoogspanningsleiding, riool, waterleiding, glasvezelkabel, gasleiding." ;
+        dct:subject                  nen3610-beg:leiding ;
         skos:notation                "Leiding" .
 
 <http://modellen.geostandaarden.nl/def/nen3610-2022>
@@ -271,11 +284,13 @@ nen3610:Constructie  a               owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis, brug, asfalt, waterleiding, fabriek, mijnstelsel." ;
+        dct:subject                  nen3610-beg:constructie ;
         skos:notation                "Constructie" .
 
 nen3610:eindRegistratie
-        a           owl:DatatypeProperty ;
-        rdfs:label  "eindRegistratie" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "eindRegistratie" ;
+        dct:subject  nen3610-beg:eind_registratie .
 
 <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel>
         a       owl:Ontology .
@@ -290,6 +305,7 @@ nen3610:Begroeiing  a                owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Begroeiing kan dus spontaan of natuurlijk zijn (vegetatie), maar ook door menselijk toedoen tot stand zijn gekomen (aanplant of beplanting) of combinaties daarvan." ;
+        dct:subject                  nen3610-beg:begroeiing ;
         skos:notation                "Begroeiing" .
 
 nen3610-sh:GeografischeRuimte
@@ -301,6 +317,7 @@ nen3610-sh:GeografischeRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. " ;
+        dct:subject                  nen3610-beg:geografische_ruimte ;
         skos:notation                "GeografischeRuimte" ;
         sh:targetClass               nen3610:GeografischeRuimte .
 
@@ -313,12 +330,14 @@ nen3610-sh:ReeelObject
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door zijn materiele samenstelling en structuur." ;
+        dct:subject                  nen3610-beg:reeel_object ;
         skos:notation                "ReeelObject" ;
         sh:targetClass               nen3610:ReeelObject .
 
 nen3610:eindGeldigheid
-        a           owl:DatatypeProperty ;
-        rdfs:label  "eindGeldigheid" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "eindGeldigheid" ;
+        dct:subject  nen3610-beg:eind_geldigheid .
 
 nen3610-sh:Verkeerruimte
         a                            sh:NodeShape ;
@@ -328,14 +347,16 @@ nen3610-sh:Verkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Verkeerruimten zijn transportruimten die specifiek bedoeld zijn voor het verplaatsen van mensen of goederen al dan niet met vervoersmiddelen, zoals bijvoorbeeld treinen, schepen en vliegtuigen." ;
+        dct:subject                  nen3610-beg:verkeerruimte ;
         skos:notation                "Verkeerruimte" ;
         sh:targetClass               nen3610:Verkeerruimte .
 
 <http://modellen.geostandaarden.nl/def/nen3610-2022/Waardelijsten>
         a       owl:Ontology .
 
-nen3610:versie  a   owl:DatatypeProperty ;
-        rdfs:label  "versie" .
+nen3610:versie  a    owl:DatatypeProperty ;
+        rdfs:label   "versie" ;
+        dct:subject  nen3610-beg:versie .
 
 nen3610-sh:RegistratieveRuimte
         a                            sh:NodeShape ;
@@ -346,12 +367,14 @@ nen3610-sh:RegistratieveRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Registratieve ruimte omvat objecten die onder de wet- of regelgeving vallen of die voor bedrijfsvoering administratief van belang zijn. In veel gevallen zal een dergelijk gebied ook een registratieve aanduiding of registratief nummer hebben. Voorbeelden zijn: gemeente Delft, postcodegebied 2345, politieregio Haaglanden, veiligheidsregio Gelderland-Midden, Nationaal Park De Hoge Veluwe, kadastraal perceel." ;
+        dct:subject                  nen3610-beg:registratieve_ruimte ;
         skos:notation                "RegistratieveRuimte" ;
         sh:targetClass               nen3610:RegistratieveRuimte .
 
 nen3610:tijdstipRegistratie
-        a           owl:DatatypeProperty ;
-        rdfs:label  "tijdstipRegistratie" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "tijdstipRegistratie" ;
+        dct:subject  nen3610-beg:tijdstip_registratie .
 
 nen3610:DummyIdentificeerbaarObject
         a                            owl:Class ;
@@ -365,8 +388,9 @@ nen3610:DummyIdentificeerbaarObject
         mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." ;
         skos:notation                "DummyIdentificeerbaarObject" .
 
-nen3610:domein  a   owl:DatatypeProperty ;
-        rdfs:label  "domein" .
+nen3610:domein  a    owl:DatatypeProperty ;
+        rdfs:label   "domein" ;
+        dct:subject  nen3610-beg:domein .
 
 nen3610:FunctioneleRuimte
         a                            owl:Class ;
@@ -379,6 +403,7 @@ nen3610:FunctioneleRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing van reële objecten." ;
+        dct:subject                  nen3610-beg:functionele_ruimte ;
         skos:notation                "FunctioneleRuimte" .
 
 nen3610:GeoObject  a                 owl:Class ;
@@ -390,6 +415,7 @@ nen3610:GeoObject  a                 owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType»." ;
+        dct:subject                  nen3610-beg:geo-object ;
         skos:notation                "GeoObject" .
 
 nen3610-sh:FunctioneleRuimte
@@ -401,6 +427,7 @@ nen3610-sh:FunctioneleRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een functionele ruimte wordt gebruikt om een (gebruiks)functie aan een ruimte toe te kennen. Het functionele gebruik van de ruimte volgt niet altijd de fysieke begrenzing van reële objecten." ;
+        dct:subject                  nen3610-beg:functionele_ruimte ;
         skos:notation                "FunctioneleRuimte" ;
         sh:targetClass               nen3610:FunctioneleRuimte .
 
@@ -412,6 +439,7 @@ nen3610-sh:Transportruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." ;
+        dct:subject                  nen3610-beg:transportruimte ;
         skos:notation                "Transportruimte" ;
         sh:targetClass               nen3610:Transportruimte .
 
@@ -423,6 +451,7 @@ nen3610:Registratie  a               owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." ;
+        dct:subject                  nen3610-beg:objectregistratie ;
         skos:notation                "Registratie" .
 
 nen3610-sh:Waterverplaatsingsruimte
@@ -433,12 +462,14 @@ nen3610-sh:Waterverplaatsingsruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een waterverplaatsingsruimte realiseert het hydrologisch aspect van water en met name de oppervlaktewaterhydrologie. Het benoemt de ruimte die wordt gebruikt voor o.a. afwatering, watertoevoer en drainage." ;
+        dct:subject                  nen3610-beg:waterverplaatsingsruimte ;
         skos:notation                "Waterverplaatsingsruimte" ;
         sh:targetClass               nen3610:Waterverplaatsingsruimte .
 
 nen3610:objectEindTijd
-        a           owl:DatatypeProperty ;
-        rdfs:label  "objectEindTijd" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "objectEindTijd" ;
+        dct:subject  nen3610-beg:object_eindtijd .
 
 nen3610:GeografischeRuimte
         a                            owl:Class ;
@@ -451,6 +482,7 @@ nen3610:GeografischeRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "De grenzen zijn niet altijd exact vastgesteld. Voorbeelden zijn: Noordoostpolder, Midden-Nederland, rivierengebied, Veluwe, Zuid-Limburg, kustgebied. " ;
+        dct:subject                  nen3610-beg:geografische_ruimte ;
         skos:notation                "GeografischeRuimte" .
 
 nen3610-sh:GeoObject  a              sh:NodeShape ;
@@ -461,6 +493,7 @@ nen3610-sh:GeoObject  a              sh:NodeShape ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Van dit objecttype worden geen directe instanties gemaakt. Indien een object een geo-object is, is het altijd een instantie van een subklasse van GeoObject. Alle subklassen van GeoObject hebben conform MIM het stereotype «Objecttype». Voor publicatie conform NEN-EN-ISO 19109:2015 is het stereotype «FeatureType» verplicht. Binnen de context van NEN 3610 is «Objecttype» het equivalent van «FeatureType»." ;
+        dct:subject                  nen3610-beg:geo-object ;
         skos:notation                "GeoObject" ;
         sh:targetClass               nen3610:GeoObject .
 
@@ -472,6 +505,7 @@ nen3610-sh:Wegverkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer." ;
+        dct:subject                  nen3610-beg:wegverkeerruimte ;
         skos:notation                "Wegverkeerruimte" ;
         sh:targetClass               nen3610:Wegverkeerruimte .
 
@@ -483,6 +517,7 @@ nen3610-sh:Gebouw  a                 sh:NodeShape ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Voorbeelden zijn: huis, schuur, flatgebouw, huizenblok, fabriek." ;
+        dct:subject                  nen3610-beg:gebouw ;
         skos:notation                "Gebouw" ;
         sh:targetClass               nen3610:Gebouw .
 
@@ -495,6 +530,7 @@ nen3610-sh:Oppervlaktewater
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Grondwater maakt geen deel uit van de superklasse." ;
+        dct:subject                  nen3610-beg:oppervlaktewater ;
         skos:notation                "Oppervlaktewater" ;
         sh:targetClass               nen3610:Oppervlaktewater .
 
@@ -506,6 +542,7 @@ nen3610-sh:VoidReasonValue
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
+        dct:subject                  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
         skos:notation                "VoidReasonValue" ;
         sh:targetClass               nen3610:VoidReasonValue .
 
@@ -518,6 +555,7 @@ nen3610-sh:VirtueleRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Virtuele ruimten bevatten geo-objecten waarvan de begrenzing of een gedeelte van de begrenzing niet tastbaar en dus ook niet zichtbaar aanwezig is. Het betreft veelal het administratief of wettelijk benoemen en vastleggen van ruimten. Voorbeelden zijn objecten voor bestuurlijke grenzen, eigendomsbegrenzing, beheerbegrenzingen, ruimtelijk beleid." ;
+        dct:subject                  nen3610-beg:virtuele_ruimte ;
         skos:notation                "VirtueleRuimte" ;
         sh:targetClass               nen3610:VirtueleRuimte .
 
@@ -531,6 +569,7 @@ nen3610:Verharding  a                owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een verharding is fysiek begrensd aanwezig. Het type gebruik van de verharding kan meervoudig zijn en hoeft niet de fysieke begrenzing te volgen." ;
+        dct:subject                  nen3610-beg:verharding ;
         skos:notation                "Verharding" .
 
 nen3610:Transportruimte
@@ -543,6 +582,7 @@ nen3610:Transportruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." ;
+        dct:subject                  nen3610-beg:transportruimte ;
         skos:notation                "Transportruimte" .
 
 nen3610:ReeelObject  a               owl:Class ;
@@ -555,6 +595,7 @@ nen3610:ReeelObject  a               owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Een reëel of fysiek object is een tastbaar begrensd object dat gekenmerkt wordt door zijn materiele samenstelling en structuur." ;
+        dct:subject                  nen3610-beg:reeel_object ;
         skos:notation                "ReeelObject" .
 
 nen3610-sh:Luchtvaartruimte
@@ -565,6 +606,7 @@ nen3610-sh:Luchtvaartruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters." ;
+        dct:subject                  nen3610-beg:luchtvaartruimte ;
         skos:notation                "Luchtvaartruimte" ;
         sh:targetClass               nen3610:Luchtvaartruimte .
 
@@ -578,6 +620,7 @@ nen3610:Luchtvaartruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters." ;
+        dct:subject                  nen3610-beg:luchtvaartruimte ;
         skos:notation                "Luchtvaartruimte" .
 
 nen3610-sh:Leiding  a                sh:NodeShape ;
@@ -588,6 +631,7 @@ nen3610-sh:Leiding  a                sh:NodeShape ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Voorbeelden zijn: hoogspanningsleiding, riool, waterleiding, glasvezelkabel, gasleiding." ;
+        dct:subject                  nen3610-beg:leiding ;
         skos:notation                "Leiding" ;
         sh:targetClass               nen3610:Leiding .
 
@@ -600,6 +644,7 @@ nen3610-sh:Spoorverkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Spoorverkeerruimte wordt gebruikt door bijvoorbeeld treinen, trams en metros." ;
+        dct:subject                  nen3610-beg:spoorverkeerruimte ;
         skos:notation                "Spoorverkeerruimte" ;
         sh:targetClass               nen3610:Spoorverkeerruimte .
 
@@ -611,6 +656,7 @@ nen3610-sh:Bodem  a                  sh:NodeShape ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld bodemkunde, geologie, geohydrologie en geomorfologie." ;
+        dct:subject                  nen3610-beg:bodem ;
         skos:notation                "Bodem" ;
         sh:targetClass               nen3610:Bodem .
 
@@ -624,6 +670,7 @@ nen3610:Scheepvaartruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Scheepvaartruimte wordt gebruikt door allerlei soorten schepen." ;
+        dct:subject                  nen3610-beg:scheepvaartruimte ;
         skos:notation                "Scheepvaartruimte" .
 
 nen3610:Bodem  a                     owl:Class ;
@@ -636,11 +683,13 @@ nen3610:Bodem  a                     owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Bodem verwijst naar een typering en/of benoeming van het aardoppervlak, waarbij de bodem doorloopt onder het oppervlaktewater.  Bodem omvat ook de daaronder liggende bodemmaterialen met indelingen die kunnen verschillen per vakgebied zoals bijvoorbeeld bodemkunde, geologie, geohydrologie en geomorfologie." ;
+        dct:subject                  nen3610-beg:bodem ;
         skos:notation                "Bodem" .
 
 nen3610:identificatie
-        a           owl:DatatypeProperty ;
-        rdfs:label  "identificatie" .
+        a            owl:DatatypeProperty ;
+        rdfs:label   "identificatie" ;
+        dct:subject  nen3610-beg:identificatie .
 
 nen3610-sh:Scheepvaartruimte
         a                            sh:NodeShape ;
@@ -650,6 +699,7 @@ nen3610-sh:Scheepvaartruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Scheepvaartruimte wordt gebruikt door allerlei soorten schepen." ;
+        dct:subject                  nen3610-beg:scheepvaartruimte ;
         skos:notation                "Scheepvaartruimte" ;
         sh:targetClass               nen3610:Scheepvaartruimte .
 
@@ -662,6 +712,7 @@ nen3610:VoidReasonValue
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
+        dct:subject                  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
         skos:notation                "VoidReasonValue" .
 
 nen3610:Gebouw  a                    owl:Class ;
@@ -674,6 +725,7 @@ nen3610:Gebouw  a                    owl:Class ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Voorbeelden zijn: huis, schuur, flatgebouw, huizenblok, fabriek." ;
+        dct:subject                  nen3610-beg:gebouw ;
         skos:notation                "Gebouw" .
 
 nen3610-sh:Kunstwerk  a              sh:NodeShape ;
@@ -684,6 +736,7 @@ nen3610-sh:Kunstwerk  a              sh:NodeShape ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Hieronder vallen overbruggingen, waterstaatkundige werken en waterkerende constructies. Overbruggingen kunnen zijn: brug, viaduct, aquaduct enz. Een voorbeeld van een waterstaatkundig werk is een sluis. Voorbeelden van waterkerende constructies zijn stuw en vaste dam." ;
+        dct:subject                  nen3610-beg:kunstwerk ;
         skos:notation                "Kunstwerk" ;
         sh:targetClass               nen3610:Kunstwerk .
 
@@ -700,6 +753,7 @@ nen3610-sh:JuridischeRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Juridische ruimte omvat objecten die zijn gekoppeld aan wet- en beleidsinformatie die aangeeft wat waar krachtens wetgeving of wettelijk beleid is geformuleerd. Voorbeelden zijn: benoeming van ruimten en gebieden in bijvoorbeeld omgevingsvisie, omgevingsverordening, waterschapsverordening, projectbesluit." ;
+        dct:subject                  nen3610-beg:juridische_ruimte ;
         skos:notation                "JuridischeRuimte" ;
         sh:targetClass               nen3610:JuridischeRuimte .
 
@@ -714,6 +768,7 @@ nen3610:JuridischeRuimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Juridische ruimte omvat objecten die zijn gekoppeld aan wet- en beleidsinformatie die aangeeft wat waar krachtens wetgeving of wettelijk beleid is geformuleerd. Voorbeelden zijn: benoeming van ruimten en gebieden in bijvoorbeeld omgevingsvisie, omgevingsverordening, waterschapsverordening, projectbesluit." ;
+        dct:subject                  nen3610-beg:juridische_ruimte ;
         skos:notation                "JuridischeRuimte" .
 
 nen3610-sh:DummyIdentificeerbaarObject
@@ -730,15 +785,19 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject." ;
-                                       sh:class                        nen3610:Registratie ;
+                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
+                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
+                                       dct:subject                     nen3610-beg:domein ;
+                                       sh:datatype                     xsd:string ;
                                        sh:maxCount                     1 ;
                                        sh:minCount                     1 ;
-                                       sh:name                         "registratiegegevens" ;
-                                       sh:nodeKind                     sh:IRI ;
-                                       sh:path                         nen3610:registratiegegevens
+                                       sh:name                         "domein" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:domein ;
+                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
                                      ] ;
         sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -762,19 +821,15 @@ nen3610-sh:DummyIdentificeerbaarObject
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              true ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
-                                       dct:subject                     nen3610-beg:domein ;
-                                       sh:datatype                     xsd:string ;
+                                       mim:toelichting                 "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject." ;
+                                       sh:class                        nen3610:Registratie ;
                                        sh:maxCount                     1 ;
                                        sh:minCount                     1 ;
-                                       sh:name                         "domein" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:domein ;
-                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+                                       sh:name                         "registratiegegevens" ;
+                                       sh:nodeKind                     sh:IRI ;
+                                       sh:path                         nen3610:registratiegegevens
                                      ] ;
         sh:targetClass               nen3610:DummyIdentificeerbaarObject .
 
@@ -786,6 +841,7 @@ nen3610-sh:Constructie
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Constructie kan boven- en ondergrondse objecten betreffen. Voorbeelden zijn: huis, brug, asfalt, waterleiding, fabriek, mijnstelsel." ;
+        dct:subject                  nen3610-beg:constructie ;
         skos:notation                "Constructie" ;
         sh:targetClass               nen3610:Constructie .
 
@@ -799,4 +855,5 @@ nen3610:Wegverkeerruimte
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  true ;
         mim:toelichting              "Wegverkeerruimten worden gebruikt door bijvoorbeeld voetgangers, fietsers en autoverkeer." ;
+        dct:subject                  nen3610-beg:wegverkeerruimte ;
         skos:notation                "Wegverkeerruimte" .
