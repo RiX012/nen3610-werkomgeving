@@ -7,8 +7,11 @@
 # - https://github.com/architolk/mimtools
 #
 
+#Debug
+#java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -e "../nen3610-2022-template - 20221216.eap" > nen3610-2022-db.ttl
+
 # First step: transform native EAP format to RDF
-java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -ea -e "../nen3610-2022-template - 20221207.eap" > nen3610-2022-ea.ttl
+java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -ea -e "../nen3610-2022-template - 20221216.eap" > nen3610-2022-ea.ttl
 
 # Second step: transform EA model in RDF to MIM in RDF
 java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ea.ttl nen3610-2022-mim-all.ttl ~/GITREPO/mimtools/ea2mim.yaml
@@ -19,8 +22,11 @@ java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim-all.ttl nen3610-
 # Fourth step: transform MIM model in RDF to RDFS/OWL/SHACL ontology
 java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim.ttl nen3610-2022-ont.ttl ~/GITREPO/mimtools/mim2onto.yaml
 
-# Fifth step: create diagram from ontology
-java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar nen3610-2022-ont.ttl nen3610-2022-model.graphml ~/GITREPO/rdf2xml/rdf2graphml.xsl
+# Fifth step: specific NEN3610 steps
+java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ont.ttl ../nen3610-2022-ontologie.ttl nen3610.yaml nen3610-2022-mim.ttl
 
-# Sixth step: specific NEN3610 steps
-java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ont.ttl nen3610-2022-final.ttl nen3610.yaml nen3610-2022-mim.ttl
+# Sixth step: create diagram from ontology
+java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar ../nen3610-2022-ontologie.ttl nen3610-2022-model.graphml ~/GITREPO/rdf2xml/rdf2graphml.xsl
+
+# Seventh step: create MD file for respec page
+java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar ../nen3610-2022-ontologie.ttl nen3610-2022-model.md ~/GITREPO/rdf2xml/rdf2md.xsl

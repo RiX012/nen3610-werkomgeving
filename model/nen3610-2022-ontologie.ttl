@@ -5,6 +5,8 @@
 @prefix mim-model-ns: <http://ontology.mim-namespace.org/> .
 @prefix nen3610:      <http://modellen.geostandaarden.nl/def/nen3610-2022#> .
 @prefix nen3610-beg:  <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/> .
+@prefix nen3610-col:  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/> .
+@prefix nen3610-ont:  <http://modellen.geostandaarden.nl/def/nen3610-2022/> .
 @prefix nen3610-sh:   <http://modellen.geostandaarden.nl/nen3610-2022/id/shape/> .
 @prefix owl:          <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,7 +16,8 @@
 
 nen3610:RegistratieveRuimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "RegistratieveRuimte" ;
         rdfs:subClassOf              nen3610:VirtueleRuimte ;
         mim:alias                    "Registratieve ruimte" ;
@@ -28,7 +31,8 @@ nen3610:RegistratieveRuimte
 
 nen3610:Oppervlaktewater
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Oppervlaktewater" ;
         rdfs:subClassOf              nen3610:ReeelObject ;
         mim:alias                    "Oppervlaktewater" ;
@@ -40,11 +44,12 @@ nen3610:Oppervlaktewater
         dct:subject                  nen3610-beg:oppervlaktewater ;
         skos:notation                "Oppervlaktewater" .
 
-<http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen>
+nen3610-ont:Basisinformatie-elementen
         a       owl:Ontology .
 
 nen3610:Kunstwerk  a                 owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Kunstwerk" ;
         rdfs:subClassOf              nen3610:Constructie ;
         mim:alias                    "Kunstwerk" ;
@@ -58,7 +63,8 @@ nen3610:Kunstwerk  a                 owl:Class ;
 
 nen3610:Waterverplaatsingsruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Transportruimte waardoor water zich verplaatst." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Waterverplaatsingsruimte" ;
         rdfs:subClassOf              nen3610:Transportruimte ;
         mim:datumOpname              "20220601" ;
@@ -71,7 +77,8 @@ nen3610:Waterverplaatsingsruimte
 
 nen3610:Spoorverkeerruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Spoorverkeerruimte" ;
         rdfs:subClassOf              nen3610:Verkeerruimte ;
         mim:alias                    "Spoorverkeerruimte" ;
@@ -85,6 +92,7 @@ nen3610:Spoorverkeerruimte
 
 nen3610-sh:Begroeiing
         a                            sh:NodeShape ;
+        rdfs:comment                 "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
         rdfs:label                   "Begroeiing" ;
         mim:alias                    "Begroeiing" ;
         mim:datumOpname              "20220601" ;
@@ -96,9 +104,22 @@ nen3610-sh:Begroeiing
         skos:notation                "Begroeiing" ;
         sh:targetClass               nen3610:Begroeiing .
 
+nen3610:IdentificeerbaarObject
+        a                            owl:Class ;
+        rdfs:comment                 "Klasse opgenomen om identificatie-attributen in te definiëren." ;
+        rdfs:isDefinedBy             nen3610-ont:Basisinformatie-elementen ;
+        rdfs:label                   "IdentificeerbaarObject" ;
+        mim:datumOpname              "20221216" ;
+        mim:herkomst                 "nen 3610" ;
+        mim:herkomstDefinitie        "nen 3610" ;
+        mim:indicatieAbstractObject  false ;
+        mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." ;
+        skos:notation                "IdentificeerbaarObject" .
+
 nen3610:Verkeerruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Transportruimte voor verkeer via land, water of lucht." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Verkeerruimte" ;
         rdfs:subClassOf              nen3610:Transportruimte ;
         mim:datumOpname              "20220601" ;
@@ -116,6 +137,7 @@ nen3610:beginGeldigheid
 
 nen3610-sh:Verharding
         a                            sh:NodeShape ;
+        rdfs:comment                 "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
         rdfs:label                   "Verharding" ;
         mim:alias                    "Verharding" ;
         mim:datumOpname              "20220601" ;
@@ -129,7 +151,8 @@ nen3610-sh:Verharding
 
 nen3610:VirtueleRuimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "VirtueleRuimte" ;
         rdfs:subClassOf              nen3610:GeoObject ;
         mim:alias                    "Virtuele ruimte" ;
@@ -143,6 +166,7 @@ nen3610:VirtueleRuimte
 
 nen3610-sh:Registratie
         a                            sh:NodeShape ;
+        rdfs:comment                 "Vastlegging van een versie van een set gegevens." ;
         rdfs:label                   "Registratie" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -151,7 +175,24 @@ nen3610-sh:Registratie
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." ;
         dct:subject                  nen3610-beg:objectregistratie ;
         skos:notation                "Registratie" ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
+                                       dct:subject                     nen3610-beg:eind_registratie ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:group                        nen3610-sh:TijdlijnRegistratie ;
+                                       sh:maxCount                     1 ;
+                                       sh:name                         "eindRegistratie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:eindRegistratie
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
@@ -160,15 +201,33 @@ nen3610-sh:Registratie
                                        mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
                                        dct:subject                     nen3610-beg:object_eindtijd ;
                                        sh:datatype                     xsd:dateTime ;
+                                       sh:group                        nen3610-sh:Levensduur ;
                                        sh:name                         "objectEindTijd" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:objectEindTijd
                                      ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+        sh:property                  [ rdfs:comment                    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              false ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
+                                       dct:subject                     nen3610-beg:begin_geldigheid ;
+                                       sh:datatype                     xsd:date ;
+                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "beginGeldigheid" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:beginGeldigheid
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Versieaanduiding van een informatieobject." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
                                        mim:patroon                     "Waarde van attribuut versie mag maximaal 50 karakters bevatten." ;
@@ -182,49 +241,8 @@ nen3610-sh:Registratie
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:versie
                                      ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
-                                       dct:subject                     nen3610-beg:begin_geldigheid ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "beginGeldigheid" ;
-                                       sh:path                         nen3610:beginGeldigheid
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
-                                       dct:subject                     nen3610-beg:eind_registratie ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:maxCount                     1 ;
-                                       sh:name                         "eindRegistratie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:eindRegistratie
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
-                                       dct:subject                     nen3610-beg:object_begintijd ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "objectBeginTijd" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:objectBeginTijd
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
@@ -232,11 +250,15 @@ nen3610-sh:Registratie
                                        mim:indicatieMaterieleHistorie  false ;
                                        mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." ;
                                        dct:subject                     nen3610-beg:eind_geldigheid ;
+                                       sh:datatype                     xsd:date ;
+                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
                                        sh:maxCount                     1 ;
                                        sh:name                         "eindGeldigheid" ;
+                                       sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:eindGeldigheid
                                      ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+        sh:property                  [ rdfs:comment                    "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
@@ -245,11 +267,29 @@ nen3610-sh:Registratie
                                        mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstip registratie zal DateTime in vrijwel alle gevallen de beste keuze zijn." ;
                                        dct:subject                     nen3610-beg:tijdstip_registratie ;
                                        sh:datatype                     xsd:dateTime ;
+                                       sh:group                        nen3610-sh:TijdlijnRegistratie ;
                                        sh:maxCount                     1 ;
                                        sh:minCount                     1 ;
                                        sh:name                         "tijdstipRegistratie" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:tijdstipRegistratie
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Tijdsaanduiding waarop het object in de werkelijkheid is ontstaan." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime." ;
+                                       dct:subject                     nen3610-beg:object_begintijd ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:group                        nen3610-sh:Levensduur ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "objectBeginTijd" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:objectBeginTijd
                                      ] ;
         sh:targetClass               nen3610:Registratie .
 
@@ -259,7 +299,8 @@ nen3610:objectBeginTijd
         dct:subject  nen3610-beg:object_begintijd .
 
 nen3610:Leiding  a                   owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Een geheel van geleiders of een ruimte die voorzien is van één ommanteling en bestemd is voor transport van materie, data en/of energie." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Leiding" ;
         rdfs:subClassOf              nen3610:Constructie ;
         mim:alias                    "Leiding" ;
@@ -273,10 +314,11 @@ nen3610:Leiding  a                   owl:Class ;
 
 <http://modellen.geostandaarden.nl/def/nen3610-2022>
         a            owl:Ontology ;
-        owl:imports  <http://modellen.geostandaarden.nl/def/nen3610-2022/Waardelijsten> , <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> , <http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen> .
+        owl:imports  nen3610-ont:Waardelijsten , nen3610-ont:SemantischModel , nen3610-ont:Basisinformatie-elementen .
 
 nen3610:Constructie  a               owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Constructie" ;
         rdfs:subClassOf              nen3610:ReeelObject ;
         mim:datumOpname              "20220601" ;
@@ -292,11 +334,16 @@ nen3610:eindRegistratie
         rdfs:label   "eindRegistratie" ;
         dct:subject  nen3610-beg:eind_registratie .
 
-<http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel>
+nen3610-sh:TijdlijnRegistratie
+        a           sh:PropertyGroup ;
+        rdfs:label  "TijdlijnRegistratie" .
+
+nen3610-ont:SemantischModel
         a       owl:Ontology .
 
 nen3610:Begroeiing  a                owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Planten die op natuurlijke wijze zijn ontstaan of door mensen zijn aangeplant." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Begroeiing" ;
         rdfs:subClassOf              nen3610:ReeelObject ;
         mim:alias                    "Begroeiing" ;
@@ -310,6 +357,7 @@ nen3610:Begroeiing  a                owl:Class ;
 
 nen3610-sh:GeografischeRuimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
         rdfs:label                   "GeografischeRuimte" ;
         mim:alias                    "Geografische ruimte" ;
         mim:datumOpname              "20220601" ;
@@ -323,6 +371,7 @@ nen3610-sh:GeografischeRuimte
 
 nen3610-sh:ReeelObject
         a                            sh:NodeShape ;
+        rdfs:comment                 "Geo-object dat zich geheel materieel manifesteert." ;
         rdfs:label                   "ReeelObject" ;
         mim:alias                    "Reëel object" ;
         mim:datumOpname              "20220601" ;
@@ -341,6 +390,7 @@ nen3610:eindGeldigheid
 
 nen3610-sh:Verkeerruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Transportruimte voor verkeer via land, water of lucht." ;
         rdfs:label                   "Verkeerruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -351,8 +401,9 @@ nen3610-sh:Verkeerruimte
         skos:notation                "Verkeerruimte" ;
         sh:targetClass               nen3610:Verkeerruimte .
 
-<http://modellen.geostandaarden.nl/def/nen3610-2022/Waardelijsten>
-        a       owl:Ontology .
+nen3610-ont:Waardelijsten
+        a            owl:Ontology ;
+        owl:imports  <https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fmogelijk_geen_waarde&format=text/turtle> .
 
 nen3610:versie  a    owl:DatatypeProperty ;
         rdfs:label   "versie" ;
@@ -360,6 +411,7 @@ nen3610:versie  a    owl:DatatypeProperty ;
 
 nen3610-sh:RegistratieveRuimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Op basis van wet- of regelgeving afgebakende ruimte die als eenheid geldt van politiek-bestuurlijke verantwoordelijkheid of voor bedrijfsvoering." ;
         rdfs:label                   "RegistratieveRuimte" ;
         mim:alias                    "Registratieve ruimte" ;
         mim:datumOpname              "20220601" ;
@@ -376,17 +428,68 @@ nen3610:tijdstipRegistratie
         rdfs:label   "tijdstipRegistratie" ;
         dct:subject  nen3610-beg:tijdstip_registratie .
 
-nen3610:DummyIdentificeerbaarObject
-        a                            owl:Class ;
-        rdfs:comment                 "Klasse opgenomen om attributen uit te kopiëren." ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen> ;
-        rdfs:label                   "DummyIdentificeerbaarObject" ;
-        mim:datumOpname              "20220601" ;
+nen3610-sh:IdentificeerbaarObject
+        a                            sh:NodeShape ;
+        rdfs:comment                 "Klasse opgenomen om identificatie-attributen in te definiëren." ;
+        rdfs:label                   "IdentificeerbaarObject" ;
+        mim:datumOpname              "20221216" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
-        mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." ;
-        skos:notation                "DummyIdentificeerbaarObject" .
+        mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." ;
+        skos:notation                "IdentificeerbaarObject" ;
+        sh:property                  [ rdfs:comment                    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
+                                       mim:toelichting                 "identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
+                                       dct:subject                     nen3610-beg:identificatie ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "identificatie" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:identificatie ;
+                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Aanduiding van het domein waarbinnen de identificatie uniek is." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:identificerend              true ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
+                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
+                                       dct:subject                     nen3610-beg:domein ;
+                                       sh:datatype                     xsd:string ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "domein" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:domein ;
+                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
+                                     ] ;
+        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject." ;
+                                       sh:class                        nen3610:Registratie ;
+                                       sh:maxCount                     1 ;
+                                       sh:name                         "registratiegegevens" ;
+                                       sh:nodeKind                     sh:IRI ;
+                                       sh:path                         nen3610:registratiegegevens
+                                     ] ;
+        sh:targetClass               nen3610:IdentificeerbaarObject .
 
 nen3610:domein  a    owl:DatatypeProperty ;
         rdfs:label   "domein" ;
@@ -394,7 +497,8 @@ nen3610:domein  a    owl:DatatypeProperty ;
 
 nen3610:FunctioneleRuimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Ruimte met een specifieke functie." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "FunctioneleRuimte" ;
         rdfs:subClassOf              nen3610:VirtueleRuimte ;
         mim:alias                    "Functionele ruimte" ;
@@ -406,8 +510,13 @@ nen3610:FunctioneleRuimte
         dct:subject                  nen3610-beg:functionele_ruimte ;
         skos:notation                "FunctioneleRuimte" .
 
+nen3610-sh:TijdlijnGeldigheid
+        a           sh:PropertyGroup ;
+        rdfs:label  "TijdlijnGeldigheid" .
+
 nen3610:GeoObject  a                 owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "GeoObject" ;
         mim:alias                    "Geo-object" ;
         mim:datumOpname              "20220601" ;
@@ -420,6 +529,7 @@ nen3610:GeoObject  a                 owl:Class ;
 
 nen3610-sh:FunctioneleRuimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Ruimte met een specifieke functie." ;
         rdfs:label                   "FunctioneleRuimte" ;
         mim:alias                    "Functionele ruimte" ;
         mim:datumOpname              "20220601" ;
@@ -433,6 +543,7 @@ nen3610-sh:FunctioneleRuimte
 
 nen3610-sh:Transportruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
         rdfs:label                   "Transportruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -444,7 +555,8 @@ nen3610-sh:Transportruimte
         sh:targetClass               nen3610:Transportruimte .
 
 nen3610:Registratie  a               owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/Basisinformatie-elementen> ;
+        rdfs:comment                 "Vastlegging van een versie van een set gegevens." ;
+        rdfs:isDefinedBy             nen3610-ont:Basisinformatie-elementen ;
         rdfs:label                   "Registratie" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -456,6 +568,7 @@ nen3610:Registratie  a               owl:Class ;
 
 nen3610-sh:Waterverplaatsingsruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Transportruimte waardoor water zich verplaatst." ;
         rdfs:label                   "Waterverplaatsingsruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -473,7 +586,8 @@ nen3610:objectEindTijd
 
 nen3610:GeografischeRuimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Ruimte die bekendstaat onder een vanuit de historie of het gebruik bekende benaming of een fysisch-geografische samenhang, al dan niet met zijn omgeving, kent." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "GeografischeRuimte" ;
         rdfs:subClassOf              nen3610:VirtueleRuimte ;
         mim:alias                    "Geografische ruimte" ;
@@ -486,6 +600,7 @@ nen3610:GeografischeRuimte
         skos:notation                "GeografischeRuimte" .
 
 nen3610-sh:GeoObject  a              sh:NodeShape ;
+        rdfs:comment                 "Een fenomeen in de werkelijkheid dat direct of indirect is geassocieerd met een locatie relatief ten opzichte van de aarde." ;
         rdfs:label                   "GeoObject" ;
         mim:alias                    "Geo-object" ;
         mim:datumOpname              "20220601" ;
@@ -499,6 +614,7 @@ nen3610-sh:GeoObject  a              sh:NodeShape ;
 
 nen3610-sh:Wegverkeerruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
         rdfs:label                   "Wegverkeerruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -510,6 +626,7 @@ nen3610-sh:Wegverkeerruimte
         sh:targetClass               nen3610:Wegverkeerruimte .
 
 nen3610-sh:Gebouw  a                 sh:NodeShape ;
+        rdfs:comment                 "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
         rdfs:label                   "Gebouw" ;
         mim:alias                    "Gebouw" ;
         mim:datumOpname              "20220601" ;
@@ -523,6 +640,7 @@ nen3610-sh:Gebouw  a                 sh:NodeShape ;
 
 nen3610-sh:Oppervlaktewater
         a                            sh:NodeShape ;
+        rdfs:comment                 "Massa van water dat de bodem bedekt of in normale omstandigheden kan bedekken." ;
         rdfs:label                   "Oppervlaktewater" ;
         mim:alias                    "Oppervlaktewater" ;
         mim:datumOpname              "20220601" ;
@@ -536,18 +654,23 @@ nen3610-sh:Oppervlaktewater
 
 nen3610-sh:VoidReasonValue
         a                            sh:NodeShape ;
+        rdfs:comment                 "Reden waarom een 'nil'-waarde is ingevuld." ;
         rdfs:label                   "VoidReasonValue" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
-        dct:subject                  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
+        dct:subject                  nen3610-col:mogelijk_geen_waarde ;
         skos:notation                "VoidReasonValue" ;
+        sh:Property                  [ sh:hasValue  nen3610-col:mogelijk_geen_waarde ;
+                                       sh:path      [ sh:inversePath  skos:member ]
+                                     ] ;
         sh:targetClass               nen3610:VoidReasonValue .
 
 nen3610-sh:VirtueleRuimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Geo-object dat zich geheel of gedeeltelijk niet-materieel manifesteert en dus slechts in abstracte en/of geregistreerde vorm bestaat." ;
         rdfs:label                   "VirtueleRuimte" ;
         mim:alias                    "Virtuele ruimte" ;
         mim:datumOpname              "20220601" ;
@@ -560,7 +683,8 @@ nen3610-sh:VirtueleRuimte
         sh:targetClass               nen3610:VirtueleRuimte .
 
 nen3610:Verharding  a                owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Een door egaliseren, verstevigen en/of verruwen voor het beoogde gebruik geschikt gemaakt oppervlak, bestaande uit in een of meer lagen over een bodem of onderliggende constructie aangelegd materiaal." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Verharding" ;
         rdfs:subClassOf              nen3610:Constructie ;
         mim:alias                    "Verharding" ;
@@ -574,7 +698,8 @@ nen3610:Verharding  a                owl:Class ;
 
 nen3610:Transportruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Transportruimte" ;
         rdfs:subClassOf              nen3610:FunctioneleRuimte ;
         mim:datumOpname              "20220601" ;
@@ -586,7 +711,8 @@ nen3610:Transportruimte
         skos:notation                "Transportruimte" .
 
 nen3610:ReeelObject  a               owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Geo-object dat zich geheel materieel manifesteert." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "ReeelObject" ;
         rdfs:subClassOf              nen3610:GeoObject ;
         mim:alias                    "Reëel object" ;
@@ -598,8 +724,13 @@ nen3610:ReeelObject  a               owl:Class ;
         dct:subject                  nen3610-beg:reeel_object ;
         skos:notation                "ReeelObject" .
 
+nen3610-sh:Levensduur
+        a           sh:PropertyGroup ;
+        rdfs:label  "Levensduur" .
+
 nen3610-sh:Luchtvaartruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
         rdfs:label                   "Luchtvaartruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -612,7 +743,8 @@ nen3610-sh:Luchtvaartruimte
 
 nen3610:Luchtvaartruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich door de lucht verplaatsen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Luchtvaartruimte" ;
         rdfs:subClassOf              nen3610:Verkeerruimte ;
         mim:datumOpname              "20220601" ;
@@ -624,6 +756,7 @@ nen3610:Luchtvaartruimte
         skos:notation                "Luchtvaartruimte" .
 
 nen3610-sh:Leiding  a                sh:NodeShape ;
+        rdfs:comment                 "Een geheel van geleiders of een ruimte die voorzien is van één ommanteling en bestemd is voor transport van materie, data en/of energie." ;
         rdfs:label                   "Leiding" ;
         mim:alias                    "Leiding" ;
         mim:datumOpname              "20220601" ;
@@ -637,6 +770,7 @@ nen3610-sh:Leiding  a                sh:NodeShape ;
 
 nen3610-sh:Spoorverkeerruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich over rails verplaatsen." ;
         rdfs:label                   "Spoorverkeerruimte" ;
         mim:alias                    "Spoorverkeerruimte" ;
         mim:datumOpname              "20220601" ;
@@ -649,6 +783,7 @@ nen3610-sh:Spoorverkeerruimte
         sh:targetClass               nen3610:Spoorverkeerruimte .
 
 nen3610-sh:Bodem  a                  sh:NodeShape ;
+        rdfs:comment                 "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
         rdfs:label                   "Bodem" ;
         mim:alias                    "Bodem" ;
         mim:datumOpname              "20220601" ;
@@ -662,7 +797,8 @@ nen3610-sh:Bodem  a                  sh:NodeShape ;
 
 nen3610:Scheepvaartruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Scheepvaartruimte" ;
         rdfs:subClassOf              nen3610:Verkeerruimte ;
         mim:datumOpname              "20220601" ;
@@ -674,7 +810,8 @@ nen3610:Scheepvaartruimte
         skos:notation                "Scheepvaartruimte" .
 
 nen3610:Bodem  a                     owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Bovenste deel van de aarde, exclusief oppervlaktewater." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Bodem" ;
         rdfs:subClassOf              nen3610:ReeelObject ;
         mim:alias                    "Bodem" ;
@@ -693,6 +830,7 @@ nen3610:identificatie
 
 nen3610-sh:Scheepvaartruimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Verkeerruimte voor voertuigen die zich over water verplaatsen." ;
         rdfs:label                   "Scheepvaartruimte" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -705,18 +843,21 @@ nen3610-sh:Scheepvaartruimte
 
 nen3610:VoidReasonValue
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/Waardelijsten> ;
+        rdfs:comment                 "Reden waarom een 'nil'-waarde is ingevuld." ;
+        rdfs:isDefinedBy             nen3610-ont:Waardelijsten ;
         rdfs:label                   "VoidReasonValue" ;
+        rdfs:subClassOf              skos:Concept ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
-        dct:subject                  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
+        dct:subject                  nen3610-col:mogelijk_geen_waarde ;
         skos:notation                "VoidReasonValue" .
 
 nen3610:Gebouw  a                    owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Overdekte en geheel of gedeeltelijk met wanden omsloten constructie bedoeld voor het in een afgeschermde omgeving onderbrengen van mensen, dieren of voorwerpen of voor de productie van goederen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Gebouw" ;
         rdfs:subClassOf              nen3610:Constructie ;
         mim:alias                    "Gebouw" ;
@@ -729,6 +870,7 @@ nen3610:Gebouw  a                    owl:Class ;
         skos:notation                "Gebouw" .
 
 nen3610-sh:Kunstwerk  a              sh:NodeShape ;
+        rdfs:comment                 "Civiel-technische constructie voor de infrastructuur van wegen, water, spoorbanen, waterkeringen en/of leidingen." ;
         rdfs:label                   "Kunstwerk" ;
         mim:alias                    "Kunstwerk" ;
         mim:datumOpname              "20220601" ;
@@ -746,6 +888,7 @@ nen3610:registratiegegevens
 
 nen3610-sh:JuridischeRuimte
         a                            sh:NodeShape ;
+        rdfs:comment                 "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
         rdfs:label                   "JuridischeRuimte" ;
         mim:alias                    "Juridische ruimte" ;
         mim:datumOpname              "20220601" ;
@@ -759,7 +902,8 @@ nen3610-sh:JuridischeRuimte
 
 nen3610:JuridischeRuimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Ruimte waar een juridisch instrument beleid of regelgeving toepast." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "JuridischeRuimte" ;
         rdfs:subClassOf              nen3610:VirtueleRuimte ;
         mim:alias                    "Juridische ruimte" ;
@@ -771,70 +915,9 @@ nen3610:JuridischeRuimte
         dct:subject                  nen3610-beg:juridische_ruimte ;
         skos:notation                "JuridischeRuimte" .
 
-nen3610-sh:DummyIdentificeerbaarObject
-        a                            sh:NodeShape ;
-        rdfs:comment                 "Klasse opgenomen om attributen uit te kopiëren." ;
-        rdfs:label                   "DummyIdentificeerbaarObject" ;
-        mim:datumOpname              "20220601" ;
-        mim:herkomst                 "nen 3610" ;
-        mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  false ;
-        mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." ;
-        skos:notation                "DummyIdentificeerbaarObject" ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              true ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut identificatie voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
-                                       dct:subject                     nen3610-beg:identificatie ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "identificatie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:identificatie ;
-                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject." ;
-                                       sh:class                        nen3610:Registratie ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "registratiegegevens" ;
-                                       sh:nodeKind                     sh:IRI ;
-                                       sh:path                         nen3610:registratiegegevens
-                                     ] ;
-        sh:property                  [ mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:identificerend              true ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:patroon                     "Alleen de volgende karakters mogen in een waarde van het attribuut domein voorkomen: {'A' ... 'Z', 'a' ... 'z', '0' ... '9', '_', '-', ',', '.', '/', ':'}" ;
-                                       mim:toelichting                 "Het attribuut domein is een unieke verwijzing naar de registratie- of ketenprocesverantwoordelijke entiteit die de identificatie uitdeelt of regels daartoe heeft opgesteld. In combinatie met het attribuut identificatie wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties en ook mondiaal uniek." ;
-                                       dct:subject                     nen3610-beg:domein ;
-                                       sh:datatype                     xsd:string ;
-                                       sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "domein" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:domein ;
-                                       sh:pattern                      "([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+"
-                                     ] ;
-        sh:targetClass               nen3610:DummyIdentificeerbaarObject .
-
 nen3610-sh:Constructie
         a                            sh:NodeShape ;
+        rdfs:comment                 "Gebouwd object dat direct of indirect met de bodem is verbonden en bedoeld is om ter plaatse te functioneren." ;
         rdfs:label                   "Constructie" ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
@@ -847,7 +930,8 @@ nen3610-sh:Constructie
 
 nen3610:Wegverkeerruimte
         a                            owl:Class ;
-        rdfs:isDefinedBy             <http://modellen.geostandaarden.nl/def/nen3610-2022/SemantischModel> ;
+        rdfs:comment                 "Verkeerruimte voor weggebruikers die zich over wegen verplaatsen." ;
+        rdfs:isDefinedBy             nen3610-ont:SemantischModel ;
         rdfs:label                   "Wegverkeerruimte" ;
         rdfs:subClassOf              nen3610:Verkeerruimte ;
         mim:datumOpname              "20220601" ;

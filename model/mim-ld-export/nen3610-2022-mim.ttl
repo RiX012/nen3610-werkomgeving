@@ -27,13 +27,13 @@
 <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A>
         a                            mim:Objecttype ;
         mim:attribuut                <urn:uuid:A1B98275-C1D6-416a-A61B-AACB4C8C44A4> , <urn:uuid:5DE55742-811D-4f31-92D0-0354787B5A86> ;
-        mim:datumOpname              "20220601" ;
-        mim:definitie                "Klasse opgenomen om attributen uit te kopiëren." ;
+        mim:datumOpname              "20221216" ;
+        mim:definitie                "Klasse opgenomen om identificatie-attributen in te definiëren." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "DummyIdentificeerbaarObject" ;
-        mim:toelichting              "Dit objecttype is een proxy en opgenomen om de identificatie-attributen in te definieren. De attributen kunnen gekopieerd worden en toegepast waar nodig." .
+        mim:naam                     "IdentificeerbaarObject" ;
+        mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." .
 
 <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8>
         a                            mim:Objecttype ;
@@ -122,6 +122,17 @@
         mim:indicatieAbstractObject  false ;
         mim:naam                     "CharacterString" .
 
+<urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F>
+        a                            mim:Objecttype ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/transportruimte> ;
+        mim:datumOpname              "20220601" ;
+        mim:definitie                "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
+        mim:herkomst                 "nen 3610" ;
+        mim:herkomstDefinitie        "nen 3610" ;
+        mim:indicatieAbstractObject  true ;
+        mim:naam                     "Transportruimte" ;
+        mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." .
+
 <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD>
         a                            mim:Objecttype ;
         mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/luchtvaartruimte> ;
@@ -133,16 +144,11 @@
         mim:naam                     "Luchtvaartruimte" ;
         mim:toelichting              "Luchtvaartruimte wordt bijvoorbeeld gebruikt door allerlei soorten vliegtuigen en helikopters." .
 
-<urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F>
-        a                            mim:Objecttype ;
-        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/transportruimte> ;
-        mim:datumOpname              "20220601" ;
-        mim:definitie                "Natuurlijke of aangelegde transportlijnen of verbindingen met knooppunten waarlangs stromen zich kunnen verplaatsen." ;
-        mim:herkomst                 "nen 3610" ;
-        mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  true ;
-        mim:naam                     "Transportruimte" ;
-        mim:toelichting              "Transportlijnen worden onder andere gerealiseerd door wegen, spoorwegen, waterwegen, luchtverbindingen." .
+<urn:uuid:326BCEE7-4BD2-46bb-BAFB-347B1076AE1D>
+        a                            mim:PrimitiefDatatype ;
+        mim:definitie                "MIM: 4-cijferig jaar, 2-cijferig maand, 2-cijferig dag uitgedrukt in yyyy-mm-dd conform https://en.wikipedia.org/wiki/ISO_8601" ;
+        mim:indicatieAbstractObject  false ;
+        mim:naam                     "Date" .
 
 <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A>
         a                            mim:Objecttype ;
@@ -169,7 +175,6 @@
         mim:definitie                   "Versieaanduiding van een informatieobject." ;
         mim:herkomst                    "nen 3610" ;
         mim:herkomstDefinitie           "nen 3610" ;
-        mim:identificerend              false ;
         mim:indicatieFormeleHistorie    false ;
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
@@ -181,7 +186,7 @@
 
 <urn:uuid:94A5BF41-39F9-48c6-85C6-FFDAB5DC4B68>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> , <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
+        mim:bevatModelelement        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> , <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Basisinformatie-elementen</b> - NEN 3610 paragraaf 8.4\r\n\r\nDe basisinformatie-elementen zijn de elementen die een centrale rol spelen in NEN 3610. Dit zijn het objecttype <font color=\"#c83500\">Geo-object</font>, de attributen ter identificatie van objecten en het objecttype <font color=\"#c83500\">Registratiegegevens</font> met de attributen voor de implementatie van het temporele model. Voor de benoeming en toepassing van de attributen is een voorbeeldklasse <font color=\"#c83500\">IM_X_klasse</font> opgenomen" ;
         mim:herkomst                 "nen 3610" ;
@@ -321,7 +326,8 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "0..1" ;
         mim:naam                        "eindGeldigheid" ;
-        mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." .
+        mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." ;
+        mim:type                        <urn:uuid:326BCEE7-4BD2-46bb-BAFB-347B1076AE1D> .
 
 <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A>
         a                            mim:Objecttype ;
@@ -347,7 +353,8 @@
         mim:indicatieMaterieleHistorie  false ;
         mim:kardinaliteit               "1..1" ;
         mim:naam                        "beginGeldigheid" ;
-        mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." .
+        mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
+        mim:type                        <urn:uuid:326BCEE7-4BD2-46bb-BAFB-347B1076AE1D> .
 
 <urn:uuid:8019CE46-6177-44c4-9972-8AE01237479B>
         a                               mim:Attribuutsoort ;
@@ -380,7 +387,7 @@
         mim:herkomstDefinitie           "nen 3610" ;
         mim:indicatieFormeleHistorie    false ;
         mim:indicatieMaterieleHistorie  false ;
-        mim:kardinaliteit               "1..1" ;
+        mim:kardinaliteit               "0..1" ;
         mim:naam                        "geregistreerdMet" ;
         mim:relatierol                  <urn:uuid-dst:3E82C86E-E6ED-4611-BE18-B0107AD443CF> ;
         mim:toelichting                 "De registratiegegevens zijn de versie en tijdlijngegevens die horen bij het registreren van één versie van het informatieobject. Ze horen als metadata bij de gegevensset van het informatieobject." .
@@ -536,7 +543,7 @@
 
 <urn:uuid-dst:3E82C86E-E6ED-4611-BE18-B0107AD443CF>
         a                  mim:RelatierolDoel ;
-        mim:kardinaliteit  "1..1" ;
+        mim:kardinaliteit  "0..1" ;
         mim:naam           "registratiegegevens" ;
         mim:type           <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> .
 
@@ -609,7 +616,7 @@
 
 <urn:uuid:AAB6354B-685C-4f41-8AD2-92A70007CA4D>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
+        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast reële objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
         mim:herkomst                 "nen 3610" ;
