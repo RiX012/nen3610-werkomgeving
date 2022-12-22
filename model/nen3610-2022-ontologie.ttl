@@ -112,7 +112,7 @@ nen3610:IdentificeerbaarObject
         mim:datumOpname              "20221216" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  false ;
+        mim:indicatieAbstractObject  true ;
         mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." ;
         skos:notation                "IdentificeerbaarObject" .
 
@@ -175,22 +175,6 @@ nen3610-sh:Registratie
         mim:toelichting              "Bij het registreren van een object als informatieobject horen een aantal metadata die hier betrekking op hebben, zoals versie en registratie van tijdlijngegevens." ;
         dct:subject                  nen3610-beg:objectregistratie ;
         skos:notation                "Registratie" ;
-        sh:property                  [ rdfs:comment                    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
-                                       dct:subject                     nen3610-beg:eind_registratie ;
-                                       sh:datatype                     xsd:dateTime ;
-                                       sh:group                        nen3610-sh:TijdlijnRegistratie ;
-                                       sh:maxCount                     1 ;
-                                       sh:name                         "eindRegistratie" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:eindRegistratie
-                                     ] ;
         sh:property                  [ rdfs:comment                    "Tijdsaanduiding waarop het object in de werkelijkheid niet meer geldig is." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
@@ -206,22 +190,21 @@ nen3610-sh:Registratie
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:objectEindTijd
                                      ] ;
-        sh:property                  [ rdfs:comment                    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode dat deze versie van het informatieobject actueel is in de registratie. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog actueel." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
                                        mim:datumOpname                 "20220601" ;
                                        mim:herkomst                    "nen 3610" ;
                                        mim:herkomstDefinitie           "nen 3610" ;
                                        mim:indicatieFormeleHistorie    false ;
                                        mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
-                                       dct:subject                     nen3610-beg:begin_geldigheid ;
-                                       sh:datatype                     xsd:date ;
-                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
+                                       mim:toelichting                 "Vanaf deze tijdsaanduiding is deze versie van het informatieobject niet meer  actueel in de registratie. Met actueel wordt bedoeld dat er geen nieuwere versie 4 in de registratie is voor dit informatieobject. Aan een lege eindregistratie is ook te zien dat het de actuele versie betreft. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Voor tijdstipRegistratie zal DateTime in vrijwel alle gevallen de beste keuze zijn. \r\n\r\nWanneer bepaalde gegevens op de tijdlijn geldigheid niet meer geldig zijn, te herkennen aan de eindGeldigheid van een versie, wordt bij het vullen van de eindGeldigheid tegelijkertijd ook altijd de eindRegistratie gevuld zodat het duidelijk is vanaf welk moment op de tijdlijn registratie deze gegevens niet meer actueel zijn. De eindRegistratie geeft dus aan wanneer er geregistreerd is dat deze gegevens niet meer actueel zijn." ;
+                                       dct:subject                     nen3610-beg:eind_registratie ;
+                                       sh:datatype                     xsd:dateTime ;
+                                       sh:group                        nen3610-sh:TijdlijnRegistratie ;
                                        sh:maxCount                     1 ;
-                                       sh:minCount                     1 ;
-                                       sh:name                         "beginGeldigheid" ;
+                                       sh:name                         "eindRegistratie" ;
                                        sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:beginGeldigheid
+                                       sh:path                         nen3610:eindRegistratie
                                      ] ;
         sh:property                  [ rdfs:comment                    "Versieaanduiding van een informatieobject." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
@@ -240,22 +223,6 @@ nen3610-sh:Registratie
                                        sh:name                         "versie" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:versie
-                                     ] ;
-        sh:property                  [ rdfs:comment                    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
-                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
-                                       mim:datumOpname                 "20220601" ;
-                                       mim:herkomst                    "nen 3610" ;
-                                       mim:herkomstDefinitie           "nen 3610" ;
-                                       mim:indicatieFormeleHistorie    false ;
-                                       mim:indicatieMaterieleHistorie  false ;
-                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." ;
-                                       dct:subject                     nen3610-beg:eind_geldigheid ;
-                                       sh:datatype                     xsd:date ;
-                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
-                                       sh:maxCount                     1 ;
-                                       sh:name                         "eindGeldigheid" ;
-                                       sh:nodeKind                     sh:Literal ;
-                                       sh:path                         nen3610:eindGeldigheid
                                      ] ;
         sh:property                  [ rdfs:comment                    "Tijdsaanduiding van het moment waarop deze versie van het informatieobject is opgenomen in de registratie." ;
                                        mim:authentiek                  mim:OverigeAuthenticiteit ;
@@ -290,6 +257,39 @@ nen3610-sh:Registratie
                                        sh:name                         "objectBeginTijd" ;
                                        sh:nodeKind                     sh:Literal ;
                                        sh:path                         nen3610:objectBeginTijd
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Start van de periode waarop deze versie van het informatieobject geldig is." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. De start van een periode is het begin van de tijdsaanduiding; het vanaf-moment'. Bij een datum (date) is dat het begin van die dag." ;
+                                       dct:subject                     nen3610-beg:begin_geldigheid ;
+                                       sh:datatype                     xsd:date ;
+                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
+                                       sh:maxCount                     1 ;
+                                       sh:minCount                     1 ;
+                                       sh:name                         "beginGeldigheid" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:beginGeldigheid
+                                     ] ;
+        sh:property                  [ rdfs:comment                    "Eind van de periode waarop deze versie van het informatieobject geldig is. De periode is tot aan deze tijdsaanduiding. Wanneer deze waarde niet is ingevuld, is de versie nog geldig." ;
+                                       mim:authentiek                  mim:OverigeAuthenticiteit ;
+                                       mim:datumOpname                 "20220601" ;
+                                       mim:herkomst                    "nen 3610" ;
+                                       mim:herkomstDefinitie           "nen 3610" ;
+                                       mim:indicatieFormeleHistorie    false ;
+                                       mim:indicatieMaterieleHistorie  false ;
+                                       mim:toelichting                 "Vanaf het begin van deze tijdsaanduiding is de instantie niet meer geldig. Er zijn verschillende datatypen voor de representatie van een tijdsaanduiding: afhankelijk van de gebruikerswensen m.b.t. granulariteit kan o.a. worden gekozen uit typen TM_Instant, Date of DateTime. Het eind van de periode is tot het begin van de tijdsaanduiding; het tot-moment'." ;
+                                       dct:subject                     nen3610-beg:eind_geldigheid ;
+                                       sh:datatype                     xsd:date ;
+                                       sh:group                        nen3610-sh:TijdlijnGeldigheid ;
+                                       sh:maxCount                     1 ;
+                                       sh:name                         "eindGeldigheid" ;
+                                       sh:nodeKind                     sh:Literal ;
+                                       sh:path                         nen3610:eindGeldigheid
                                      ] ;
         sh:targetClass               nen3610:Registratie .
 
@@ -435,7 +435,7 @@ nen3610-sh:IdentificeerbaarObject
         mim:datumOpname              "20221216" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  false ;
+        mim:indicatieAbstractObject  true ;
         mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." ;
         skos:notation                "IdentificeerbaarObject" ;
         sh:property                  [ rdfs:comment                    "Unieke identificatiecode van een informatieobject binnen de context van een registratie.\r\nToelichting:  identificatie' is de identificatiecode die een object heeft binnen een registratie of binnen een ketenproces voor data-uitwisseling. Binnen de registratie of de data-uitwisseling is het object uniek identificeerbaar. In combinatie met het attribuut domein wordt een object hiermee uniek identificeerbaar op het niveau van verschillende registraties, uitwisselprocessen en ook wereldwijd uniek.\r\nDe reguliere expressie voor de toegestane tekens is: ([a-z]|[A-Z]|[0-9]|\\_|\\-|\\,|\\.|\\:|\\/)+" ;
@@ -661,7 +661,7 @@ nen3610-sh:VoidReasonValue
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
-        dct:subject                  nen3610-col:mogelijk_geen_waarde ;
+        dct:subject                  nen3610-beg:mogelijk_geen_waarde ;
         skos:notation                "VoidReasonValue" ;
         sh:Property                  [ sh:hasValue  nen3610-col:mogelijk_geen_waarde ;
                                        sh:path      [ sh:inversePath  skos:member ]
@@ -847,12 +847,16 @@ nen3610:VoidReasonValue
         rdfs:isDefinedBy             nen3610-ont:Waardelijsten ;
         rdfs:label                   "VoidReasonValue" ;
         rdfs:subClassOf              skos:Concept ;
+        mim:Aclass                   nen3610:VoidReasonValue ;
+        mim:Alocatie                 <https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fmogelijk_geen_waarde&format=text/turtle> ;
+        mim:Aontology                nen3610-ont:Waardelijsten ;
+        mim:Ashape                   nen3610-sh:VoidReasonValue ;
         mim:datumOpname              "20220601" ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." ;
-        dct:subject                  nen3610-col:mogelijk_geen_waarde ;
+        dct:subject                  nen3610-beg:mogelijk_geen_waarde ;
         skos:notation                "VoidReasonValue" .
 
 nen3610:Gebouw  a                    owl:Class ;

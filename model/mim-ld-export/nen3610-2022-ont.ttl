@@ -51,7 +51,7 @@ mim-item-ns:VoidReasonValue
         rdfs:isDefinedBy  mim-model-ns:Waardelijsten ;
         rdfs:label        "VoidReasonValue" ;
         mim:equivalent    <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C> ;
-        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
+        dct:subject       <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/mogelijk_geen_waarde> ;
         skos:notation     "VoidReasonValue" ;
         sh:targetClass    mim-item-ns:VoidReasonValue .
 

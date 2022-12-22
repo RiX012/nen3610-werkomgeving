@@ -391,12 +391,13 @@
 
 <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C>
         a                            mim:Codelijst ;
-        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/mogelijk_geen_waarde> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Reden waarom een 'nil'-waarde is ingevuld." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
+        mim:locatie                  "https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fmogelijk_geen_waarde&format=text/turtle" ;
         mim:naam                     "VoidReasonValue" ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." .
 
@@ -612,7 +613,7 @@
 
 <urn:uuid:94A5BF41-39F9-48c6-85C6-FFDAB5DC4B68>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> , <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
+        mim:bevatModelelement        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> , <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Basisinformatie-elementen</b> - NEN 3610 paragraaf 8.4\r\n\r\nDe basisinformatie-elementen zijn de elementen die een centrale rol spelen in NEN 3610. Dit zijn het objecttype <font color=\"#c83500\">Geo-object</font>, de attributen ter identificatie van objecten en het objecttype <font color=\"#c83500\">Registratiegegevens</font> met de attributen voor de implementatie van het temporele model. Voor de benoeming en toepassing van de attributen is een voorbeeldklasse <font color=\"#c83500\">IM_X_klasse</font> opgenomen" ;
         mim:herkomst                 "nen 3610" ;
@@ -644,7 +645,7 @@
 
 <urn:uuid:AAB6354B-685C-4f41-8AD2-92A70007CA4D>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
+        mim:bevatModelelement        <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> , <urn:uuid:AC4F927B-8E66-43a1-9290-5DC5E84203A6> , <urn:uuid:CC240C98-C4B6-4796-ADB1-24D0F841EC34> , <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407> , <urn:uuid:99749D9E-9B0F-4134-959D-4D7BE81D0CEA> , <urn:uuid:5183AC98-C887-4e5c-BC61-41A64257CE2A> , <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> , <urn:uuid:C16B3487-F0C4-4e06-BDBB-72DDA60C7BA8> , <urn:uuid:4CA7941A-0973-4909-8978-6C17A3CD6F0E> , <urn:uuid:A3F7184D-50E3-4d4d-B6B2-BB3127C7FBFC> , <urn:uuid:121AB4EC-0D70-48ee-BB85-EEF13378C900> , <urn:uuid:57FC8B96-00D7-4eb4-A03C-4EA90E3A5733> , <urn:uuid:DAECA380-235D-4a0a-95B9-A3C166AAC4BD> , <urn:uuid:531D0265-A1CA-45fa-9DFC-3CFD82071F26> , <urn:uuid:8A4801C0-D263-4a0b-99C5-A0C7A67FFE62> , <urn:uuid:5E62C776-3420-4eac-BA47-7EE0602F035B> , <urn:uuid:9426A967-757C-4889-ACD5-B1E420BF7E90> , <urn:uuid:F404593C-277B-4dcd-ABA9-EB37F8015AF4> , <urn:uuid:65280E13-7AA2-451f-9E14-CD7798636FAC> , <urn:uuid:240997BA-70F2-48dc-8A47-CA765C364BE7> , <urn:uuid:85C106F3-B76B-4f9e-ACCF-AABCA792A479> , <urn:uuid:0CD49AD6-5021-4f47-B055-638163C4A94F> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Semantisch model</b> -  NEN 3610 paragraaf 8.4\r\n\r\nHet semantisch model classificeert de objecttypen waarbij locatie-informatie van belang is. Het omvat naast reële objecten die fysiek (tastbaar) in de werkelijkheid aanwezig zijn, ook objecten die niet tastbaar zijn maar dienen om de ruimte in te delen en te benoemen vanuit administratieve en andere doeleinden. Deze verschillende views op de werkelijkheid leiden tot verschillende onafhankelijke classificaties. Deze classificaties hoeven niet per se uit het geodomein te komen. Voor NEN 3610 hebben de classificaties gemeenschappelijk dat ze informatie koppelen aan een locatie. Ze vervullen de rol van geo-object." ;
         mim:herkomst                 "nen 3610" ;
@@ -772,15 +773,15 @@
         mim:subtype    <urn:uuid:63F459F5-DBA6-4b91-A04A-30797C2A590F> ;
         mim:supertype  <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A> .
 
-<urn:uuid:B491881D-7EA8-4d92-A6EA-EB7D7A4C967D>
-        a                            mim:PrimitiefDatatype ;
-        mim:indicatieAbstractObject  false ;
-        mim:naam                     "GM_LineString" .
-
 <urn:uuid:BAE033C2-093D-4d7a-9CFD-B2DAD8756DD0>
         a              mim:Generalisatie ;
         mim:subtype    <urn:uuid:E3956B4F-8CE1-4bdf-88DA-2201BAC43668> ;
         mim:supertype  <urn:uuid:5E50A675-D501-40b6-82BE-6C49F355D3A0> .
+
+<urn:uuid:B491881D-7EA8-4d92-A6EA-EB7D7A4C967D>
+        a                            mim:PrimitiefDatatype ;
+        mim:indicatieAbstractObject  false ;
+        mim:naam                     "GM_LineString" .
 
 <urn:uuid:0933CF52-99E4-45ea-8615-9A1827202020>
         a                               mim:Attribuutsoort ;
@@ -802,12 +803,13 @@
 <urn:uuid:A2949663-66E1-440a-B3DE-90584F0A9284>
         a                            mim:Informatiemodel ;
         mim:alias                    "/Geonovum/imgolf-werkomgeving" ;
-        mim:bevatModelelement        <urn:uuid:ADBF0588-0D6F-4704-A532-9F1E819403BC> , <urn:uuid:A05DF8A6-B3FB-49a4-BBAD-AA475FBAF9E2> ;
+        mim:bevatModelelement        <urn:uuid:A05DF8A6-B3FB-49a4-BBAD-AA475FBAF9E2> , <urn:uuid:ADBF0588-0D6F-4704-A532-9F1E819403BC> ;
         mim:definitie                "Dit is een informatief voorbeeldmodel van een NEN 3610 toepassing. Dit mini informatiemodel beschrijft hoe een golfbaan gemodelleerd kan worden.\r\n\r\nMim versie 1.1.1 is toegepast." ;
         mim:herkomst                 "IMGolf" ;
         mim:herkomstDefinitie        "IMGolf" ;
         mim:indicatieAbstractObject  false ;
-        mim:naam                     "IMGolf" .
+        mim:naam                     "IMGolf" ;
+        mim:relatiemodelleringstype  mim:RelatierolLeidend .
 
 <urn:uuid:B23632C6-1D57-4174-BCBA-D5AB02AFEE8A>
         a                            mim:Objecttype ;
@@ -840,6 +842,7 @@
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "NEN3610" ;
+        mim:relatiemodelleringstype  mim:RelatierolLeidend ;
         mim:toelichting              "MIM versie is 1.1.1 maar is voor Imvertoir aangegeven als 1.1 omdat Imvertor 1.1.1 nog niet heeft geinstalleerd. (20221114)" .
 
 <urn:uuid:649D146A-3D62-4201-89F7-CE29392406E8>
@@ -1248,7 +1251,7 @@
         mim:definitie                "Klasse opgenomen om identificatie-attributen in te definiëren." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  false ;
+        mim:indicatieAbstractObject  true ;
         mim:naam                     "IdentificeerbaarObject" ;
         mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." .
 

@@ -42,9 +42,11 @@ nen3610-sh:VoidReasonValue
 ```
 
 De werking van deze constructie is als volgt:
-- Met de `owl:import` wordt verzorgd dat de juiste waarden worden geïmporteerd. De URI die hier gebruikt wordt, levert daadwerkelijk de betreffende waarden op dit moment. Wellicht beter zou zijn om een 'doc' URI van de collectie te kunnen gebruiken, maar deze is op dit moment niet beschikbaar;
+- Met de `owl:import` wordt verzorgd dat de juiste waarden worden geïmporteerd. De URI die hier gebruikt wordt, levert daadwerkelijk de betreffende waarden op dit moment. Wellicht beter zou zijn om een 'doc' URI van de collectie te kunnen gebruiken, maar deze is op dit moment niet beschikbaar. De waarde is afkomstig uit het metagegeven `mim:locatie`;
 - Met `rdfs:subClassOf` is duidelijk dat de waarden niet "zomaar" exemplaren zijn, maar referenties naar begrippen;
 - Met `sh:hasValue` wordt aangegeven dat de begrippen in een specifieke collectie moeten voorkomen (via het inverse pad `skos:member`)
+
+Hiermee is de werking van de Codelijst voor het grootste gedeelte gelijk getrokken met de werking van de Enumeratie. Enige uitdaging is nu nog dat de locatie van de waarden wel bekend zijn, maar niet de daadwerkelijke constraint. In dit geval is gekeken naar de waarden in een `skos:Collection`, maar er zijn ook situaties dat in zo'n geval het `skos:ConceptScheme` is gebruikt. Op dit moment is dat nog niet uit het MIM informatiemodel af te leiden.
 
 #### Metagegevens rondom historie
 

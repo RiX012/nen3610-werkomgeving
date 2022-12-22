@@ -265,6 +265,46 @@ queries:
           ?class owl:sameAs ?c
         }
       }
+  - title: add specific data to Codelijst VoidReasonValue
+    query: >
+      PREFIX nen3610-col: <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/>
+      PREFIX mim:  <http://bp4mc2.org/def/mim#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?class mim:Aclass ?class.
+          ?class mim:Ashape ?shape.
+          ?class mim:Aontology ?ontology.
+          ?class mim:Alocatie ?locatieuri.
+          ?class rdfs:subClassOf skos:Concept.
+          ?shape sh:Property [
+            sh:path [sh:inversePath skos:member];
+            sh:hasValue nen3610-col:mogelijk_geen_waarde
+          ].
+          ?ontology owl:imports ?locatieuri.
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT distinct ?class ?shape ?ontology (iri(?locatie) as ?locatieuri)
+          WHERE {
+            ?c mim:equivalent ?codelijst.
+            ?s sh:targetClass ?c.
+            ?c rdfs:isDefinedBy ?o.
+            ?codelijst mim:locatie ?locatie.
+            ?class owl:sameAs ?c.
+            ?shape owl:sameAs ?s.
+            ?ontology owl:sameAs ?o.
+          }
+        }
+        GRAPH <urn:output> {
+          ?class a owl:Class.
+          ?shape a sh:NodeShape.
+        }
+      }
   - title: remove owl:sameAs from blank nodes
     query: >
       PREFIX sh: <http://www.w3.org/ns/shacl#>
@@ -280,26 +320,6 @@ queries:
           ?blank owl:sameAs ?ps
         }
       }
-  - title: add specific data to VoidReasonValue
-    query: >
-      PREFIX nen3610: <http://modellen.geostandaarden.nl/def/nen3610-2022#>
-      PREFIX nen3610-sh: <http://modellen.geostandaarden.nl/nen3610-2022/id/shape/>
-      PREFIX nen3610-col: <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/>
-      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-      PREFIX sh: <http://www.w3.org/ns/shacl#>
-      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-      PREFIX owl: <http://www.w3.org/2002/07/owl#>
-      INSERT {
-        GRAPH <urn:output> {
-          nen3610:VoidReasonValue rdfs:subClassOf skos:Concept.
-          nen3610-sh:VoidReasonValue sh:Property [
-            sh:path [sh:inversePath skos:member];
-            sh:hasValue nen3610-col:mogelijk_geen_waarde
-          ].
-          <http://modellen.geostandaarden.nl/def/nen3610-2022/Waardelijsten> owl:imports <https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fmogelijk_geen_waarde&format=text/turtle>.
-        }
-      }
-      WHERE {}
   - title: add PropertyGroup info
     query: >
       PREFIX sh: <http://www.w3.org/ns/shacl#>

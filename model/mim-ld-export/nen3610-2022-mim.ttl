@@ -31,7 +31,7 @@
         mim:definitie                "Klasse opgenomen om identificatie-attributen in te definiëren." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
-        mim:indicatieAbstractObject  false ;
+        mim:indicatieAbstractObject  true ;
         mim:naam                     "IdentificeerbaarObject" ;
         mim:toelichting              "De klasse wordt als superklasse gebruikt voor alle objecttypen waarvan de instanties identificeerbaar moeten zijn." .
 
@@ -186,7 +186,7 @@
 
 <urn:uuid:94A5BF41-39F9-48c6-85C6-FFDAB5DC4B68>
         a                            mim:Domein ;
-        mim:bevatModelelement        <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> , <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> ;
+        mim:bevatModelelement        <urn:uuid:47CE152F-6789-46dc-A29F-33647F0A644A> , <urn:uuid:2EB8F2FF-4F71-4441-8B77-6DD2CFE62E6A> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "<b>Basisinformatie-elementen</b> - NEN 3610 paragraaf 8.4\r\n\r\nDe basisinformatie-elementen zijn de elementen die een centrale rol spelen in NEN 3610. Dit zijn het objecttype <font color=\"#c83500\">Geo-object</font>, de attributen ter identificatie van objecten en het objecttype <font color=\"#c83500\">Registratiegegevens</font> met de attributen voor de implementatie van het temporele model. Voor de benoeming en toepassing van de attributen is een voorbeeldklasse <font color=\"#c83500\">IM_X_klasse</font> opgenomen" ;
         mim:herkomst                 "nen 3610" ;
@@ -475,6 +475,7 @@
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
         mim:naam                     "NEN3610" ;
+        mim:relatiemodelleringstype  mim:RelatierolLeidend ;
         mim:toelichting              "MIM versie is 1.1.1 maar is voor Imvertoir aangegeven als 1.1 omdat Imvertor 1.1.1 nog niet heeft geinstalleerd. (20221114)" .
 
 <urn:uuid:21548D9F-88F5-41e4-85B3-0DC6A35FB407>
@@ -605,12 +606,13 @@
 
 <urn:uuid:03776960-DC8E-4ef9-9910-9B540D78291C>
         a                            mim:Codelijst ;
-        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/mogelijk_geen_waarde> ;
+        mim:begrip                   <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/mogelijk_geen_waarde> ;
         mim:datumOpname              "20220601" ;
         mim:definitie                "Reden waarom een 'nil'-waarde is ingevuld." ;
         mim:herkomst                 "nen 3610" ;
         mim:herkomstDefinitie        "nen 3610" ;
         mim:indicatieAbstractObject  false ;
+        mim:locatie                  "https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fcollectie%2Fmogelijk_geen_waarde&format=text/turtle" ;
         mim:naam                     "VoidReasonValue" ;
         mim:toelichting              "Deze codelijst moet extern worden gepubliceerd." .
 
