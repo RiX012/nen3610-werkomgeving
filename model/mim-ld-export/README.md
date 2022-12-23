@@ -50,7 +50,7 @@ Hiermee is de werking van de Codelijst voor het grootste gedeelte gelijk getrokk
 
 #### Metagegevens rondom historie
 
-Omdat er feitelijk geen gegevensconstraints worden toegevoegd bij de ordening van de properties rondom historie, kan volstaan worden met het introduceren van drie PropertyGroups.
+Omdat er feitelijk geen gegevensconstraints worden toegevoegd bij de ordening van de properties rondom historie, kan volstaan worden met het introduceren van drie PropertyGroups. De standaard geeft aan dat geen van de drie tijdlijnen verplicht zijn. Dat betekent dan geen van de eigenschappen verplicht zijn. In het originele MIM model zijn wel de attribuutsoorten `tijdstipRegistratie`, `beginGeldigheid` en `objectBeginTijd` als verplicht aangemerkt, maar dat moet gelezen worden als "verplicht, indien de betreffende tijdlijn geimplementeerd is". Om te zorgen dat deze interpretatie goed blijft werken in de transformatie, moeten de betreffende eigenschappen optioneel gemaakt worden.
 
 ```
 nen3610-sh:TijdlijnGeldigheid

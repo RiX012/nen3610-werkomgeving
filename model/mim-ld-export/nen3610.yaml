@@ -320,12 +320,19 @@ queries:
           ?blank owl:sameAs ?ps
         }
       }
-  - title: add PropertyGroup info
+  - title: add PropertyGroup info (and delete minCount for the specific elements)
     query: >
       PREFIX sh: <http://www.w3.org/ns/shacl#>
       PREFIX nen3610: <http://modellen.geostandaarden.nl/def/nen3610-2022#>
       PREFIX nen3610-sh: <http://modellen.geostandaarden.nl/nen3610-2022/id/shape/>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      DELETE {
+        GRAPH <urn:output> {
+          ?begingeldigheid sh:minCount 1.
+          ?objectbegintijd sh:minCount 1.
+          ?tijdstipregistratie sh:minCount 1.
+        }
+      }
       INSERT {
         GRAPH <urn:output> {
           ?begingeldigheid sh:group nen3610-sh:TijdlijnGeldigheid.
