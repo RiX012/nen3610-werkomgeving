@@ -31,22 +31,38 @@ queries:
   - title: export ontology
     query: >
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
       INSERT {
         GRAPH <urn:input> {
           <http://modellen.geostandaarden.nl/def/nen3610-2022> owl:sameAs <http://ontology.mim-namespace.org/NEN3610>.
-          ?i owl:sameAs ?import
         }
         GRAPH <urn:output> {
           <http://modellen.geostandaarden.nl/def/nen3610-2022> a owl:Ontology;
-            owl:imports ?i.
-            ?i a owl:Ontology.
+            sh:declare [
+              sh:prefix "nen3610";
+              sh:namespace "http://modellen.geostandaarden.nl/def/nen3610-2022#";
+            ];
+        }
+      }
+      WHERE {}
+  - title: export sub-ontologies
+    query: >
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:input> {
+          ?i owl:sameAs ?import
+        }
+        GRAPH <urn:output> {
+          ?ontology owl:imports ?i.
+          ?i a owl:Ontology.
         }
       }
       WHERE {
         GRAPH <urn:input> {
-          <http://ontology.mim-namespace.org/NEN3610> a owl:Ontology.
+          ?ontology owl:sameAs <http://ontology.mim-namespace.org/NEN3610>.
           OPTIONAL {
-            ?o owl:imports ?import
+            <http://ontology.mim-namespace.org/NEN3610> owl:imports ?import
             BIND (iri(concat("http://modellen.geostandaarden.nl/def/nen3610-2022/",strafter(str(?import),"http://ontology.mim-namespace.org/"))) as ?i)
           }
         }
@@ -275,10 +291,6 @@ queries:
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
       INSERT {
         GRAPH <urn:output> {
-          ?class mim:Aclass ?class.
-          ?class mim:Ashape ?shape.
-          ?class mim:Aontology ?ontology.
-          ?class mim:Alocatie ?locatieuri.
           ?class rdfs:subClassOf skos:Concept.
           ?shape sh:Property [
             sh:path [sh:inversePath skos:member];
