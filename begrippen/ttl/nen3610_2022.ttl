@@ -815,7 +815,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Element heeft in werkelijkheid geen waarde"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geen waarde"@nl;
-  skos:broader bk:nen3610-2022 .
+  skos:broader :mogelijk_geen_waarde .
 
 :niet_geautoriseerd a skos:Concept;
   skos:hiddenLabel "nietGeautoriseerd"@nl;
@@ -824,7 +824,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Deze zender vindt dat de ontvanger niet geautoriseerd is om de waarde te kennen"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet geautoriseerd"@nl;
-  skos:broader bk:nen3610-2022 .
+  skos:broader :mogelijk_geen_waarde .
 
 :niet_ondersteund a skos:Concept;
   skos:hiddenLabel "nietOndersteund"@nl;
@@ -833,7 +833,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Zender houdt in zijn registratie geen waarde voor dit attribuut bij. Geldt voor alle objecten van dit objecttype"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet ondersteund"@nl;
-  skos:broader bk:nen3610-2022 .
+  skos:broader :mogelijk_geen_waarde .
 
 :vastgesteld_onbekend a skos:Concept;
   skos:hiddenLabel "vastgesteldOnbekend"@nl;
@@ -842,7 +842,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Er is vastgesteld dat de waarde van het attribuut onbekend is en hoogst waarschijnlijk niet meer kan worden achterhaald (bijvoorbeeld omdat het brondocument onleesbaar is of het object niet meer bestaat in de werkelijkheid)"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Vastgesteld onbekend"@nl;
-  skos:broader bk:nen3610-2022 .
+  skos:broader :mogelijk_geen_waarde .
 
 :waarde_onbekend a skos:Concept;
   skos:hiddenLabel "waardeOnbekend"@nl;
@@ -851,7 +851,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Element is verplicht maar de waarde is bij de zender niet bekend"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Waarde onbekend"@nl;
-  skos:broader bk:nen3610-2022 .
+  skos:broader :mogelijk_geen_waarde .
 
 #===================================================================================================
 # Versies
