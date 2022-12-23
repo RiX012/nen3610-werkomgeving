@@ -796,6 +796,17 @@ col:ruimtelijke_relaties a skos:Collection;
 #===================================================================================================
 # Mogelijk geen waarde
 #===================================================================================================
+:mogelijk_geen_waarde a skos:Concept;
+  skos:hiddenLabel "mogelijkGeenWaarde"@nl;
+  rdfs:label "Mogelijk geen waarde"@nl;
+  dct:source "NEN3610:2022 Basismodel Geo-informatie - 9.8"@nl;
+  skos:definition "Metagegeven dat aangeeeft dat een warde niet bekend is of dat een ontvanger niet geautoriseerd is om de waarde te ontvangen."@nl;
+  skos:scopeNote "Er zijn situaties dat de waarde van een attribuut om redenen niet wordt gedeeld of soms ook niet in een registraties is opgeslagen. Met het metagegeven mogelijk geen waarde = 'ja', wordt aangegeven of deze conditite is toegestaan. In dat geval mag deze eigenschap bij uitwisseling een 'nil'-waarde bevatten. Dit betekent dat het attribuut geen waarde heeft in deze dataset, maar at het object in de werkelijkheid wel een waarde kan hebben."@nl;
+  skos:scopeNote "Het metagegeven mogelijk geen waarde = 'ja' wordt alleen toegepast op de attributen waarvan gewenst wordt dat deze mogelijkheid er is. Het kan zowel op verplichte attributen als op optionele attributen worden toegepast."@nl;
+  skos:scopeNote "Bij mogelijk geen waarde = 'ja' hoort ook de mogelijkheid om de reden voor het niet uitwisselen of niet opnemen in de registratie te delen. Het gebruik hiervan is optioneel. Het is dus op het niveau van NEN 3610 niet verplicht om een reden op te nemen. Een sectoraal model kan hier nadere afspraken over maken. De redenen voor het niet delen van informatie zijn opgenomen in de lijst VoidReasonValue. Deze lijst is uitbreidbaar, waardoor ook andere redenen opgenomen kunnen worden."@nl;
+  skos:inScheme bk:nen3610-2022;
+  skos:prefLabel "Mogelijk geen waarde"@nl;
+  skos:topConceptOf bk:nen3610-2022 .
 
 :geen_waarde a skos:Concept;
   skos:hiddenLabel "geenWaarde"@nl;
@@ -804,7 +815,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Element heeft in werkelijkheid geen waarde"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Geen waarde"@nl;
-  skos:topConceptOf bk:nen3610-2022 .
+  skos:broader bk:nen3610-2022 .
 
 :niet_geautoriseerd a skos:Concept;
   skos:hiddenLabel "nietGeautoriseerd"@nl;
@@ -813,7 +824,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Deze zender vindt dat de ontvanger niet geautoriseerd is om de waarde te kennen"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet geautoriseerd"@nl;
-  skos:topConceptOf bk:nen3610-2022 .
+  skos:broader bk:nen3610-2022 .
 
 :niet_ondersteund a skos:Concept;
   skos:hiddenLabel "nietOndersteund"@nl;
@@ -822,7 +833,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Zender houdt in zijn registratie geen waarde voor dit attribuut bij. Geldt voor alle objecten van dit objecttype"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Niet ondersteund"@nl;
-  skos:topConceptOf bk:nen3610-2022 .
+  skos:broader bk:nen3610-2022 .
 
 :vastgesteld_onbekend a skos:Concept;
   skos:hiddenLabel "vastgesteldOnbekend"@nl;
@@ -831,7 +842,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Er is vastgesteld dat de waarde van het attribuut onbekend is en hoogst waarschijnlijk niet meer kan worden achterhaald (bijvoorbeeld omdat het brondocument onleesbaar is of het object niet meer bestaat in de werkelijkheid)"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Vastgesteld onbekend"@nl;
-  skos:topConceptOf bk:nen3610-2022 .
+  skos:broader bk:nen3610-2022 .
 
 :waarde_onbekend a skos:Concept;
   skos:hiddenLabel "waardeOnbekend"@nl;
@@ -840,7 +851,7 @@ col:ruimtelijke_relaties a skos:Collection;
   skos:definition "Element is verplicht maar de waarde is bij de zender niet bekend"@nl;
   skos:inScheme bk:nen3610-2022;
   skos:prefLabel "Waarde onbekend"@nl;
-  skos:topConceptOf bk:nen3610-2022 .
+  skos:broader bk:nen3610-2022 .
 
 #===================================================================================================
 # Versies
