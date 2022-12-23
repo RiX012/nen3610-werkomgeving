@@ -8,7 +8,7 @@ De MIM ontologie wordt volledig gegenereerd vanuit het EA bestand in de map `/mo
 
 ## Afwijkingen ten opzichte van de MIM transformatie-standaard
 
-Bij de transformatie van het NEN3610 MIM model naar RDFS/OWL/SHACL is zo strikt mogelijk voldaan aan de regels zoals gedefinieerd in de MIM standaard. Toch is het noodzakelijk gebleken om enkele afwijkingen c.q. aanvullingen toe te passen. In een enkel geval gaat het om een interpretatie van de standaard, waarbij de standaard niet (volledig) precies is in de keuze die gemaakt moet worden. In andere gevallen gaat het om informatie die benodigd was om de transformatie uit te voeren, maar niet aanwezig was in de standaard.
+Bij de transformatie van het NEN3610 MIM model naar RDFS/OWL/SHACL is zo strikt mogelijk voldaan aan de regels zoals gedefinieerd in de MIM standaard. Toch is het noodzakelijk gebleken om enkele afwijkingen c.q. aanvullingen toe te passen. In een enkel geval gaat het om een interpretatie van de standaard, waarbij de standaard niet (volledig) precies is in de keuze die gemaakt moet worden. In andere gevallen gaat het om informatie die benodigd was om de transformatie uit te voeren, maar niet aanwezig was in de standaard. Daarnaast is er één geval waarbij er feitelijk geen onduidelijkheid is, maar waar het toch wenselijk is om een toelichting te geven op de uiteindelijke transformatie.
 
 ### Interpretaties
 
@@ -90,4 +90,27 @@ nen3610-sh:Registratie
                 sh:group  nen3610-sh:Levensduur ;
                 sh:path   nen3610:objectBeginTijd
               ] .
+```
+
+### Toelichtingen
+
+#### Naam van eigenschap afkomstig uit een relatie
+
+In UML bestaat de mogelijkheid om bij een relatie zowel een relatiesoortnaam als een relatierolnaam op te geven. Voor MIM geldt dat één van de twee namen daarbij daadwerkelijk de drager van informatie is, de andere is puur ter ondersteuning. De MIM-transformatieregels zijn hierover duidelijk: als er een rolnaam is ingevuld, dan moet alleen deze meegenomen worden in de transformatie. Dit kan daardoor eventueel afwijken van het metagegeven `mim:relatiemodelleringstype` (mocht daar de waarde `mim:relatiesoortLeidend` zijn gebruikt). Dit lijkt een inconsistentie in de MIM standaard. In het specifieke geval van dit NEN 3610 informatiemodel is er geen onduidelijkheid, omdat het metagegeven `mim:relatiemodelleringstype` in dit geval de waarde `mim:relatierolLeidend` heeft. Dit sluit ook aan bij de tekst in de NEN 3610 standaard zelf (sectie 7.5): "*[..]gebruikt bij het modelleren van relaties tussen objecttypen de relatie-einden (bron en doel) als informatiedragers. De naam van de relatie is alleen voor de leesbaarheid van het model.*". Dit geldt ook voor partijen die gebruik maken van de NEN 3610 standaard, uit dezelfde sectie: "*NEN 3610 conformeert zich aan het Metamodel voor Informatiemodellering (MIM). Toepassingen van NEN3610 conformeren zich daarmee ook aan MIM.*".
+
+Partijen die een eigen Linked Data model gebruiken kunnen vanzelfsprekend zelf aanvullende eigenschappen toevoegen (bijvoorbeeld door in de implementatie gebruik te maken van `rdfs:subPropertyOf`). Voor de leesbaarheid bij de uitwisseling van data wordt dan wel geadviseerd om alsnog de originele NEN 3610 eigenschappen toe te voegen, om te voorkomen dat derden de data niet rechtstreeks kunnen lezen conform het originele informatiemodel). Dit is niet nodig voor de subklassen van het NEN 3610 model, aangezien dit al duidelijk wordt vanuit het model zelf (dergelijke subklassen zullen in originele informatiemodel via een generalisatie zichtbaar zijn) Zie onderstaand voorbeeld waarin een dergelijke uitbreiding is toegepast (zowel op klassen als eigenschappen):
+
+```
+  # Model
+  imvoorbeeld:Brug rdfs:subClassOf nen3610:Kunstwerk.
+  imvoorbeeld:geregistreerdMet rdfs:subPropertyOf nen3610:registratiegegevens.
+
+  # Data
+  brug:Merwedebrug a imvoorbeeld:Brug;
+    imvoorbeeld:geregistreerdMet brugdata:MerwedebrugRegistratie-20220125185426;
+    nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20220125185426;
+  .
+  brugdata:MerwedebrugRegistratie-20220125185426 a nen3610:Registratie;
+    nen3610:tijdstipRegistratie "2022-01-25T18:54:26"^^xsd:dateTime;
+  .
 ```
