@@ -8,6 +8,8 @@ prefixes:
   nen3610: http://modellen.geostandaarden.nl/def/nen3610-2022#
   nen3610-sh: http://modellen.geostandaarden.nl/nen3610-2022/id/shape/
   nen3610-beg: http://definities.geostandaarden.nl/nen3610-2022/id/begrip/
+  nen3610-col: http://definities.geostandaarden.nl/nen3610-2022/id/collectie/
+  nen3610-ont: http://modellen.geostandaarden.nl/def/nen3610-2022/
   mim: http://bp4mc2.org/def/mim#
   xsd: http://www.w3.org/2001/XMLSchema#
 queries:
@@ -29,22 +31,38 @@ queries:
   - title: export ontology
     query: >
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
       INSERT {
         GRAPH <urn:input> {
           <http://modellen.geostandaarden.nl/def/nen3610-2022> owl:sameAs <http://ontology.mim-namespace.org/NEN3610>.
-          ?i owl:sameAs ?import
         }
         GRAPH <urn:output> {
           <http://modellen.geostandaarden.nl/def/nen3610-2022> a owl:Ontology;
-            owl:imports ?i.
-            ?i a owl:Ontology.
+            sh:declare [
+              sh:prefix "nen3610";
+              sh:namespace "http://modellen.geostandaarden.nl/def/nen3610-2022#";
+            ];
+        }
+      }
+      WHERE {}
+  - title: export sub-ontologies
+    query: >
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      INSERT {
+        GRAPH <urn:input> {
+          ?i owl:sameAs ?import
+        }
+        GRAPH <urn:output> {
+          ?ontology owl:imports ?i.
+          ?i a owl:Ontology.
         }
       }
       WHERE {
         GRAPH <urn:input> {
-          <http://ontology.mim-namespace.org/NEN3610> a owl:Ontology.
+          ?ontology owl:sameAs <http://ontology.mim-namespace.org/NEN3610>.
           OPTIONAL {
-            ?o owl:imports ?import
+            <http://ontology.mim-namespace.org/NEN3610> owl:imports ?import
             BIND (iri(concat("http://modellen.geostandaarden.nl/def/nen3610-2022/",strafter(str(?import),"http://ontology.mim-namespace.org/"))) as ?i)
           }
         }
@@ -54,6 +72,7 @@ queries:
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
       INSERT {
         GRAPH <urn:input> {
@@ -71,7 +90,7 @@ queries:
           ?c ?p ?o.
           ?c rdfs:isDefinedBy ?package.
           ?onto owl:sameAs ?package
-          FILTER (isLiteral(?o))
+          FILTER (isLiteral(?o) || ?p=dct:subject)
           BIND (iri(concat("http://modellen.geostandaarden.nl/def/nen3610-2022#",strafter(str(?c),"http://ontology.mim-namespace.org/def/modelname#"))) as ?class)
         }
       }
@@ -80,6 +99,7 @@ queries:
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       PREFIX sh: <http://www.w3.org/ns/shacl#>
       INSERT {
         GRAPH <urn:input> {
@@ -98,7 +118,7 @@ queries:
           ?ns ?p ?o.
           ?ns rdfs:isDefinedBy ?package.
           ?onto owl:sameAs ?package
-          FILTER (isLiteral(?o))
+          FILTER (isLiteral(?o) || ?p=dct:subject)
           BIND (iri(concat("http://modellen.geostandaarden.nl/def/nen3610-2022#",strafter(str(?c),"http://ontology.mim-namespace.org/def/modelname#"))) as ?class)
           BIND (iri(concat("http://modellen.geostandaarden.nl/nen3610-2022/id/shape/",strafter(str(?ns),"http://ontology.mim-namespace.org/def/modelname#"))) as ?shape)
         }
@@ -175,6 +195,7 @@ queries:
         GRAPH <urn:input> {
           xsd:string mim:equivalent mim-item-ns:CharacterString.
           xsd:dateTime mim:equivalent mim-item-ns:DateTime.
+          xsd:date mim:equivalent mim-item-ns:Date.
         }
       }
       WHERE {}
@@ -202,19 +223,21 @@ queries:
     query: >
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      PREFIX dct: <http://purl.org/dc/terms/>
       INSERT {
         GRAPH <urn:input> {
           ?prop owl:sameAs ?p
         }
         GRAPH <urn:output> {
           ?prop a ?t.
-          ?prop rdfs:label ?label
+          ?prop ?pp ?po.
         }
       }
       WHERE {
         GRAPH <urn:input> {
           ?p a ?t.
-          ?p rdfs:label ?label.
+          ?p ?pp ?po.
+          FILTER (?pp=rdfs:label || ?pp=dct:subject)
           FILTER (?t = owl:ObjectProperty || ?t = owl:DatatypeProperty)
           BIND (iri(concat("http://modellen.geostandaarden.nl/def/nen3610-2022#",strafter(str(?p),"http://ontology.mim-namespace.org/def/modelname#"))) as ?prop)
         }
@@ -258,6 +281,42 @@ queries:
           ?class owl:sameAs ?c
         }
       }
+  - title: add specific data to Codelijst VoidReasonValue
+    query: >
+      PREFIX nen3610-col: <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/>
+      PREFIX mim:  <http://bp4mc2.org/def/mim#>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+      PREFIX owl: <http://www.w3.org/2002/07/owl#>
+      INSERT {
+        GRAPH <urn:output> {
+          ?class rdfs:subClassOf skos:Concept.
+          ?shape sh:Property [
+            sh:path [sh:inversePath skos:member];
+            sh:hasValue nen3610-col:mogelijk_geen_waarde
+          ].
+          ?ontology owl:imports ?locatieuri.
+        }
+      }
+      WHERE {
+        GRAPH <urn:input> {
+          SELECT distinct ?class ?shape ?ontology (iri(?locatie) as ?locatieuri)
+          WHERE {
+            ?c mim:equivalent ?codelijst.
+            ?s sh:targetClass ?c.
+            ?c rdfs:isDefinedBy ?o.
+            ?codelijst mim:locatie ?locatie.
+            ?class owl:sameAs ?c.
+            ?shape owl:sameAs ?s.
+            ?ontology owl:sameAs ?o.
+          }
+        }
+        GRAPH <urn:output> {
+          ?class a owl:Class.
+          ?shape a sh:NodeShape.
+        }
+      }
   - title: remove owl:sameAs from blank nodes
     query: >
       PREFIX sh: <http://www.w3.org/ns/shacl#>
@@ -271,5 +330,47 @@ queries:
         GRAPH <urn:output> {
           ?shape sh:property ?blank.
           ?blank owl:sameAs ?ps
+        }
+      }
+  - title: add PropertyGroup info (and delete minCount for the specific elements)
+    query: >
+      PREFIX sh: <http://www.w3.org/ns/shacl#>
+      PREFIX nen3610: <http://modellen.geostandaarden.nl/def/nen3610-2022#>
+      PREFIX nen3610-sh: <http://modellen.geostandaarden.nl/nen3610-2022/id/shape/>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      DELETE {
+        GRAPH <urn:output> {
+          ?begingeldigheid sh:minCount 1.
+          ?objectbegintijd sh:minCount 1.
+          ?tijdstipregistratie sh:minCount 1.
+        }
+      }
+      INSERT {
+        GRAPH <urn:output> {
+          ?begingeldigheid sh:group nen3610-sh:TijdlijnGeldigheid.
+          ?eindgeldigheid sh:group nen3610-sh:TijdlijnGeldigheid.
+          ?tijdstipregistratie sh:group nen3610-sh:TijdlijnRegistratie.
+          ?eindregistratie sh:group nen3610-sh:TijdlijnRegistratie.
+          ?objectbegintijd sh:group nen3610-sh:Levensduur.
+          ?objecteindtijd sh:group nen3610-sh:Levensduur.
+          nen3610-sh:TijdlijnGeldigheid a sh:PropertyGroup; rdfs:label "TijdlijnGeldigheid".
+          nen3610-sh:TijdlijnRegistratie a sh:PropertyGroup; rdfs:label "TijdlijnRegistratie".
+          nen3610-sh:Levensduur a sh:PropertyGroup; rdfs:label "Levensduur".
+        }
+      }
+      WHERE {
+        GRAPH <urn:output> {
+          nen3610-sh:Registratie sh:property ?begingeldigheid.
+          nen3610-sh:Registratie sh:property ?eindgeldigheid.
+          nen3610-sh:Registratie sh:property ?tijdstipregistratie.
+          nen3610-sh:Registratie sh:property ?eindregistratie.
+          nen3610-sh:Registratie sh:property ?objectbegintijd.
+          nen3610-sh:Registratie sh:property ?objecteindtijd.
+          ?begingeldigheid sh:path nen3610:beginGeldigheid.
+          ?eindgeldigheid sh:path nen3610:eindGeldigheid.
+          ?tijdstipregistratie sh:path nen3610:tijdstipRegistratie.
+          ?eindregistratie sh:path nen3610:eindRegistratie.
+          ?objectbegintijd sh:path nen3610:objectBeginTijd.
+          ?objecteindtijd sh:path nen3610:objectEindTijd.
         }
       }
