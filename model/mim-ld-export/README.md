@@ -114,3 +114,81 @@ Partijen die een eigen Linked Data model gebruiken kunnen vanzelfsprekend zelf a
     nen3610:tijdstipRegistratie "2022-01-25T18:54:26"^^xsd:dateTime;
   .
 ```
+
+#### Interpretatie van "Registratie"
+
+In het NEN 3610 profiel is aangegeven dat de cardinaliteit tussen een IdentificeerbaarObject en de Registratie gelijk is aan 0..1. Met andere woorden: het is niet nodig om een Registratie op te voeren, maar het mag wel. Een registratie is gedefinieerd als "*Vastlegging van een versie van een set gegevens*". De eigenschappen van een registratie zijn dan ook metagegevens, of zoals de NEN 3610 standaar dit beschrijft: "*Registratie bevat de registratiegegevens die als metadata bij een versie van een informatieobject horen*". De relatie met IdentificeerbaarObject is dan ook geen relatie met het Informatieobject **zelf**, maar met zijn **versie**.
+
+Met de uitspraak `brug:Merwedebrug a imvoorbeeld:Brug` stellen we dat de resource `brug:Merwedebrug` een daadwerkelijke brug is, het informatieobject zelf. Het is nog aan de implementator hoe deze de Registratie verbindt aan dit informatieobject. Hiervoor zijn twee verschillende oplossingen denkbaar. Van belang is dat hierbij de cardinaliteit 0..1 van de relatie geborgd blijft in de feitelijke data.
+
+In beide oplossingen beschrijven we de Merwedebrug, en is sprake van twee versies van (de registratie over) deze Merwedebrug.
+
+##### Optie 1: met behulp van verschillende named graphs
+Deze optie introduceert geen nieuwe klassen of eigenschappen en sluit daarmee het dichtste aan bij het originele informatiemodel. Het vereist echter een specifiek gebruik van named graphs.
+
+```
+GRAPH brugdata:MerwedebrugRegistratie-20220125185426 {
+  brug:Merwedebrug a imvoorbeeld:Brug;
+    nen3610:identificatie "NLDOR001010577001143";
+    nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20220125185426;
+  .
+  brugdata:MerwedebrugRegistratie-20220125185426 a nen3610:Registratie;
+    nen3610:tijdstipRegistratie "2022-01-25T18:54:26"^^xsd:dateTime;
+  .
+}
+GRAPH <brugdata:MerwedebrugRegistratie-20221126051247> {
+  brug:Merwedebrug a imvoorbeeld:Brug;
+    nen3610:identificatie "NLDOR001010577001143";
+    nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20221126051247;
+  .
+  brugdata:MerwedebrugRegistratie-20221126051247 a nen3610:Registratie;
+    nen3610:tijdstipRegistratie "2022-11-26T05:12:47"^^xsd:dateTime;
+  .
+}
+```
+
+##### Optie 2: door in de data expliciet onderscheid te maken tussen een versie van het informatieobject en het informatieobject zelf
+Deze optie introduceert introduceert een nieuwe eigenschap (versieVan), conform de tekst van de NEN 3610 standaard, maar eentje die niet in het (huidige) NEN 3610 template-model zit. Met deze optie wordt expliciet het onderscheid tussen de brug zelf (`brug:Merwedebrug`) en verschillende versies van die brug door te tijd heen (`brug:Merwedebrug1` en `brug:Merwedebrug2`) gemaakt.
+
+```
+brug:Merwedebrug1 a imvoorbeeld:Brug;
+  nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20220125185426;
+  nen3610:identificatie "NLDOR001010577001143";
+  imvoorbeeld:versieVan brug:Merwedebrug;
+.
+brugdata:MerwedebrugRegistratie-20220125185426 a nen3610:Registratie;
+  nen3610:tijdstipRegistratie "2022-01-25T18:54:26"^^xsd:dateTime;
+.
+brug:Merwedebrug2 a imvoorbeeld:Brug;
+  nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20221126051247;
+  nen3610:identificatie "NLDOR001010577001143";
+  imvoorbeeld:versieVan brug:Merwedebrug;
+.
+brugdata:MerwedebrugRegistratie-20221126051247 a nen3610:Registratie;
+  nen3610:tijdstipRegistratie "2022-11-26T05:12:47"^^xsd:dateTime;
+.
+```
+
+Met dit voorbeeld is de resource `brug:Merwedebrug` een resource die wijst naar het informatieobject zelf. We leggen verder geen informatie vast over deze brug, alle informatie over deze brug leggen we vast bij een resource die een specifieke versie van de brug voorstelt. Door de eigenschap `imvoorbeeld:versieVan` weten we zeker dat we het over dezelfde brug hebben.
+
+Merk op: de eigenschap `nen3610:identificatie` zou in dit geval gekoppeld kunnen worden aan `brug:Merwedebrug` omdat we eigenlijk wel kunnen stellen dat de Merwedebrug nooit een andere identificatie zal krijgen. Maar toch zou dat theoretisch kunnen en bovendien zou dit een afwijking betekenen van het huidige NEN3610 model (waarin `nen3610:identificatie` een verplicht veld is).
+
+##### Optie 3: door het daadwerkelijke informatieobject in het geheel niet op te nemen.
+Optie 3 is feitelijk gelijk aan optie 2, maar dan zonder het opnemen van het informatieobject zelf. Dit zou betekenen dat je alleen maar op basis van de identificatie kunt zien dat sprake is van dezelfde brug. In niet-Linked Data implementaties is dat heel gebruikelijk, maar in Linked Data implementaties is het juist veel gebruikelijker om het informatieobject ook zelf op te nemen. De kans is aanwezig dat deze optie-3 tot implementatieproblemen leidt (slechte performance), omdat het in graph-toepassingen niet gebruikelijk is om te navigeren over literals (zoals `nen3610:identificatie`).
+
+```
+brug:Merwedebrug1 a imvoorbeeld:Brug;
+  nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20220125185426;
+  nen3610:identificatie "NLDOR001010577001143";
+.
+brugdata:MerwedebrugRegistratie-20220125185426 a nen3610:Registratie;
+  nen3610:tijdstipRegistratie "2022-01-25T18:54:26"^^xsd:dateTime;
+.
+brug:Merwedebrug2 a imvoorbeeld:Brug;
+  nen3610:registratiegegevens brugdata:MerwedebrugRegistratie-20221126051247;
+  nen3610:identificatie "NLDOR001010577001143";
+.
+brugdata:MerwedebrugRegistratie-20221126051247 a nen3610:Registratie;
+  nen3610:tijdstipRegistratie "2022-11-26T05:12:47"^^xsd:dateTime;
+.
+```
