@@ -50,7 +50,7 @@ Hiermee is de werking van de Codelijst voor het grootste gedeelte gelijk getrokk
 
 #### Metagegevens rondom historie
 
-Omdat er feitelijk geen gegevensconstraints worden toegevoegd bij de ordening van de properties rondom historie, kan volstaan worden met het introduceren van drie PropertyGroups. De standaard geeft aan dat geen van de drie tijdlijnen verplicht zijn. Dat betekent dan geen van de eigenschappen verplicht zijn. In het originele MIM model zijn wel de attribuutsoorten `tijdstipRegistratie`, `beginGeldigheid` en `objectBeginTijd` als verplicht aangemerkt, maar dat moet gelezen worden als "verplicht, indien de betreffende tijdlijn geimplementeerd is". Om te zorgen dat deze interpretatie goed blijft werken in de transformatie, moeten de betreffende eigenschappen optioneel gemaakt worden.
+Omdat er feitelijk geen gegevensconstraints worden toegevoegd bij de ordening van de properties rondom historie, kan volstaan worden met het introduceren van drie PropertyGroups. De standaard geeft aan dat geen van de drie tijdlijnen verplicht zijn. Dat betekent dan geen van de eigenschappen verplicht zijn. In het originele MIM model zijn wel de attribuutsoorten `tijdstipRegistratie`, `beginGeldigheid` en `objectBeginTijd` als verplicht aangemerkt, maar dat moet gelezen worden als "verplicht, indien de betreffende tijdlijn geïmplementeerd is". Om te zorgen dat deze interpretatie goed blijft werken in de transformatie, moeten de betreffende eigenschappen optioneel gemaakt worden.
 
 ```
 nen3610-sh:TijdlijnGeldigheid
@@ -117,7 +117,7 @@ Partijen die een eigen Linked Data model gebruiken kunnen vanzelfsprekend zelf a
 
 #### Interpretatie van "Registratie"
 
-In het NEN 3610 profiel is aangegeven dat de cardinaliteit tussen een IdentificeerbaarObject en de Registratie gelijk is aan 0..1. Met andere woorden: het is niet nodig om een Registratie op te voeren, maar het mag wel. Een registratie is gedefinieerd als "*Vastlegging van een versie van een set gegevens*". De eigenschappen van een registratie zijn dan ook metagegevens, of zoals de NEN 3610 standaar dit beschrijft: "*Registratie bevat de registratiegegevens die als metadata bij een versie van een informatieobject horen*". De relatie met IdentificeerbaarObject is dan ook geen relatie met het Informatieobject **zelf**, maar met zijn **versie**.
+In het NEN 3610 profiel is aangegeven dat de cardinaliteit tussen een IdentificeerbaarObject en de Registratie gelijk is aan 0..1. Met andere woorden: het is niet nodig om een Registratie op te voeren, maar het mag wel en dan in de data nooit meer dan één per identificeerbaar object. Een registratie is gedefinieerd als "*Vastlegging van een versie van een set gegevens*". De eigenschappen van een registratie zijn dan ook metagegevens, of zoals de NEN 3610 standaard dit beschrijft: "*Registratie bevat de registratiegegevens die als metadata bij een versie van een informatieobject horen*". De relatie met IdentificeerbaarObject is dan ook geen relatie met het Informatieobject **zelf**, maar met zijn **versie**.
 
 Met de uitspraak `brug:Merwedebrug a imvoorbeeld:Brug` stellen we dat de resource `brug:Merwedebrug` een daadwerkelijke brug is, het informatieobject zelf. Het is nog aan de implementator hoe deze de Registratie verbindt aan dit informatieobject. Hiervoor zijn drie verschillende oplossingen denkbaar. Van belang is dat hierbij de cardinaliteit 0..1 van de relatie geborgd blijft in de feitelijke data.
 
