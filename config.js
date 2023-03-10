@@ -36,26 +36,23 @@ var respecConfig =
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: [
     {
-      name: "Paul Janssen",
-      url: "https://www.geonovum.nl",
+      name:     "Paul Janssen",
+      company:  "Geonovum",
+      url:      "https://www.geonovum.nl",
     }
   ],
+
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
-   authors:
+  authors:
   [
      {
-     name:       "",
-    company:    "",
-      companyURL: ""
-   },
-    {
-     name:       "",
-     company:    "",
-    companyURL: ""
-  },
-
+      name:       "Paul Janssen",
+      company:    "Geonovum",
+      companyURL: "https://geonovum.nl",
+    },
   ],
+
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "ds-template", 	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
