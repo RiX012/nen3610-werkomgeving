@@ -45,9 +45,9 @@ var respecConfig =
   ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
-  authors:
-  [
-  ],
+ // authors:
+ // [
+ // ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
   shortName: "nen3610-2022", 	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
