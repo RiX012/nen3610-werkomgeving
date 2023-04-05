@@ -8,25 +8,25 @@
 #
 
 #Debug
-#java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -e "../nen3610-2022-template - 20221216.eap" > nen3610-2022-db.ttl
+#java -jar libs/ea2rdf.jar -e "../nen3610-2022-template.eap" > nen3610-2022-db.ttl
 
 # First step: transform native EAP format to RDF
-#java -jar ~/GITREPO/ea2rdf/target/ea2rdf.jar -ea -e "../nen3610-2022-template.eap" > nen3610-2022-ea.ttl
+java -jar libs/ea2rdf.jar -ea -e "../nen3610-2022-template.eap" > nen3610-2022-ea.ttl
 
 # Second step: transform EA model in RDF to MIM in RDF
-#java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ea.ttl nen3610-2022-mim-all.ttl ~/GITREPO/mimtools/ea2mim.yaml
+java -jar libs/rdf2rdf.jar nen3610-2022-ea.ttl nen3610-2022-mim-all.ttl libs/ea2mim.yaml
 
 # Third step: get only the NEN3610 Informatimodel from the EA model
-#java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim-all.ttl nen3610-2022-mim.ttl nen3610-split.yaml
+java -jar libs/rdf2rdf.jar nen3610-2022-mim-all.ttl nen3610-2022-mim.ttl nen3610-split.yaml
 
 # Fourth step: transform MIM model in RDF to RDFS/OWL/SHACL ontology
-#java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-mim.ttl nen3610-2022-ont.ttl ~/GITREPO/mimtools/mim2onto.yaml
+java -jar libs/rdf2rdf.jar nen3610-2022-mim.ttl nen3610-2022-ont.ttl libs/mim2onto.yaml
 
 # Fifth step: specific NEN3610 steps
-#java -jar ~/GITREPO/rdf2rdf/target/rdf2rdf.jar nen3610-2022-ont.ttl ../nen3610-2022-ontologie.ttl nen3610.yaml nen3610-2022-mim.ttl
+java -jar libs/rdf2rdf.jar nen3610-2022-ont.ttl ../nen3610-2022-ontologie.ttl nen3610.yaml nen3610-2022-mim.ttl
 
 # Sixth step: create diagram from ontology
-#java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar ../nen3610-2022-ontologie.ttl nen3610-2022-model.graphml ~/GITREPO/rdf2xml/rdf2graphml.xsl
+java -jar libs/rdf2xml.jar ../nen3610-2022-ontologie.ttl nen3610-2022-model.graphml libs/rdf2graphml.xsl
 
 # Seventh step: create MD file for respec page
-java -jar ~/GITREPO/rdf2xml/target/rdf2xml.jar ../nen3610-2022-ontologie.ttl ../respec/nen3610-2022-model.md ~/GITREPO/rdf2xml/rdf2md.xsl
+java -jar libs/rdf2xml.jar ../nen3610-2022-ontologie.ttl ../respec/nen3610-2022-model.md ~/GITREPO/rdf2xml/rdf2md.xsl
