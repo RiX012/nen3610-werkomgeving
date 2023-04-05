@@ -1,1 +1,3 @@
 /model/mim-ld-export/libs/*.jar
+/model/mim-ld-export/libs/*.yaml
+/model/mim-ld-export/libs/*.xsl
