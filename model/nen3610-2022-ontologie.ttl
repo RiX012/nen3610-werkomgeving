@@ -3,11 +3,11 @@
 @prefix mim:          <http://bp4mc2.org/def/mim#> .
 @prefix mim-item-ns:  <http://ontology.mim-namespace.org/def/modelname#> .
 @prefix mim-model-ns: <http://ontology.mim-namespace.org/> .
-@prefix nen3610:      <http://modellen.geostandaarden.nl/def/nen3610-2022#> .
+@prefix nen3610:      <http://modellen.geostandaarden.nl/def/nen3610#> .
 @prefix nen3610-beg:  <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/> .
 @prefix nen3610-col:  <http://definities.geostandaarden.nl/nen3610-2022/id/collectie/> .
-@prefix nen3610-ont:  <http://modellen.geostandaarden.nl/def/nen3610-2022/> .
-@prefix nen3610-sh:   <http://modellen.geostandaarden.nl/nen3610-2022/id/shape/> .
+@prefix nen3610-ont:  <http://modellen.geostandaarden.nl/def/nen3610/> .
+@prefix nen3610-sh:   <http://modellen.geostandaarden.nl/nen3610/id/shape/> .
 @prefix owl:          <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh:           <http://www.w3.org/ns/shacl#> .
@@ -309,10 +309,10 @@ nen3610:Leiding  a                   owl:Class ;
         dct:subject                  nen3610-beg:leiding ;
         skos:notation                "Leiding" .
 
-<http://modellen.geostandaarden.nl/def/nen3610-2022>
+<http://modellen.geostandaarden.nl/def/nen3610>
         a            owl:Ontology ;
         owl:imports  nen3610-ont:SemantischModel , nen3610-ont:Basisinformatie-elementen , nen3610-ont:Waardelijsten ;
-        sh:declare   [ sh:namespace  "http://modellen.geostandaarden.nl/def/nen3610-2022#" ;
+        sh:declare   [ sh:namespace  "http://modellen.geostandaarden.nl/def/nen3610#" ;
                        sh:prefix     "nen3610"
                      ] .
 
